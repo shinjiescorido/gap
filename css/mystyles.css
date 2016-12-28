@@ -73,7 +73,8 @@ footer div {
     padding-top: 10px;
 }
 section {
-  min-height:150px;
+  max-height:200px;
+  overflow-y: hidden;
 }
 section p {
 	padding:7%;
@@ -195,7 +196,7 @@ nav a.icon {display: none;}
   }
   footer div {
     text-align: center;
-    width: 25%;
+    width: 33%;
     float: left;
   }
   footer img {
@@ -540,7 +541,7 @@ div.panel.show {
       border-top: 15px solid red;
       display: block;
       height: 200px;
-      margin: 0;
+      margin: 10px 0 0;
       padding: 0;
       position: relative;
     }
@@ -647,16 +648,16 @@ div.panel.show {
     height:115px;
   }
   .head-holder-1 {
-    background-image: url('../images/header/480/kid-children-diver.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-480/fish-coral-diver_480.jpg');
   }
   .head-holder-2 {
-    background-image: url('../images/header/480/island-tour.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-480/fishing-rod_480.jpg');
   }
   .head-holder-3 {
-    background-image: url('../images/header/480/parasailing.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-480/banana-boat-sled_480.jpg');  
   }
   .head-holder-4 {
-    background-image: url('../images/header/480/helmet-diving.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-480/seatrek-underwater_480.jpg');  
   }
 }
 
@@ -703,16 +704,16 @@ div.panel.show {
       height: 180px;
   }
   .head-holder-1 {
-    background-image: url('../images/header/768/kid-children-diver.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-768/fish-coral-diver_768.jpg');
   }
   .head-holder-2 {
-    background-image: url('../images/header/768/island-tour.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-768/fishing-rod_768.jpg');watersports-photos-header
   }
   .head-holder-3 {
-    background-image: url('../images/header/768/parasailing.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-768/banana-boat-sled_768.jpg');  
   }
   .head-holder-4 {
-    background-image: url('../images/header/768/helmet-diving.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-768/seatrek-underwater_768.jpg');  
   }
 }
 
@@ -733,16 +734,16 @@ div.panel.show {
       height: 200px;
   }
   .head-holder-1 {
-    background-image: url('../images/header/1024/kid-children-diver.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1024/fish-coral-diver_1024.jpg');
   }
   .head-holder-2 {
-    background-image: url('../images/header/1024/island-tour.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1024/fishing-rod_1024.jpg');
   }
   .head-holder-3 {
-    background-image: url('../images/header/1024/parasailing.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1024/banana-boat-sled_1024.jpg');  
   }
   .head-holder-4 {
-    background-image: url('../images/header/1024/helmet-diving.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1024/seatrek-underwater_1024.jpg');  
   }
 }
 
@@ -759,16 +760,16 @@ div.panel.show {
     margin: 313px 0 35px 10px;
   }
   .head-holder-1 {
-    background-image: url('../images/header/1920/kid-children-diver.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1920/fish-coral-diver_1920.jpg');
   }
   .head-holder-2 {
-    background-image: url('../images/header/1920/island-tour.jpg');
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1920/fishing-rod_1920.jpg');
   }
   .head-holder-3 {
-    background-image: url('../images/header/1920/parasailing.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1920/banana-boat-sled_1920.jpg');  
   }
   .head-holder-4 {
-    background-image: url('../images/header/1920/helmet-diving.jpg');  
+    background-image: url('../images/watersports-photos-header/watersports-photos-header-1920/seatrek-underwater_1920.jpg');  
   }
 }
 
@@ -781,16 +782,16 @@ div.panel.show {
     margin: 313px 0 35px 10px;
   }
   .head-holder-1 {
-    background-image: url('../images/header/kid-children-diver.jpg');
+    background-image: url('../images/watersports-photos-header/fish-coral-diver.jpg');
   }
   .head-holder-2 {
-    background-image: url('../images/header/island-tour.jpg');
+    background-image: url('../images/watersports-photos-header/fishing-rod.jpg');
   }
   .head-holder-3 {
-    background-image: url('../images/header/parasailing.jpg');  
+    background-image: url('../images/watersports-photos-header/banana-boat-sled.jpg');  
   }
   .head-holder-4 {
-    background-image: url('../images/header/helmet-diving.jpg');  
+    background-image: url('../images/watersports-photos-header/seatrek-underwater.jpg');  
   }
 }
 
