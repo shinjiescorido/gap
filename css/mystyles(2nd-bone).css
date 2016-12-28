@@ -1,0 +1,737 @@
+html, body {
+  height: 100%;
+  margin:0px;
+}
+.container {
+  min-height: 100%;
+}
+  .head-holder-1 {
+    background-image: url('../images/header/kid-children-diver.jpg');
+  }
+  .head-holder-2 {
+    background-image: url('../images/header/island-tour.jpg');
+  }
+  .head-holder-3 {
+    background-image: url('../images/header/parasailing.jpg');  
+  }
+  .head-holder-4 {
+    background-image: url('../images/header/helmet-diving.jpg');  
+  }
+  
+.menu-floater-mobile {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.menu-floater-tablet {
+  display: none;
+}
+.heading {
+  display: none;
+}
+.heading {
+  overflow:hidden;
+  opacity: 0.9;
+  z-index:-1;
+  background-color: #000;
+}
+.heading h1{
+  color: #fff;
+  text-transform: uppercase;
+  margin:0px;
+}
+.head-holder-1 {
+  background-image: url('../images/background-1.jpg');
+  height:100%;
+  background-color: #000;
+}
+.head-holder-2 {
+  background-image: url('../images/background-2.jpg');
+  height:100%;
+  background-color: #000;
+}
+.head-holder-3 {
+  background-image: url('../images/background-3.jpg');
+  height:100%;
+  background-color: #000;
+}
+.head-holder-4{
+  background-image: url('../images/background-4.jpg');
+  height:100%;
+  background-color: #000;
+}
+footer {
+  color:#fff;
+  height: 90px;
+  border-top:1px solid #ccc;
+  font-size:14px;
+
+}
+footer div {
+    padding-top: 10px;
+}
+section {
+  min-height:150px;
+}
+section p {
+	padding:7%;
+}
+.row {
+    padding:10px;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    width: 100%;
+    display:block;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+nav {
+  background-color: #333;
+}
+
+nav a.icon {display: none;}
+
+ /* For mobile phones:
+[class*="col-"] {
+    width: 100%;
+    float:left;
+} */
+
+    /* For mobiles: */
+  [class*="col-"] {
+    width: 100%;
+    float:left;
+  }
+    .col-m-image {
+      width:100%;
+      height: auto;
+      display:block;
+    }
+    section{
+      margin: 30px 0px;
+    }
+    section p {
+      display:none;
+    }
+    section h2 {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.388;
+      padding: 0 10px;
+      margin: 0 10px;
+      font-weight: 700;
+      font-size: 18px;
+      color: #333;
+      text-transform: uppercase;
+    }
+    #heads {
+      background-color: #666;
+      margin-top: 25px;
+    }
+    .top_h2 {
+    background: #ff3d2e;
+    display: block;
+    margin: 0px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    }
+
+  .slider-caption {
+      margin: 85px 0 35px 10px;
+      
+      opacity: 0.8;
+      padding: 10px;
+      text-transform: capitalize;
+      z-index: 2;
+
+  }
+  .slider-caption span {
+      background: #fff none repeat scroll 0 0;
+      color: #000;
+      font-family: "Poppins",sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 3px;
+      box-shadow: 1px 1px 15px #666;
+      padding:10px;
+  }
+    .heading {
+      background-repeat:no-repeat;
+      background-position:center;
+      background-size:100%;
+    }
+    .readmore {
+      display:none;
+    }
+  .divider {
+    display:none;
+  }
+  footer div {
+    text-align: center;
+    width: 25%;
+    float: left;
+  }
+  footer img {
+    width: 80%
+  }
+  .copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    color:#666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  nav {
+    display:none;
+  }
+
+  .mainrow {
+      margin-top: 10px;
+  }
+  /*Style 'show menu' label button and hide it by default*/
+  .show-menu {
+    background: #000 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 15px;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid #666;
+  }
+  .show-menu img {
+    width: 45px;
+  }
+  /*Hide checkbox*/
+  input[type=checkbox]{
+      display: none;
+  }
+  
+  .panel.show [class*="col-"] {
+    float: none;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-align: center;
+  }
+ 
+  .panel.show [class*="col-"]:first-child {
+    padding-top: 0px;
+  } 
+  .panel.show [class*="col-"]:last-child {
+    border:none;
+  }
+  
+  .panel.show [class*="col-"] span {
+    font-size:16px;
+    color:#fff;
+  }
+  
+  .panel.show [class*="col-"] img {
+    opacity: 1;
+    width:auto;
+  }
+  .panel.show [class*="col-"] img:hover {
+    opacity: 0.7;
+  }
+
+  /*Show menu when invisible checkbox is checked*/
+  input[type=checkbox]:checked ~ nav{
+      display: block;
+  }
+
+/* 
+  this is for the accordion menu in mobile
+*/
+#myTopNav {
+  opacity: 0.95;  
+}
+
+.nav-mobile-wrapper {
+  max-height:80vh;
+  overflow-y: auto;
+}
+
+button.accordion {
+    background-color: #262626;
+    color: #ccc;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid #666;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #26519E;
+    color:#fff;
+}
+
+div.panel {
+    /* padding: 10px 10px 10px 18px; */
+    display: none;
+    background-color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+div.panel.show {
+    display: block;
+}
+
+.panel.show p {
+    font-family: "Poppins",sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.panel-show-wrapper {
+  padding-top:18px;
+}
+/* 
+  accordion menu mobile ends here
+*/
+@media (min-width:480px), (min-width:480px) and (orientation: landscape){  /* landscape problem starts here */
+  /* query for mobile phone with landscape orientation  */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%; font-size:32px;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .panel.show [class*="col-"] {
+      float:left;;
+    }
+    div.panel.show {
+      display:table;
+    }
+    .panel.show [class*="col-"]:first-child {
+      padding-top:10px;
+    }
+    section p {
+      display:block;
+      margin:0px;
+      padding:0px;
+      font-size:14px;
+      font-family: 'Arial', sans-serif;
+      color:#666;
+      text-indent: 10px;
+      padding: 10px;
+    }
+
+    .top_h2 {
+      margin: 0px 10px;
+      background-color:#fff;
+      border-bottom: 1px solid #ff3d2e;
+      color: #ff3d2e;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    .readmore {
+      display:block;
+      color:#fff;
+      background-color:#ff3d2e;
+      font-family:'Arial', sans-serif;
+      font-size:11px;
+      text-transform:capitalize;
+      float:right;
+      padding:5px;
+      margin:0px 5px;
+      text-align:center;
+    }
+    section {
+      margin:0px 10px;
+      padding: 10px 0px;
+      border-top:1px solid #ccc;
+    }
+    .heading {
+      min-height: 50px;
+    }
+
+    .divider {
+      display:none;
+    }
+    .myTopNav {
+      display:block;
+    }
+    nav a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  /* this is for tablet device */
+  .col-t-1 {width: 8.33%;}
+  .col-t-2 {width: 16.66%;}
+  .col-t-3 {width: 25%; font-size:32px;}
+  .col-t-4 {width: 33.33%;}
+  .col-t-5 {width: 41.66%;}
+  .col-t-6 {width: 50%;}
+  .col-t-7 {width: 58.33%;}
+  .col-t-8 {width: 66.66%;}
+  .col-t-9 {width: 75%;}
+  .col-t-10 {width: 83.33%;}
+  .col-t-11 {width: 91.66%;}
+  .col-t-12 {width: 100%;}
+  .about-menu-mobile {
+    margin:0px;
+    overflow-y: hidden;
+    height:200px;
+    background:#151515;
+    text-align:center;
+    transform: translate3d(-100%, 0px, 0px);
+    transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, visibility 0s ease 0.4s;
+    visibility: hidden;
+    position:absolute;
+    top: 30px;
+    left:0px;
+  }
+  .is-visible {
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, visibility 0s ease 0s;
+    visibility: visible;
+  }
+  .about-menu-mobile .about-link-holder{
+    padding:15px 10px 10px 10px;
+  }
+  .about-menu-mobile .about-link-holder a {
+    height:170px;
+    text-decoration:none;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+    opacity:1;
+    display:table;
+  }
+  span.show-arrow {
+    display:none;
+  }
+  span.show-arrow:after {
+    content: 'whatever it is you want to add';
+  }
+  .about-menu-mobile .about-link-holder a img {
+      width: 97%;
+  }
+  .about-menu-mobile .about-link-holder a:hover {
+    opacity:0.7;
+  }
+  .about-link-holder h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .about-link-holder p {
+    color: #fff;
+    font-size: 15px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+      section p {
+      display:block;
+      margin:0px;
+      padding:0px;
+      font-size:14px;
+      font-family: 'Arial', sans-serif;
+      color:#666;
+      text-indent: 10px;
+      padding: 10px;
+      max-height: 87px;
+      overflow-y: hidden;
+    }
+
+    .top_h2 {
+      margin: 0px 10px;
+      background-color:#fff;
+      border-bottom: 1px solid #ff3d2e;
+      color: #ff3d2e;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    .readmore {
+      display:block;
+      color:#fff;
+      background-color:#ff3d2e;
+      font-family:'Arial', sans-serif;
+      font-size:11px;
+      text-transform:capitalize;
+      float:right;
+      padding:5px;
+      margin:0px 5px;
+      text-align:center;
+    }
+    section {
+      margin:0px 0px;
+      padding: 10px 0px;
+     
+    }
+    section .content-wrapper {
+      padding: 0px 0px 10px 0px;
+      border-bottom: 1px solid #ccc;
+      display: table;
+    }
+    .heading {
+      min-height: 50px;
+    }
+
+   .col-m-image {
+      width:100%;
+    }
+    .divider {
+      border-bottom: 1px solid #ccc;
+      border-top: 15px solid red;
+      display: block;
+      height: 200px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+    .divider img {
+      height: 200px;
+      position: absolute;
+      width: 100%;
+    }
+    .divider div {
+      bottom: 80px;
+      font-size: 30px;
+      left: 0;
+      position: absolute;
+    }
+    .divider a {
+      color: #fff;
+      font-size: 30px;
+      text-decoration: none;
+      text-shadow: 1px 1px saddlebrown;
+    }
+    .myTopNav {
+      display:block;
+    }
+    footer {
+      text-align: center;
+    }
+    footer div {
+      float:none;
+      text-align: center;
+      width: 17%;
+      display: inline-block
+    }
+    footer img {
+      padding: 0 10px;
+    }
+    nav a {
+        display: inline-block;
+    }
+    .menu-floater-mobile {
+      display: none;
+    }
+    .menu-floater-tablet {
+      display:block;
+      position: fixed;
+      top:0;
+      left:0;
+      height:30px;
+      z-index:11;
+    }
+    
+    
+/*  menu big starts here */
+  nav {
+      display: block;
+     height: inherit;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  nav a {
+    width:inherit;
+    height: inherit;
+  }
+  .link-2 {
+    border-right: 2px dotted transparent;
+    color: #ffffff;
+    font-size: 16px;
+    height: inherit;
+    margin: 0 10px;
+    padding: 0 8px 0 10px;
+    text-decoration: none;
+    transition: all 0.6s ease 0s;
+  }
+  .link-2:hover {
+    border-right: 2px dotted #ffffff;
+  }
+
+}
+
+@media (max-width:480px) {
+  .slider-caption {
+    margin:0px;
+  }
+  .panel.show [class*="col-"] img {
+    width:auto;
+  }
+  .slider-caption span {
+      border-radius: 0;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 40px;
+      margin: 0;
+      padding: 10px;
+  }
+  .heading .row {
+    background-size: 100% 100%;
+  }
+  .heading {
+    height:115px;
+  }
+  .head-holder-1 {
+    background-image: url('../images/header/480/kid-children-diver.jpg');
+  }
+  .head-holder-2 {
+    background-image: url('../images/header/480/island-tour.jpg');
+  }
+  .head-holder-3 {
+    background-image: url('../images/header/480/parasailing.jpg');  
+  }
+  .head-holder-4 {
+    background-image: url('../images/header/480/helmet-diving.jpg');  
+  }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  .panel.show [class*="col-"] img {
+    width:97%;
+  }
+  .slider-caption span {
+    font-weight: 500;
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0px;
+    box-shadow: 1px 1px 15px #666;
+    color: #000;
+    font-family: "Poppins",sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 10px;
+  }
+  .heading .row {
+      background-size: 100% 100%;
+      height: 180px;
+  }
+  .head-holder-1 {
+    background-image: url('../images/header/768/kid-children-diver.jpg');
+  }
+  .head-holder-2 {
+    background-image: url('../images/header/768/island-tour.jpg');
+  }
+  .head-holder-3 {
+    background-image: url('../images/header/768/parasailing.jpg');  
+  }
+  .head-holder-4 {
+    background-image: url('../images/header/768/helmet-diving.jpg');  
+  }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+  .slider-caption span {
+    background: #fff none repeat scroll 0 0;
+    border-radius:0px;
+    box-shadow: 1px 1px 15px #666;
+    color: #000;
+    font-family: "Poppins",sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 10px;
+    font-weight:500;
+  }
+  .heading .row {
+      background-size: 100% 100%;
+      height: 200px;
+  }
+  .head-holder-1 {
+    background-image: url('../images/header/1024/kid-children-diver.jpg');
+  }
+  .head-holder-2 {
+    background-image: url('../images/header/1024/island-tour.jpg');
+  }
+  .head-holder-3 {
+    background-image: url('../images/header/1024/parasailing.jpg');  
+  }
+  .head-holder-4 {
+    background-image: url('../images/header/1024/helmet-diving.jpg');  
+  }
+}
+
+@media (min-width: 1025px) and (max-width:1920px) {
+  .heading .row {
+      background-size: 100% 100%;
+      height: 400px;
+  }
+    
+  .about-menu-mobile .about-link-holder a img {
+      width: auto;
+  }
+  .slider-caption {
+    margin: 313px 0 35px 10px;
+  }
+  .head-holder-1 {
+    background-image: url('../images/header/1920/kid-children-diver.jpg');
+  }
+  .head-holder-2 {
+    background-image: url('../images/header/1920/island-tour.jpg');
+  }
+  .head-holder-3 {
+    background-image: url('../images/header/1920/parasailing.jpg');  
+  }
+  .head-holder-4 {
+    background-image: url('../images/header/1920/helmet-diving.jpg');  
+  }
+}
+
+@media (min-width: 1921px) {
+  .heading .row {
+      background-size: 100% 100%;
+      height: 400px;
+  }
+  .slider-caption {
+    margin: 313px 0 35px 10px;
+  }
+  .head-holder-1 {
+    background-image: url('../images/header/kid-children-diver.jpg');
+  }
+  .head-holder-2 {
+    background-image: url('../images/header/island-tour.jpg');
+  }
+  .head-holder-3 {
+    background-image: url('../images/header/parasailing.jpg');  
+  }
+  .head-holder-4 {
+    background-image: url('../images/header/helmet-diving.jpg');  
+  }
+}
+
+
+
+
