@@ -1,0 +1,64 @@
+<html>
+<head></head>
+<script>
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i&lt;(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p&lt;1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num&lt;min || max&lt;num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+</script>
+<body>
+<form action="/cgi-bin/FormMail01.pl" method="post" name="inquiry" id="inquiry" onsubmit="MM_validateForm('realname','','R','email','','RisEmail','Age','','NisNum','Inquiry','','R');return document.MM_returnValue">
+
+      <input name="recipient" value="dive@divescotty.com,diveinquiry@divescotty.com,jay@divescotty.com" type="hidden">
+           	  <input name="subject" value="Web Site inquiry" type="hidden">
+           	  <input name="print_config" value="nationality,age,inquiry" type="hidden">
+			  <input name="required" value="realname,email,Inquiry" type="hidden">
+			  <input name="redirect" value="http://divescotty.com/contact/thankyou.html" type="hidden">
+           	  <table width="95%" cellspacing="5" cellpadding="0" border="0">
+                <tbody><tr>
+                  <td width="15%">Name</td>
+                  <td width="3%">:</td>
+                  <td width="82%"><input name="realname" id="realname" size="20" type="text"></td>
+                </tr>
+                <tr>
+                  <td>E-mail</td>
+                  <td>:</td>
+                  <td><input name="email" id="email" size="20" type="text"></td>
+                </tr>
+                <tr>
+                  <td>Nationality</td>
+                  <td>:</td>
+                  <td><input name="Nationality" id="Nationality" size="20" type="text"></td>
+                </tr>
+                <tr>
+                  <td valign="middle">Age</td>
+                  <td valign="middle">:</td>
+                  <td valign="middle"><input name="Age" id="Age" size="1" maxlength="2" type="text"></td>
+                </tr>
+                <tr>
+                  <td valign="top">Inquiry</td>
+                  <td valign="top">:</td>
+                  <td valign="middle"><textarea name="Inquiry" cols="35" rows="7" id="Inquiry"></textarea></td>
+                </tr>
+                
+                <tr>
+                  <td valign="top">&nbsp;</td>
+                  <td valign="top">&nbsp;</td>
+                  <td valign="middle"><input value="Submit" type="submit">
+                  <input value="Reset" type="reset"></td>
+                </tr>
+              </tbody></table>
+          </form>
+          </body>
+</html>
