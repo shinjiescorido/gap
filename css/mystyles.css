@@ -73,7 +73,7 @@ footer div {
     padding-top: 10px;
 }
 section {
-  max-height:200px;
+  /*max-height:200px;*/
   overflow-y: hidden;
 }
 section p {
@@ -390,7 +390,7 @@ div.panel.show {
     section {
       margin:0px 10px;
       padding: 10px 0px;
-      border-top:1px solid #ccc;
+      /* border-top:1px solid #ccc; */
     }
     .heading {
       min-height: 50px;
