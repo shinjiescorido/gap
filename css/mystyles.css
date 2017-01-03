@@ -46,6 +46,18 @@ a {
       border: 1px solid #3079ed !important;
       text-shadow: 0 1px rgba(0, 0, 0, 0.1) !important;
   }
+  .gored {
+    background-color: #e63900 !important;
+    background-image: -moz-linear-gradient(center top , #e63900, #cc3300) !important;
+    border: 1px solid #ff4000 !important;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1) !important;
+  }
+  .gogreen {
+    background-color: #39ac39 !important;
+    background-image: -moz-linear-gradient(center top , #39ac39, #339933) !important;
+    border: 1px solid #2d862d !important;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1) !important;
+  }
 /* button styles end */
 .menu-floater-mobile {
   position: fixed;
@@ -410,7 +422,7 @@ div.panel.show {
       text-transform: capitalize;
     }
     .top_h2 a {
-       color: blue;
+       color: #0162fe;
     }
     .readmore {
       display:block;
@@ -682,6 +694,9 @@ div.panel.show {
     .col-ms-10 {width: 83.33% !important;}
     .col-ms-11 {width: 91.66% !important;}
     .col-ms-12 {width: 100% !important;}
+    .heading {
+      height: auto;
+    }
     [class*="col-ms-"] {
       float:left;
     }
@@ -696,12 +711,13 @@ div.panel.show {
     color: #666;
     display: block;
     font-family: "Arial",sans-serif;
-    font-size: 3vw;
+    font-size: 12px;
     height: 53px;
     margin: 0;
     overflow: hidden;
-    padding: 10px;
+    padding: 5px 10px 10px;
     text-indent: 10px;
+
     }
 
     [class*="col-ms-"] .top_h2 {
@@ -709,11 +725,11 @@ div.panel.show {
       background-color:#fff;
       border-bottom: 1px solid #ff3d2e;
       color: #ff3d2e;
-      font-size: 3vw;
+      font-size: 12px;
       text-transform: capitalize;
     }
     [class*="col-ms-"] .top_h2 a {
-       color: blue;
+       color: #0162fe;
     }
     [class*="col-ms-"] .readmore {
       display:block;
@@ -728,11 +744,64 @@ div.panel.show {
       font-size:14px;
       font-weight:600;
     }
+    [class*="col-ms-"] .readmore a {
+      font-size: 12px;
+    }
     section[class*="col-ms-"] {
       margin:0px 10px;
       padding: 10px 0px;
       border-top:1px solid #ccc;
     }
+
+/*
+ ## 3- line Truncator CSS
+*/
+ 
+ /* styles for '...' */ 
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.9em; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+/*
+ ## END 3- line Truncator CSS
+*/
+
   /*
     this area sets mobile design on sub pages
   */
@@ -755,7 +824,7 @@ div.panel.show {
     background-size: 100% 100%;
   }
   .heading {
-    height:115px;
+    height:auto;
   }
   .head-holder-1 {
     background-image: url('../images/watersports-photos-header/watersports-photos-header-480/fish-coral-diver_480.jpg');
