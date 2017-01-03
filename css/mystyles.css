@@ -31,7 +31,15 @@ a {
   .hide-divider {
     display: none;  
   }
-  
+
+/* button styles */
+  .goblue {
+      background-color: #4d90fe !important;
+      background-image: -moz-linear-gradient(center top , #4d90fe, #4787ed) !important;
+      border: 1px solid #3079ed !important;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.1) !important;
+  }
+/* button styles end */
 .menu-floater-mobile {
   position: fixed;
   z-index: 10;
@@ -651,6 +659,76 @@ div.panel.show {
 }
 
 @media (max-width:480px) {
+  /*
+    this area sets mobile design on sub pages
+  */
+    
+    .col-ms-1 {width: 8.33% !important;}
+    .col-ms-2 {width: 16.66% !important;}
+    .col-ms-3 {width: 25%; !important;}
+    .col-ms-4 {width: 33.33% !important;}
+    .col-ms-5 {width: 41.66% !important;}
+    .col-ms-6 {width: 50% !important;}
+    .col-ms-7 {width: 58.33% !important;}
+    .col-ms-8 {width: 66.66% !important;}
+    .col-ms-9 {width: 75% !important;}
+    .col-ms-10 {width: 83.33% !important;}
+    .col-ms-11 {width: 91.66% !important;}
+    .col-ms-12 {width: 100% !important;}
+    [class*="col-ms-"] {
+      float:left;
+    }
+    
+    section[class*="col-ms-"] .col-m-image {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    
+    section[class*="col-ms-"] p {
+    color: #666;
+    display: block;
+    font-family: "Arial",sans-serif;
+    font-size: 3vw;
+    height: 53px;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px;
+    text-indent: 10px;
+    }
+
+    [class*="col-ms-"] .top_h2 {
+      margin: 0px 10px;
+      background-color:#fff;
+      border-bottom: 1px solid #ff3d2e;
+      color: #ff3d2e;
+      font-size: 3vw;
+      text-transform: capitalize;
+    }
+    [class*="col-ms-"] .top_h2 a {
+       color: blue;
+    }
+    [class*="col-ms-"] .readmore {
+      display:block;
+      color:#fff;
+      font-family:'Arial', sans-serif;
+      font-size:11px;
+      text-transform:capitalize;
+      float:right;
+      padding:5px;
+      margin:0px 5px;
+      text-align:center;
+      font-size:14px;
+      font-weight:600;
+    }
+    section[class*="col-ms-"] {
+      margin:0px 10px;
+      padding: 10px 0px;
+      border-top:1px solid #ccc;
+    }
+  /*
+    this area sets mobile design on sub pages
+  */
   .slider-caption {
     margin:0px;
   }
