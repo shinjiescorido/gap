@@ -28,6 +28,10 @@ a {
     background-image: url('../images/header/helmet-diving.jpg');  
   }
   
+  .hide-divider {
+    display: none;  
+  }
+  
 .menu-floater-mobile {
   position: fixed;
   z-index: 10;
@@ -463,6 +467,7 @@ div.panel.show {
     margin: auto;
     top: 30px;
   }
+
   .about-menu-mobile .about-link-holder{
     padding:15px 10px 10px 10px;
     display: table;
@@ -723,6 +728,7 @@ div.panel.show {
       background-size: 100% 100%;
       height: 180px;
   }
+
   .head-holder-1 {
     background-image: url('../images/watersports-photos-header/watersports-photos-header-768/fish-coral-diver_768.jpg');
   }
@@ -749,6 +755,9 @@ div.panel.show {
     padding: 10px;
     font-weight:500;
   }
+  .hide-divider {
+    display: block;  
+  }
   .heading .row {
       background-size: 100% 100%;
       height: 200px;
@@ -772,7 +781,9 @@ div.panel.show {
       background-size: 100% 100%;
       height: 400px;
   }
-    
+  .hide-divider {
+    display: block;  
+  }  
   .about-menu-mobile .about-link-holder a img {
       width: 95%;
   }
@@ -797,6 +808,9 @@ div.panel.show {
   .heading .row {
       background-size: 100% 100%;
       height: 400px;
+  }
+  .hide-divider {
+    display: block;  
   }
   .slider-caption {
     margin: 313px 0 35px 10px;
