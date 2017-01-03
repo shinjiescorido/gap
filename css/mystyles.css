@@ -33,6 +33,13 @@ a {
   }
 
 /* button styles */
+  .goorange {
+      background-color: #ff9933 !important;
+      background-image: -moz-linear-gradient(center top , #ff9933, #e67300) !important;
+      border: 1px solid #ff8c1a !important;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.1) !important;
+  }
+  
   .goblue {
       background-color: #4d90fe !important;
       background-image: -moz-linear-gradient(center top , #4d90fe, #4787ed) !important;
