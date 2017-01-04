@@ -519,7 +519,7 @@ div.panel.show {
     margin:0px;
     overflow-y: hidden;
     height:auto;
-    background:#2d57b9;
+    background:rgba(45, 87, 185, 0.8) none repeat scroll 0 0;
     text-align:center;
     transform: translate3d(0px, -100%, 0px);
     transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, visibility 0s ease 0.4s;
@@ -527,7 +527,7 @@ div.panel.show {
     position:absolute;
     top: 0px;
     left:0;
-    width:100%;
+   /* width:100%; */
   }
   .is-visible {
     transform: translate3d(0px, 0px, 0px);
@@ -536,6 +536,8 @@ div.panel.show {
     display:table;
     margin: auto;
     top: 30px;
+    right:0;
+    position: static;
   }
 
   .about-menu-mobile .about-link-holder{
