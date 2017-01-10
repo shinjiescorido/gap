@@ -91,6 +91,36 @@ a {
 /*
  ## END 3- line Truncator CSS
 */
+/*
+  ## Begin Line Truncator css
+*/
+.block-with-text-2 {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 1.5em;
+  text-align: justify;
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text-2:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.block-with-text-2:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+/*
+  ## End n-line truncator css
+*/
 .home-btn-m img {
   height:15px;
   padding-top:4px;
@@ -699,7 +729,9 @@ div.panel.show {
     .panel.show [class*="col-"]:first-child {
       padding-top:10px;
     }
-
+.block-with-text-2 {
+  max-height: 4em;
+}
     section p {
       display:block;
       margin:0px;
@@ -772,6 +804,9 @@ div.panel.show {
   .col-t-12 {width: 100%;}
   .block-with-text {
     max-height: 2.5em;
+  }
+  .block-with-text-2 {
+    max-height: 2em;
   }
   .about-menu-mobile {
     margin:0px;
@@ -1217,6 +1252,9 @@ div.panel.show {
   .block-with-text {
     max-height: 3em;
   }
+  .block-with-text-2 {
+    max-height: 4em;
+  }
   .hide-divider {
     display: block;
   }
@@ -1224,31 +1262,14 @@ div.panel.show {
       background-size: 100% 100%;
       height: 200px;
   }
-  /*
-  .head-holder-1 {
-    background-image: url('../images/header/1024/fish-coral-diver_1024.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1024/beach-sun-bath-photo_1024.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1024/banana-boat-sled_1024.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1024/seatrek-underwater_1024.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1024/deep-sea-fishing_1024.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1024/sidemount-diving-course_1024.jpg');
-  }
-  */
 }
 
-@media (min-width: 1025px) and (max-width:1199) {
+@media (min-width: 1025px) {
   .block-with-text {
     max-height: 3.2em;
+  }
+  .block-with-text-2 {
+    max-height: 4em;
   }
   #heads .heading .row {
       background-size: 100% 100%;
@@ -1260,32 +1281,15 @@ div.panel.show {
   .about-menu-mobile .about-link-holder a img {
       width: 95%;
   }
-  /*
-  .head-holder-1 {
-    background-image: url('../images/header/1920/fish-coral-diver_1920.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1920/beach-sun-bath-photo_1920.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1920/banana-boat-sled_1920.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1920/seatrek-underwater_1920.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1920/deep-sea-fishing_1920.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1920/sidemount-diving-course_1920.jpg');
-  }
-  */
 }
 @media (min-width: 1200px) and (max-width:1440px) {
    /* added this media query for desciprtion and image size between 1200 - 1440 transition */
    /* since 1025 - 1440 transition is too high we need to make new breakpoints in between */
   .block-with-text {
     max-height: 6em;
+  }
+  .block-with-text-2 {
+    max-height: 4em;
   }
   .heading .row {
       background-size: 100% 100%;
