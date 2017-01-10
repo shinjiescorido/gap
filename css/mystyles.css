@@ -36,7 +36,10 @@ a {
 /*
  ## 3- line Truncator CSS
 */
+.h-cloner span {
+  display: block;
 
+}
  /* styles for '...' */
 .block-with-text {
   /* hide text if it more than N lines  */
@@ -52,6 +55,13 @@ a {
   /* place for '...' */
 /*  margin-right: -1em; */
   padding-right: 1em;
+}
+
+.about-link-holder h3 {
+    color: orange;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
 }
 /* create the ... */
 .block-with-text:before {
@@ -427,6 +437,12 @@ nav a.icon {display: none;}
     }
     .readmore {
       display:none;
+    }
+    .readmore h3 {
+        font-weight: 400;
+        line-height: 15px;
+        margin: 0;
+        padding: 0;
     }
   .divider {
     display:none;
@@ -1108,6 +1124,12 @@ div.panel.show {
     background-image: url('../images/header/480/sidemount-diving-course_480.jpg');
   }
   */
+  .panel div div {
+      display: table;
+  }
+  .panel div div img {
+      width: 95%;
+  }
 }
 
 @media (min-width: 481px) and (max-width:1023px){ /* why 1023px? menu ? and it's not until 768? */
