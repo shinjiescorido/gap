@@ -3,118 +3,58 @@
 <head>
   <title>Scotty's Dive Center - watersports</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta charset="UTF-8"> 
- 
+ <meta charset="UTF-8">
+
 <link rel="stylesheet" type="text/css" href="../css/mystyles.css">
- <script src="../js/main.js"></script> 
+ <script src="../js/main.js"></script>
+ <style>
+ @media (max-width:480px) {
+   .head-holder-1 {
+     background-image: url('../images/header/480/fish-coral-diver_480.jpg');
+   }
+   body{
+     background:  url(../images/header/480/fish-coral-diver_480) no-repeat -9999px -9999px;
+   }
+ }
+
+ @media (min-width:481px) and (max-width:768px) {
+   .head-holder-1 {
+     background-image: url('../images/header/768/fish-coral-diver_768.jpg');
+   }
+   body{
+     background:  url(../images/header/768/fish-coral-diver_768) no-repeat -9999px -9999px;
+   }
+
+ }
+
+ @media (min-width: 769px) and (max-width:1024px) {
+   .head-holder-1 {
+     background-image: url('../images/header/1024/fish-coral-diver_1024.jpg');
+   }
+   body{
+     background:  url(../images/header/1024/fish-coral-diver_1024) no-repeat -9999px -9999px;
+   }
+ }
+
+ @media (min-width: 1025px) and (max-width:1920px) {
+   .head-holder-1 {
+     background-image: url('../images/header/1920/fish-coral-diver_1920.jpg');
+   }
+   body{
+     background:  url(../images/header/1920/fish-coral-diver_1920) no-repeat -9999px -9999px;
+   }
+ }
+
+ @media (min-width: 1921px) {
+   .head-holder-1 {
+     background-image: url('../images/header/1920/fish-coral-diver.jpg');
+   }
+   body{
+     background:  url(../images/header/1920/fish-coral-diver_1920) no-repeat -9999px -9999px;
+   }
+ }
+ </style>
 </head>
-<style>
-  @media (max-width:480px) {
-    .head-holder-1 {
-    background-image: url('../images/header/480/fish-coral-diver_480.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/480/beach-sun-bath-photo_480.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/480/banana-boat-sled_480.jpg');  
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/480/seatrek-underwater_480.jpg');  
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/480/deep-sea-fishing_480.jpg');  
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/480/sidemount-diving-course_480.jpg');  
-  }
-}
-
-@media (min-width:481px) and (max-width:768px) {
-  .head-holder-1 {
-    background-image: url('../images/header/768/fish-coral-diver_768.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/768/beach-sun-bath-photo_768.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/768/banana-boat-sled_768.jpg');  
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/768/seatrek-underwater_768.jpg');  
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/768/deep-sea-fishing_768.jpg');  
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/768/sidemount-diving-course_768.jpg');  
-  }
-
-}
-
-@media (min-width: 769px) and (max-width:1024px) {
-  .head-holder-1 {
-    background-image: url('../images/header/1024/fish-coral-diver_1024.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1024/beach-sun-bath-photo_1024.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1024/banana-boat-sled_1024.jpg');  
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1024/seatrek-underwater_1024.jpg');  
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1024/deep-sea-fishing_1024.jpg');  
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1024/sidemount-diving-course_1024.jpg');  
-  }
-}
-
-@media (min-width: 1025px) and (max-width:1920px) {
-  .head-holder-1 {
-    background-image: url('../images/header/1920/fish-coral-diver_1920.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1920/beach-sun-bath-photo_1920.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1920/banana-boat-sled_1920.jpg');  
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1920/seatrek-underwater_1920.jpg');  
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1920/deep-sea-fishing_1920.jpg');  
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1920/sidemount-diving-course_1920.jpg');  
-  }
-}
-
-@media (min-width: 1921px) {
-  .head-holder-1 {
-    background-image: url('../images/header/1920/fish-coral-diver.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1920/beach-sun-bath-photo.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1920/banana-boat-sled.jpg');  
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1920/seatrek-underwater.jpg');  
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1920/deep-sea-fishing_1920.jpg');  
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1920/sidemount-diving-course_1920.jpg');  
-  }
-}
-</style>
 <body onload="">
 
 <div class="container col-12">
@@ -126,7 +66,7 @@
       <a class="link-2" data-id="4" href="#">Club Member</a>
       <a class="link-2" data-id="5" href="../contact/about-dive-scotty.html">More About Us</a>
     </nav>
-    
+
     <div id="main-menu-1" class="about-menu-mobile row">
       <div class="row about-link-holder">
         <a href="../scuba-diving/scuba-diving-courses.html" class="col-t-2">
@@ -285,7 +225,7 @@
             </div>
           </div>
         </div>
-        
+
         <button class="accordion">
           <div class="col-m-12 section-menu">
             <div class="col-m-2">
@@ -397,7 +337,7 @@
             </div>
           </div>
         </div>
-        
+
         <button class="accordion">
           <div class="col-m-12 section-menu">
             <div class="col-m-2">
@@ -432,7 +372,7 @@
              <h2>More About Us</h2>
           </button>
         <div class="panel"></div>
-        
+
       </div>
       <!-- ************************** -->
     </nav>
@@ -440,555 +380,718 @@
   <header id="heads">
     <div class="heading">
       <div class="row head-holder-1">
-        <div class="slider-caption">
-          <p>
+          <h2>
               Scotty's Action Sports Network
-              Submerge into a Whole New World all over Philippines! 
+              Submerge into a Whole New World all over Philippines!
               Choose where to Dive with us Now!
-          </p>
-        </div>
+          </h2>
       </div>
     </div>
   </header>
-  
-  <div class="row mainrow">
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-           <a href="../scuba-diving/scuba-diving-destinations.html">
-              <img title="wreck scuba diving" alt="scuba diving destinations" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/wreck-scuba-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/wreck-scuba-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/wreck-scuba-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-            </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/scuba-diving-destinations.html">Parasailing</a></h2>
-            <p class="block-with-text">
-              Be part of the magical experience where you will be in a few hundred feet up in the air, far enough that you have a unique perspective on the beach, the water, and all the people around you. 
-            </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">
-            Parasailing Prices
-          </a>
-         <div class="toggle-price">
-            <div>
-              <ul>
-              	<li><span>Cebu Mactan
-              		<ul>
-              			<li><span>Magnum
-              				<ul>
-              					<li><span>Height: 350m / 1150ft</span></li>
-              					<li><span>Duration: 10 minutes</span></li>
-              					<li><span class="diving-price">Price: 4,000PHP / $80 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Deluxe
-              				<ul>
-              					<li><span>Height: 250m / 820ft</span></li>
-              					<li><span>Duration: 10 minutes</span></li>
-              					<li><span class="diving-price">Price: 3,500PHP / $70 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Standard
-              				<ul>
-              					<li><span>Height: 150m / 500ft</span></li>
-              					<li><span>Duration: 10 minutes</span></li>
-              					<li><span class="diving-price">Price: 3,000PHP / $60 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Picnic in the sky
-              				<ul>
-              					<li><span>Height: 150m / 500ft</span></li>
-              					<li><span>Duration: 15 minutes</span></li>
-              					<li><span class="diving-price">Price: 5,000PHP / $100 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Rider on the Speedboat
-              				<ul>
-              					<li><span class="diving-price">Price: 450PHP / $9 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Digital Photos
-              				<ul>
-              					<li><span>Number of shots: 30 copies</span></li>
-              					<li><span class="diving-price">Price: 450PHP / $9</span></li>
-              					<li><span>Additional digital photos</span></li>
-              					<li><span>additional shots max: 30 copies</span></li>
-              					<li><span class="diving-price">Prices: 350PHP / $7</span></li>
-              				</ul>
-              			</span></li>
-              		</ul>
-              	</span></li>
-              	<li><span>Bohol
-              		<ul>
-              			<li><span>Magnum
-              				<ul>
-              					<li><span>Height: 350m / 1150ft</span></li>
-              					<li><span>Duration: 10 minutes</span></li>
-              					<li><span class="diving-price">Price: 5,000PHP / $100 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Deluxe
-              				<ul>
-              					<li><span>Height: 250m / 820ft</span></li>
-              					<li><span>Duration: 10 minutes</span></li>
-              					<li><span class="diving-price">Price: 4,500PHP / $90 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Standard
-              				<ul>
-              					<li><span>Height: 150m / 500ft</span></li>
-              					<li><span>Duration: 10 minutes</span></li>
-              					<li><span class="diving-price">Price: 4,000PHP / $80 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Rider on the Speedboat
-              				<ul>
-              					<li><span class="diving-price">Price: 600PHP / $12 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Digital Photos
-              				<ul>
-              					<li><span>Number of shots: 30 copies</span></li>
-              					<li><span class="diving-price">Price: 600PHP / $12</span></li>
-              					<li><span>Additional digital photos</span></li>
-              					<li><span>additional shots max: 30 copies</span></li>
-              					<li><span class="diving-price">Prices: 400PHP / $8</span></li>
-              				</ul>
-              			</span></li>
-              		</ul>
-              	</span></li>
-              	<li><span>Boracay
-              		<ul>
-              			<li><span>Standard
-              				<ul>
-              					<li><span>Height: 150m / 500ft</span></li>
-              					<li><span>Duration: 15 minutes</span></li>
-              					<li><span class="diving-price">Price: 4,500PHP / $90 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Standard Flight Tandem
-              				<ul>
-              					<li><span>Height: 150m / 500ft</span></li>
-              					<li><span>Duration: 15 minutes</span></li>
-              					<li><span class="diving-price">Price: 3,500PHP / $70 per person</span></li>
-              				</ul>
-              			</span></li>
-              			<li><span>Rider on the Speedboat
-              				<ul>
-              					<li><span class="diving-price">Price: 500PHP / $10 per person</span></li>
-              				</ul>
-              			</span></li>
-              		</ul>
-              	</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/scuba-diving-safaris.html">
-          <img title="scuba diving" alt="scuba diving safaris" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/fishing-tour-boat-yatch_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/fishing-tour-boat-yatch_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/fishing-tour-boat-yatch_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/scuba-diving-destinations.html">Jet Skiing</a></h2>
-            <p class="block-with-text">
-              Take your fast and furious drive on this watersport and let your adrenaline roar as you splash your way to the gushing waves of the sea and the breeze that blows ahead! Ride your way on this fun and exciting water activity and tightened your grip as you ride your way above the waves.
-            </p>
-        </div> 
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">Jetski Prices</a>
-          <div class="toggle-price">
-            <div>
-              <ul>
-              	<li><span>Boracay</span>
-              		<ul>
-              			<li><span>Yamaha 1,100 cc</span>
-              				<ul>
-              					<li><span>1 hour</span></li>
-              					<li><span>5,750PHP / $115 per person</span></li>
-              				</ul>
-              			</li>
-              			<li><span>Yamaha 1,100 cc</span>
-              				<ul>
-              					<li><span>30 minutes</span></li>
-              					<li><span>3,500PHP / $70 per person</span></li>
-              				</ul>
-              			</li>
-              		</ul>
-              	</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Wind Surfing</a></h2>
-           <p class="block-with-text">
-            There’s no better way to experience the sheer energy in the waves of the sea than wind surfing. You will need strength and a lot of balance to wind surf, just like riding a bicycle, you are sure to lose your balance a few times before you master the skill of staying onboard. But once you get the hang of it, you’ll glide with the wind across the gleaming oceans and its waves.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-          <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-            <a class="toggle-down" href="javascript:void(0);">Wind Surfing Prices</a>
-            <div class="toggle-price">
-              <div>
-                <br /><br />
-                <p style="color:#fff">
-                  Wind Surfing Prices may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
-                </p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Pedal Boats and Paddle Boats</a></h2>
-           <p class="block-with-text">
-            Enjoy with your friends and family in these human powered watercraft for your recreational needs. There’s no better way to enjoy a day in the bodies of water with some close friends and family with your favorite beverages in your own boat. Or stay still and catch some fish while letting the breeze embrance you all over.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">Pedal Boats and Paddle Boats Prices</a>
-            <div class="toggle-price">
-              <div>
-                <br /><br />
-                <p style="color:#fff">
-                  Pedal Boats and Paddle Boats Prices may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
-                </p>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Kayaks</a></h2>
-          <p class="block-with-text">
-           Take part on this versatile water sport that can be done any bodies of water while doing other recreational activities like camping or fishing. Or take in the adrenaline and race to the waves and paddle to the finish line. Brace yourself in the adventure while slowly traverse the coastal islands to view the marine masterpiece and the whispers of the breeze as you do a leisurely stroke on your way.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">Kayaks Prices</a>
-            <div class="toggle-price">
-                <div>
-                  <br /><br />
-                  <p style="color:#fff">
-                    Kayaks may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
-                  </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Water Toys</a></h2>
-          <p class="block-with-text">
-           Take your kids and kids at heart on these water toys from Scotty’s and let them enjoy several varieties of adventure under the sun. So many to choose from and the fun never stops on that. Jump in, slide down, climb up, roll over and never miss to get wet on the fun as the day goes on.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-            <a class="toggle-down" href="javascript:void(0);">Water Toys Prices</a>
-            <div class="toggle-price">
-                <div>
-                  <br /><br />
-                  <p style="color:#fff">
-                    Water Toys may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
-                  </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Air Mattresses</a></h2>
-         <p class="block-with-text">
-           Float in and relax your soul on our floaters and bring in the tan and fun. Select from variety of pool/beach floaters and take in the fun on your splashing adventure under the sun. Take your friends in while you gaze at the blue sky and the roaring sun. 
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">Air Mattresses Prices</a>
-            <div class="toggle-price">
-                <div>
-                  <br /><br />
-                  <p style="color:#fff">
-                    Air Mattresses may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
-                  </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Float Tubes</a></h2>
-         <p class="block-with-text">
-            In this lightweight, single person watercraft that enables you to reach wilderness streams, ponds and lakes, usually where there is no boat access, the fun is letting the current pull you while floating or take in the sport of fishing that has been loved by many over the past centuries.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">Float Tubes Prices</a>
-            <div class="toggle-price">
-                <div>
-                  <br /><br />
-                  <p style="color:#fff">
-                    Float Tubes may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
-                  </p>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Snorkeling</a></h2>
-         <p class="block-with-text">
-           With Scotty’s Snorkeling Equipments, you could dive in and enjoy the colorful fishes swimming and the beauty of the coral reefs beneath using Snorkeling Gears. Meet and greet different types of marine lifes as you explore the ocean with our Snorkeling mask while drifting through the waters using Snorkeling Fins.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">Snorkeling Prices</a>
-            <div class="toggle-price">
-                <div>
-                  <ul>
-                    <li><span>Life Vest : 150PHP / $3 per person</span></li>
-                    <li><span>Wetsuit : 300PHP / $6 per person</span></li>
-                    <li><span>Mask with Snorkel : 400PHP / $8 per set</span></li>
-                    <li><span>Fins : 250PHP / $5 per person</span></li>
-                    <li><span>Booties : 150PHP / $3 per person</span></li>
-                    <li><span>Fins with Strap and Booties : 350PHP / $7 per set</span></li>
-                    <li><span>Snorkelling Set ( Mask, Snorkel, Fins and Life Vest ) : 600PHP / $12 per person</span></li>
-                  </ul>
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Kite Surfing</a></h2>
-         <p class="block-with-text">
-            Kite Surfing is a complex, but rewarding sport. Take your water sport skills on surfing, wakeboarding and kite flying as you will get to experience those in one and take in the freedom and feel the supreme energy of the wind.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
-          <a class="toggle-down" href="javascript:void(0);">Kite Surfing Prices</a>
-          <div class="toggle-price">
-            <div>
-              <ul>
-              	<li><span>Boracay</span>
-              		<ul>
-              			<li><span>Kite Surfing 2 hour Session</span>
-              				<ul>
-              					<li><span>30 minutes Short Lecture</span></li>
-              					<li><span>5,000PHP / $100 per person</span></li>
-              				</ul>
-              			</li>
-              		</ul>
-              	</li>
-              </ul>
-            </div>
-          </div>
-        
-        </div>
-      </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Water Skiing</a></h2>
-         <p class="block-with-text">
-            Be part of this popular watersports activity and ski your way to the roaring depths of the ocean! Water Skiing gives you the thrill of riding the waves behind a motorboat. Take a leap, rush in jumping waves and stay on your feet as the fun splash in. Bring over the gang in this family-oriented activity and race in the depths of the sea as the fun continues while the sun shines. Strengthened your body as the fun will pull you away on this adrenaline recreational activity and rush in to the waves as you are taking your soul in this marvelous activity that you surely dont wanna miss. 
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><a href="../scuba-diving/scuba-diving-destinations.html">Water Skiing Prices</a></div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Knee Boarding</a></h2>
-         <p class="block-with-text">
-           Kneel to the fun as you rush in to the waves as closer to the sea and drive into excitement as you can easily plummet your way with this watersport activity. Experience the fun while being towed by a speed boat along the crystal blue waters of Mactan. In this Marine Sport activity, this will be your stepping stone if you want to learn water skiing and wake boarding as it wont be difficult to balance. 
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><a href="../scuba-diving/scuba-diving-destinations.html">Knee Boarding Prices</a></div>
-      </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Wake Boarding</a></h2>
-         <p class="block-with-text">
-           Experience the thrill of riding on a twin fin behind a powerful boat and learn to catch mad air even when there is no wind. Take the challenge of wake boarding and live up your dream gliding across the waters on a buzzing enjoyment carving up your very own endless wave. Learning how to wakeboard properly, however, can take some time and experience. That’s why at Scotty’s Action Sports Network will get you up and on the board in no time.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><a href="../scuba-diving/scuba-diving-destinations.html">Wake Boarding Prices</a></div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Banana Boat Ride</a></h2>
-         <p class="block-with-text">
-            Bring over your family and friends on this fun ride and let everyone hold on as much as possible as the speedboat runs it way through the gushing waves and it might flip away the inflatable boat, and you’d be really lucky to hold on. Going on a Banana Boat Ride is truly a great way to take a break from your everyday routine as it is exhilarating, fun and very safe. The fun and excitement can be enjoyed by your friends and family as well as the young ones and let this ride be their starting adventure and make this an unforgettable vacation ever.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><a href="../scuba-diving/scuba-diving-destinations.html">Banana Boat Ride Prices</a></div>
-      </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Flyfish</a></h2>
-         <p class="block-with-text">
-           A must try marine sport activity as you will be riding a flat rubber boat which is pulled by a speed boat and dashes its way against the wind sweeping and lift up your ride. It is like riding a wild horse over the water. So hold on tight! Otherwise you will fall! The greater the speed, the higher it flies. Get wet and wild in this exciting adventure that you can share with your family and friends.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><a href="../scuba-diving/scuba-diving-destinations.html">Flyfish Prices</a></div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Waterball</a></h2>
-         <p class="block-with-text">
-            Walking on water is so easy and fun! This inflatable sphere made of transparent plastic will enable you to walk or run across the water. This ingenious invention is tons of fun for friends and family! Walk, run, dog paddle, roll around on the water, interact with it like never before, just have the times of your lives on water and even better because you don’t get wet while doing it.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><a href="../scuba-diving/scuba-diving-destinations.html">Waterball Prices</a></div>
-      </div>
-    </section>
-    <div class="clearer"></div>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="../scuba-diving/helmet-diving-seatrek.html">
-          <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-          </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="../scuba-diving/helmet-diving-seatrek.html">Sail Boats</a></h2>
-         <p class="block-with-text">
-            Do you want to cruise on to your next destination? Sail your way with your friends and family and let them feel every puff of breeze or let them touch the water as it flows past and take your picnic in the middle on the crystal blue waters. Enjoy the view while staying dry or you can dip your feet in the cool blue waters below.
-          </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><a href="../scuba-diving/scuba-diving-destinations.html">Sail Boats Prices</a></div>
-      </div>
-    </section>
 
-  </div>
-  
-  
+
+        <div class="row mainrow">
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                 <a href="#">
+                    <img title="wreck scuba diving" alt="scuba diving destinations" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/wreck-scuba-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/wreck-scuba-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/wreck-scuba-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                  </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Parasailing</a></h1>
+                  <p class="block-with-text-2">
+                    Be part of the magical experience where you will be in a few hundred feet up in the air, far enough that you have a unique perspective on the beach, the water, and all the people around you.
+                  </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">
+                  Parasailing Prices
+                  </a>
+                </h3>
+               <div class="toggle-price">
+                  <div>
+                    <ul>
+                    	<li><span>Cebu Mactan
+                    		<ul>
+                    			<li><span>Magnum
+                    				<ul>
+                    					<li><span>Height: 350m / 1150ft</span></li>
+                    					<li><span>Duration: 10 minutes</span></li>
+                    					<li><span class="diving-price">Price: 4,000PHP / $80 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Deluxe
+                    				<ul>
+                    					<li><span>Height: 250m / 820ft</span></li>
+                    					<li><span>Duration: 10 minutes</span></li>
+                    					<li><span class="diving-price">Price: 3,500PHP / $70 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Standard
+                    				<ul>
+                    					<li><span>Height: 150m / 500ft</span></li>
+                    					<li><span>Duration: 10 minutes</span></li>
+                    					<li><span class="diving-price">Price: 3,000PHP / $60 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Picnic in the sky
+                    				<ul>
+                    					<li><span>Height: 150m / 500ft</span></li>
+                    					<li><span>Duration: 15 minutes</span></li>
+                    					<li><span class="diving-price">Price: 5,000PHP / $100 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Rider on the Speedboat
+                    				<ul>
+                    					<li><span class="diving-price">Price: 450PHP / $9 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Digital Photos
+                    				<ul>
+                    					<li><span>Number of shots: 30 copies</span></li>
+                    					<li><span class="diving-price">Price: 450PHP / $9</span></li>
+                    					<li><span>Additional digital photos</span></li>
+                    					<li><span>additional shots max: 30 copies</span></li>
+                    					<li><span class="diving-price">Prices: 350PHP / $7</span></li>
+                    				</ul>
+                    			</span></li>
+                    		</ul>
+                    	</span></li>
+                    	<li><span>Bohol
+                    		<ul>
+                    			<li><span>Magnum
+                    				<ul>
+                    					<li><span>Height: 350m / 1150ft</span></li>
+                    					<li><span>Duration: 10 minutes</span></li>
+                    					<li><span class="diving-price">Price: 5,000PHP / $100 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Deluxe
+                    				<ul>
+                    					<li><span>Height: 250m / 820ft</span></li>
+                    					<li><span>Duration: 10 minutes</span></li>
+                    					<li><span class="diving-price">Price: 4,500PHP / $90 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Standard
+                    				<ul>
+                    					<li><span>Height: 150m / 500ft</span></li>
+                    					<li><span>Duration: 10 minutes</span></li>
+                    					<li><span class="diving-price">Price: 4,000PHP / $80 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Rider on the Speedboat
+                    				<ul>
+                    					<li><span class="diving-price">Price: 600PHP / $12 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Digital Photos
+                    				<ul>
+                    					<li><span>Number of shots: 30 copies</span></li>
+                    					<li><span class="diving-price">Price: 600PHP / $12</span></li>
+                    					<li><span>Additional digital photos</span></li>
+                    					<li><span>additional shots max: 30 copies</span></li>
+                    					<li><span class="diving-price">Prices: 400PHP / $8</span></li>
+                    				</ul>
+                    			</span></li>
+                    		</ul>
+                    	</span></li>
+                    	<li><span>Boracay
+                    		<ul>
+                    			<li><span>Standard
+                    				<ul>
+                    					<li><span>Height: 150m / 500ft</span></li>
+                    					<li><span>Duration: 15 minutes</span></li>
+                    					<li><span class="diving-price">Price: 4,500PHP / $90 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Standard Flight Tandem
+                    				<ul>
+                    					<li><span>Height: 150m / 500ft</span></li>
+                    					<li><span>Duration: 15 minutes</span></li>
+                    					<li><span class="diving-price">Price: 3,500PHP / $70 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    			<li><span>Rider on the Speedboat
+                    				<ul>
+                    					<li><span class="diving-price">Price: 500PHP / $10 per person</span></li>
+                    				</ul>
+                    			</span></li>
+                    		</ul>
+                    	</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="../scuba-diving/scuba-diving-safaris.html">
+                <img title="scuba diving" alt="scuba diving safaris" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/fishing-tour-boat-yatch_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/fishing-tour-boat-yatch_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/fishing-tour-boat-yatch_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Jet Skiing</a></h1>
+                  <p class="block-with-text-2">
+                    Take your fast and furious drive on this watersport and let your adrenaline roar as you splash your way to the gushing waves of the sea and the breeze that blows ahead! Ride your way on this fun and exciting water activity and tightened your grip as you ride your way above the waves.
+                  </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Jetski Prices</a>
+                </h3>
+                <div class="toggle-price">
+                  <div>
+                    <ul>
+                    	<li><span>Boracay</span>
+                    		<ul>
+                    			<li><span>Yamaha 1,100 cc</span>
+                    				<ul>
+                    					<li><span>1 hour</span></li>
+                    					<li><span>5,750PHP / $115 per person</span></li>
+                    				</ul>
+                    			</li>
+                    			<li><span>Yamaha 1,100 cc</span>
+                    				<ul>
+                    					<li><span>30 minutes</span></li>
+                    					<li><span>3,500PHP / $70 per person</span></li>
+                    				</ul>
+                    			</li>
+                    		</ul>
+                    	</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Wind Surfing</a></h1>
+                 <p class="block-with-text-2">
+                  There’s no better way to experience the sheer energy in the waves of the sea than wind surfing. You will need strength and a lot of balance to wind surf, just like riding a bicycle, you are sure to lose your balance a few times before you master the skill of staying onboard. But once you get the hang of it, you’ll glide with the wind across the gleaming oceans and its waves.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+                <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Wind Surfing Prices</a>
+                </h3>
+                  <div class="toggle-price">
+                    <div>
+                      <br />
+                      <p>
+                        Wind Surfing Prices may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Pedal Boats and Paddle Boats</a></h1>
+                 <p class="block-with-text-2">
+                  Enjoy with your friends and family in these human powered watercraft for your recreational needs. There’s no better way to enjoy a day in the bodies of water with some close friends and family with your favorite beverages in your own boat. Or stay still and catch some fish while letting the breeze embrance you all over.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Pedal Boats and Paddle Boats Prices</a>
+                </h3>
+                  <div class="toggle-price">
+                    <div>
+                      <br />
+                      <p>
+                        Pedal Boats and Paddle Boats Prices may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Kayaks</a></h1>
+                <p class="block-with-text-2">
+                 Take part on this versatile water sport that can be done any bodies of water while doing other recreational activities like camping or fishing. Or take in the adrenaline and race to the waves and paddle to the finish line. Brace yourself in the adventure while slowly traverse the coastal islands to view the marine masterpiece and the whispers of the breeze as you do a leisurely stroke on your way.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Kayaks Prices</a>
+                </h3>
+                  <div class="toggle-price">
+                      <div>
+                        <br />
+                        <p>
+                          Kayaks may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Water Toys</a></h1>
+                <p class="block-with-text-2">
+                 Take your kids and kids at heart on these water toys from Scotty’s and let them enjoy several varieties of adventure under the sun. So many to choose from and the fun never stops on that. Jump in, slide down, climb up, roll over and never miss to get wet on the fun as the day goes on.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Water Toys Prices</a>
+                </h3>
+                  <div class="toggle-price">
+                      <div>
+                        <br />
+                        <p>
+                          Water Toys may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Air Mattresses</a></h1>
+               <p class="block-with-text-2">
+                 Float in and relax your soul on our floaters and bring in the tan and fun. Select from variety of pool/beach floaters and take in the fun on your splashing adventure under the sun. Take your friends in while you gaze at the blue sky and the roaring sun.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Air Mattresses Prices</a>
+                </h3>
+                  <div class="toggle-price">
+                      <div>
+                        <br />
+                        <p>
+                          Air Mattresses may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Float Tubes</a></h1>
+               <p class="block-with-text-2">
+                  In this lightweight, single person watercraft that enables you to reach wilderness streams, ponds and lakes, usually where there is no boat access, the fun is letting the current pull you while floating or take in the sport of fishing that has been loved by many over the past centuries.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Float Tubes Prices</a>
+                </h3>
+                  <div class="toggle-price">
+                      <div>
+                        <br />
+                        <p>
+                          Float Tubes may vary with our local partners. Please contact us through our <a href="../contact/dive-support.html">email support</a> or <a style="color:#4d90f" href="tel:+63322315060">call us</a> for more information.
+                        </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Snorkeling</a></h1>
+               <p class="block-with-text-2">
+                 With Scotty’s Snorkeling Equipments, you could dive in and enjoy the colorful fishes swimming and the beauty of the coral reefs beneath using Snorkeling Gears. Meet and greet different types of marine lifes as you explore the ocean with our Snorkeling mask while drifting through the waters using Snorkeling Fins.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Snorkeling Prices</a>
+                </h3>
+                  <div class="toggle-price">
+                      <div>
+                        <ul>
+                          <li><span>Life Vest : 150PHP / $3 per person</span></li>
+                          <li><span>Wetsuit : 300PHP / $6 per person</span></li>
+                          <li><span>Mask with Snorkel : 400PHP / $8 per set</span></li>
+                          <li><span>Fins : 250PHP / $5 per person</span></li>
+                          <li><span>Booties : 150PHP / $3 per person</span></li>
+                          <li><span>Fins with Strap and Booties : 350PHP / $7 per set</span></li>
+                          <li><span>Snorkelling Set ( Mask, Snorkel, Fins and Life Vest ) : 600PHP / $12 per person</span></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Kite Surfing</a></h1>
+               <p class="block-with-text-2">
+                  Kite Surfing is a complex, but rewarding sport. Take your water sport skills on surfing, wakeboarding and kite flying as you will get to experience those in one and take in the freedom and feel the supreme energy of the wind.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Kite Surfing Prices</a>
+                </h3>
+                <div class="toggle-price">
+                  <div>
+                    <ul>
+                    	<li><span>Boracay</span>
+                    		<ul>
+                    			<li><span>Kite Surfing 2 hour Session</span>
+                    				<ul>
+                    					<li><span>30 minutes Short Lecture</span></li>
+                    					<li><span>5,000PHP / $100 per person</span></li>
+                    				</ul>
+                    			</li>
+                    		</ul>
+                    	</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Water Skiing</a></h1>
+               <p class="block-with-text-2">
+                  Be part of this popular watersports activity and ski your way to the roaring depths of the ocean! Water Skiing gives you the thrill of riding the waves behind a motorboat. Take a leap, rush in jumping waves and stay on your feet as the fun splash in. Bring over the gang in this family-oriented activity and race in the depths of the sea as the fun continues while the sun shines. Strengthened your body as the fun will pull you away on this adrenaline recreational activity and rush in to the waves as you are taking your soul in this marvelous activity that you surely dont wanna miss.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Water Skiing Prices</a>
+                </h3>
+                <div class="toggle-price">
+                  <div>
+                    <ul>
+                      <li><span>Boracay</span>
+                        <ul>
+                          <li><span>Duration : 1 hour</span></li>
+                          <li><span>Price : 8,500PHP / $170</span></li>
+                          <li><span>Maximum of 3 persons</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 30 minutes</span></li>
+                          <li><span>Price : 5,000PHP / $100</span></li>
+                          <li><span>Maximum of 2 persons</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 15 minutes</span></li>
+                          <li><span>Price : 3,500PHP / $70</span></li>
+                          <li><span>Maximum of 1 person</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Required for beginners</span></li>
+                          <li><span>Price : 1,000PHP / $20 per lesson</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Knee Boarding</a></h1>
+               <p class="block-with-text-2">
+                 Kneel to the fun as you rush in to the waves as closer to the sea and drive into excitement as you can easily plummet your way with this watersport activity. Experience the fun while being towed by a speed boat along the crystal blue waters of Mactan. In this Marine Sport activity, this will be your stepping stone if you want to learn water skiing and wake boarding as it wont be difficult to balance.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Knee Boarding Prices
+                  </a>
+                </h3>
+                <div class="toggle-price">
+                  <div>
+                    <ul>
+                      <li><span>Boracay</span>
+                        <ul>
+                          <li><span>Duration : 1 hour</span></li>
+                          <li><span>Price : 8,500PHP / $170</span></li>
+                          <li><span>Maximum of 3 persons</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 30 minutes</span></li>
+                          <li><span>Price : 5,000PHP / $100</span></li>
+                          <li><span>Maximum of 2 persons</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 15 minutes</span></li>
+                          <li><span>Price : 3,500PHP / $70</span></li>
+                          <li><span>Maximum of 1 person</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Required for beginners</span></li>
+                          <li><span>Price : 1,500PHP / $20 per lesson</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Wake Boarding</a></h1>
+               <p class="block-with-text-2">
+                 Experience the thrill of riding on a twin fin behind a powerful boat and learn to catch mad air even when there is no wind. Take the challenge of wake boarding and live up your dream gliding across the waters on a buzzing enjoyment carving up your very own endless wave. Learning how to wakeboard properly, however, can take some time and experience. That’s why at Scotty’s Action Sports Network will get you up and on the board in no time.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Wake Boarding Prices</a>
+                </h3>
+                <div class="toggle-price">
+                  <div>
+                    <ul>
+                      <li><span>Boracay</span>
+                        <ul>
+                          <li><span>Duration : 1 hour</span></li>
+                          <li><span>Price : 8,500PHP / $170</span></li>
+                          <li><span>Maximum of 3 persons</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 30 minutes</span></li>
+                          <li><span>Price : 5,000PHP / $100</span></li>
+                          <li><span>Maximum of 2 persons</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 15 minutes</span></li>
+                          <li><span>Price : 3,500PHP / $70</span></li>
+                          <li><span>Maximum of 1 person</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Required for beginners</span></li>
+                          <li><span>Price : 1,500PHP / $20 per lesson</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Banana Boat Ride</a></h1>
+               <p class="block-with-text-2">
+                  Bring over your family and friends on this fun ride and let everyone hold on as much as possible as the speedboat runs it way through the gushing waves and it might flip away the inflatable boat, and you’d be really lucky to hold on. Going on a Banana Boat Ride is truly a great way to take a break from your everyday routine as it is exhilarating, fun and very safe. The fun and excitement can be enjoyed by your friends and family as well as the young ones and let this ride be their starting adventure and make this an unforgettable vacation ever.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange">
+                <h3 class="toggle-down">
+                  <a href="javascript:void(0);">Banana Boat Ride Prices</a>
+                </h3>
+                <div class="toggle-price">
+                  <div>
+                    <ul>
+                      <li><span>Mactan Cebu</span>
+                        <ul>
+                          <li><span>Duration : 30 minutes</span></li>
+                          <li><span>Price : 2,250PHP / $45 per person</span></li>
+                          <li><span>2 persons minimum</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 15 minutes</span></li>
+                          <li><span>Price : 1,350PHP / $27 per person</span></li>
+                          <li><span>2 persons minimum</span></li>
+                        </ul>
+                      </li>
+
+                      <li><span>Bohol</span>
+                        <ul>
+                          <li><span>Duration : 30 minutes</span></li>
+                          <li><span>Price : 2,800PHP / $56 per person</span></li>
+                          <li><span>2 persons minimum</span></li>
+                          <li><span>800PHP / $16 per additional rider</span></li>
+                        </ul>
+                        <ul>
+                          <li><span>Duration : 15 minutes</span></li>
+                          <li><span>Price : 1,680PHP / $33 per person</span></li>
+                          <li><span>3 persons minimum</span></li>
+                          <li><span>450PHP / $9 per additional rider</span></li>
+                        </ul>
+                      </li>
+
+                      <li><span>Boracay</span>
+                        <ul>
+                          <li><span>Duration : 15 minutes</span></li>
+                          <li><span>Price : 1,500PHP / $30 per person</span></li>
+                          <li><span>2 persons minimum</span></li>
+                          <li><span>750PHP / $15 per additional rider</span></li>
+                          <li><span>7 persons maximum riders</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Flyfish</a></h1>
+               <p class="block-with-text-2">
+                 A must try marine sport activity as you will be riding a flat rubber boat which is pulled by a speed boat and dashes its way against the wind sweeping and lift up your ride. It is like riding a wild horse over the water. So hold on tight! Otherwise you will fall! The greater the speed, the higher it flies. Get wet and wild in this exciting adventure that you can share with your family and friends.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><h3 class="toggle-down"><a href="#">Flyfish Prices</a></h3></div>
+            </div>
+          </section>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Waterball</a></h1>
+               <p class="block-with-text-2">
+                  Walking on water is so easy and fun! This inflatable sphere made of transparent plastic will enable you to walk or run across the water. This ingenious invention is tons of fun for friends and family! Walk, run, dog paddle, roll around on the water, interact with it like never before, just have the times of your lives on water and even better because you don’t get wet while doing it.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><h3 class="toggle-down"><a href="#">Waterball Prices</a></h3></div>
+            </div>
+          </section>
+          <div class="clearer"></div>
+          <section class="sub-page col-ms-12 col-m-12 col-t-6">
+            <div class="content-wrapper">
+              <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
+                <a href="#">
+                <img title="helmet diving" alt="Underwater helmet diving" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/helmet-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/helmet-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+                </a>
+              </div>
+              <div class="col-m-9 col-ms-7 col-t-7">
+                <h1 class="top_h2"><a href="#">Sail Boats</a></h1>
+               <p class="block-with-text-2">
+                  Do you want to cruise on to your next destination? Sail your way with your friends and family and let them feel every puff of breeze or let them touch the water as it flows past and take your picnic in the middle on the crystal blue waters. Enjoy the view while staying dry or you can dip your feet in the cool blue waters below.
+                </p>
+              </div>
+              <div style="height:1px; clear:both"></div>
+              <div class="col-m-6 col-ms-12 col-t-12 readmore goorange"><h3 class="toggle-down"><a href="#">Sail Boats Prices</a></h3></div>
+            </div>
+          </section>
+
+        </div>
+
+
+
   <footer class="col-12 col-m-12">
     <div><a href="tel:+63322315060"><img src="../images/call-us.jpg" /></a></div>
     <div><a href="./contact/dive-support.html"><img src="../images/email-support.jpg" /></a></div>
@@ -996,7 +1099,7 @@
     <div class="col-m-12 col-t-12 copyright">
       Copyright divescotty.com/Scotty's Action Sports Network (SASN) 1986-2017 All rights reserved
       <br />
-      
+
       Punta Engaño Road, Lapu-Lapu City 6015, Cebu Philippines
       <br />
       Tel. Nos.: (+63 32) 231-5060 / 231-5061
