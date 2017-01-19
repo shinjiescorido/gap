@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Island hopping tours and sunset cruises in the Philippines</title>
+</head>
+
+<body>
+    <textarea id="text">  </textarea>
+</body>
+<script>
+    var arr = [
+        [
+            'morning-island-tour.html',
+            'Sunset sunrise island',
+            'sunset-sunrise-island',
+            'Morning Island Tour',
+            'Rise up early as you will go on a Morning Island Tour and snorkel underwater with your family and friends. Enjoy the beauty of the marine sanctuary beneath your boat on your island tour while snorkeling as the sun rises up to the sky.',
+            'Morning Island Tour'
+        ],
+        [
+          'island-tour-snorkeling-adventures.html',
+            'Island tour discovery',
+            'island-tour-discovery',
+            'Island Tour Snorkeling Adventures',
+            'Explore the breathtaking underwater world of the marine sanctuary at Nalusuan Island in your Island Tour Snorkeling Adventure. Experience the masterpiece of Mother Nature as this tropical reef will impress you as you snorkel on your island hopping tour.',
+            'Island Tour Snorkeling Adventures'
+        ],
+        [
+            'sun-and-fun-island-adventure.html',
+            'Beach family',
+            'beach-family',
+            'Sun and Fun Island Adventure',
+            'Take your Island Hopping Tour snorkeling in the colorful marine sanctuary of Nalusuan Island and enjoy your beach activities as your island hopping tour takes a stop at the white sand beach Pandanon Island. Take your beach sun and fun activities or spend the rest of the time relaxing on its white coral sand.',
+            'Sun and Fun Island Adventure'
+        ],
+        [
+            'seafood-stilt-restaurant.html',
+            'Shells sand island sun',
+            'shells-sand-island-sun',
+            'Seafood Stilt Restaurant',
+            'Experience a unique seafood dining experience freshly served at Stilt Seafood Restaurant within the North Eastern side of Olango Island. Enjoy the magnificient view of the sea and the sky as the restaurant built over the water on stilts.',
+            'Seafood Stilt Restaurant'
+        ],
+        [
+            'sight-seeing-tours.html',
+            'Beach sea island',
+            'beach-sea-island',
+            'Sight Seeing Tour',
+            'Island Hopping Sight Seeing Tour is one of our most recommended as you will get to enjoy the tour with our local banca and sailboats. Enjoy the view as you go sight seeing on spectacular locations and its amazing features that will surely mesmerize you through out the island hopping tour.',
+            'Sight Seeing Tour'
+        ],
+        [
+            'sunset-cruise.html',
+            'Sun glasses beach',
+            'sun-glasses-beach',
+            'Island Sunset Cruise',
+            'As the day goes down, enjoy the fascinating sight seeing island hopping tour on Island Sunset Cruise within along the local tropical waters and the warm breeze. Sail around on an open water as the sun sets and the night rises.',
+            'Island Sunset Cruise'
+        ],
+        [
+            'river-adventures.html',
+            'Native local life',
+            'native-local-life',
+            'Cambuhat River  Adventure',
+            'Travel on a culture-filled island tour, swim and snorkel while having fun in the sand bar of Bohol as you tour on Cambuhat River Adventure. Taste the delicious and freshly farmed oysters and its local delicacies as you cruise on the river or enjoy kayaking with your friends and family.',
+            'Cambuhat River  Adventure'
+        ],
+        [
+            'bohol-snorkeling-adventure-and-dolphin-watching.html',
+            'Philippines dolphins',
+            'philippines-dolphins',
+            'Bohol Snorkeling Adventure and Dolphin Watching',
+            'Keep memories of wonderful marine sanctuaries as you take Bohol Snorkeling Adventure. Relax on your island hopping tour as you will also get to do Dolphin Watching in the tropical waters of Bohol.',
+            'Bohol Snorkeling Adventure and Dolphin Watching'
+        ],
+        [
+            'boracay-island-tour-snorkeling.html',
+            'Philippines dolphins',
+            'philippines-dolphins',
+            'Boracay Island Tour Snorkeling',
+            'Boracay is not just its white sand beaches and the night party that you could enjoy. Take on island hopping and snorkel to its beautiful marine sanctuaries that you surely dont wanna miss.',
+            'Boracay Island Tour Snorkeling'
+        ],
+        [
+            'boracay-island-sun-and-fun-adventures.html',
+            'Serenity peace quiet',
+            'serenity-peace-quiet',
+            'Boracay Island Sun and Fun Adventure',
+            'Sail away to the beautiful sceneries of the islands of Boracay and play under the sun on Boracay Island Sun and Fun Adventure. Take island hopping tour and then take your beach activities on its white sand beaches.',
+            'Boracay Island Sun and Fun Adventure'
+        ],
+        [
+            'sight-seeing-tours.html',
+            'Island tour remote isolated',
+            'island-tour-remote-isolated',
+            'Boracay Island Sight Seeing Tour',
+            'Island Tours on tropical waters of Boracay Islands are one of the best time that visitors shouldnt miss as we will take you to places with its magnificient views and amazing tourist spots.',
+            'Boracay Island Sight Seeing Tour'
+        ],
+        [
+            'boracay-island-boat-tours.html',
+            'Island tour',
+            'island-tour',
+            'Boracay Island Boat Tour',
+            'Indulge yourself of the marvelous culture of the Islands of Boracay as you take your Boat Tour and venture to its amazing sites and fill your heart with great memories of your island hopping tour.',
+            'Boracay Island Boat Tour'
+        ]
+    ];
+
+    var gotolink = '';
+    var image_title = '';
+    var image_name = '';
+    var head_title = '';
+    var description = '';
+    var title = '';
+    var sectioner = '';
+
+    for (var x = 0; x < arr.length; x++) {
+      gotolink = arr[x][0];
+      image_title = arr[x][1];
+      image_name = arr[x][2];
+      head_title = arr[x][3];
+      description = arr[x][4];
+      title = arr[x][5];
+
+      sectioner = '  <section class="sub-page col-ms-12 col-m-12 col-t-6">' +
+          '<div class="content-wrapper">' +
+          '<div class="logo_wrapper col-ms-5 col-m-3 col-t-5">' +
+          '<a href="./' + gotolink + '">' +
+          '<img title="' + image_title + '" alt="' + image_title + '" class="col-m-image"' +
+          'src="../images/pictures/island-tours-hopping/480/' + image_name + '_480.jpg"' +
+          'srcset="../images/pictures/island-tours-hopping/480/' + image_name + '_480.jpg 320w,' +
+          '../images/pictures/island-tours-hopping/768/' + image_name + '_768.jpg 480w"' +
+          'sizes="(min-width: 1920px) 50vw, 100vw" />' +
+          '</a>' +
+          '</div>' +
+          '<div class="col-m-9 col-ms-7 col-t-7">' +
+          '<h1 class="top_h2"><a href="./' + gotolink + '">' + head_title + '</a></h1>' +
+          '<p class="block-with-text-2">' +
+          description +
+          '</p>' +
+          '</div>' +
+          '<div style="height:1px; clear:both"></div>' +
+          '<div class="col-m-6 col-ms-12 col-t-12 readmore gogreen">' +
+          '<h3>' +
+          '<a href="' + gotolink + '">' +
+          title + ' Prices' +
+          '</a>' +
+          '</h3>' +
+          '<div class="toggle-price">' +
+          '</div>' +
+          '</div>' +
+          '</div>' +
+          '</section>';
+document.getElementById("text").innerHTML += sectioner;
+    }
+
+</script>
+
+</html>
