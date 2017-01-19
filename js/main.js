@@ -19,7 +19,7 @@ function carousel() {
     unfade(x[myIndex - 1]);
     x[myIndex - 1].style.display = 'block';
     //x[0].style.display='block';
-    setTimeout(carousel, 7000); // Change imag seconds
+    setTimeout(carousel, 500); // Change imag seconds
 }
 
 function fade(element) {

@@ -1,660 +1,825 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
-<title>Scotty's Dive Center - Island Tours</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
- <meta charset="UTF-8">
+    <title>Boat Rentals | Island Tours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 
-<link rel="stylesheet" type="text/css" href="../css/mystyles.css">
- <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/mystyles.css">
+    <script src="../js/main.js"></script>
+    <style>
+        @media (max-width:480px) {
+            .head-holder-2 {
+                background-image: url("../images/header/island-tours-hopping/480/deep-sea-fishing-tour_480.jpg");
+            }
+            .head-holder-3 {
+                background-image: url("../images/header/island-tours-hopping/480/boat-rental-safari_480.jpg");
+            }
+            .head-holder-1 {
+                background-image: url("../images/header/island-tours-hopping/480/safari-boat-banca-banka_480.jpg");
+            }
+            body {
+                background: url(../images/header/island-tours-hopping/480/deep-sea-fishing-tour_480.jpg) no-repeat -9999px -9999px,
+                            url(../images/header/island-tours-hopping/480/boat-rental-safari_480.jpg) no-repeat -9999px -9999px,
+                            url(../images/header/island-tours-hopping/480/safari-boat-banca-banka_480.jpg) no-repeat -9999px -9999px;
+            }
+        }
+
+        @media (min-width:481px) and (max-width:768px) {
+          .head-holder-2 {
+              background-image: url("../images/header/island-tours-hopping/768/deep-sea-fishing-tour_768.jpg");
+          }
+          .head-holder-3 {
+              background-image: url("../images/header/island-tours-hopping/768/boat-rental-safari_768.jpg");
+          }
+          .head-holder-1 {
+              background-image: url("../images/header/island-tours-hopping/768/safari-boat-banca-banka_768.jpg");
+          }
+          body {
+              background: url(../images/header/island-tours-hopping/768/deep-sea-fishing-tour_768.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/768/boat-rental-safari_768.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/768/safari-boat-banca-banka_768.jpg) no-repeat -9999px -9999px;
+          }
+        }
+
+        @media (min-width: 769px) and (max-width:1024px) {
+          .head-holder-2 {
+              background-image: url("../images/header/island-tours-hopping/1024/deep-sea-fishing-tour_1024.jpg");
+          }
+          .head-holder-3 {
+              background-image: url("../images/header/island-tours-hopping/1024/boat-rental-safari_1024.jpg");
+          }
+          .head-holder-1 {
+              background-image: url("../images/header/island-tours-hopping/1024/safari-boat-banca-banka_1024.jpg");
+          }
+          body {
+              background: url(../images/header/island-tours-hopping/1024/deep-sea-fishing-tour_1024.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/1024/boat-rental-safari_1024.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/1024/safari-boat-banca-banka_1024.jpg) no-repeat -9999px -9999px;
+          }
+        }
+
+        @media (min-width: 1025px) and (max-width:1440px) {
+          .head-holder-2 {
+              background-image: url("../images/header/island-tours-hopping/1440/deep-sea-fishing-tour_1440.jpg");
+          }
+          .head-holder-3 {
+              background-image: url("../images/header/island-tours-hopping/1440/boat-rental-safari_1440.jpg");
+          }
+          .head-holder-1 {
+              background-image: url("../images/header/island-tours-hopping/1440/safari-boat-banca-banka_1440.jpg");
+          }
+          body {
+              background: url(../images/header/island-tours-hopping/1440/deep-sea-fishing-tour_1440.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/1440/boat-rental-safari_1440.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/1440/safari-boat-banca-banka_1440.jpg) no-repeat -9999px -9999px;
+          }
+        }
+
+        @media (min-width: 1441px) and (max-width:1920px) {
+          .head-holder-2 {
+              background-image: url("../images/header/island-tours-hopping/1920/deep-sea-fishing-tour_1920.jpg");
+          }
+          .head-holder-3 {
+              background-image: url("../images/header/island-tours-hopping/1920/boat-rental-safari_1920.jpg");
+          }
+          .head-holder-1 {
+              background-image: url("../images/header/island-tours-hopping/1920/safari-boat-banca-banka_1920.jpg");
+          }
+          body {
+              background: url(../images/header/island-tours-hopping/1920/deep-sea-fishing-tour_1920.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/1920/boat-rental-safari_1920.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/1920/safari-boat-banca-banka_1920.jpg) no-repeat -9999px -9999px;
+          }
+        }
+
+        @media (min-width:1921px) {
+          .head-holder-2 {
+              background-image: url("../images/header/island-tours-hopping/deep-sea-fishing-tour.jpg");
+          }
+          .head-holder-3 {
+              background-image: url("../images/header/island-tours-hopping/boat-rental-safari.jpg");
+          }
+          .head-holder-1 {
+              background-image: url("../images/header/island-tours-hopping/safari-boat-banca-banka.jpg");
+          }
+          body {
+              background: url(../images/header/island-tours-hopping/deep-sea-fishing-tour.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/boat-rental-safari.jpg) no-repeat -9999px -9999px,
+                          url(../images/header/island-tours-hopping/safari-boat-banca-banka.jpg) no-repeat -9999px -9999px;
+          }
+        }
+    </style>
 </head>
-<style>
-  @media (max-width:480px) {
-    .head-holder-1 {
-    background-image: url('../images/header/480/fish-coral-diver_480.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/480/beach-sun-bath-photo_480.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/480/banana-boat-sled_480.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/480/seatrek-underwater_480.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/480/deep-sea-fishing_480.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/480/sidemount-diving-course_480.jpg');
-  }
-}
 
-@media (min-width:481px) and (max-width:768px) {
-  .head-holder-1 {
-    background-image: url('../images/header/768/fish-coral-diver_768.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/768/beach-sun-bath-photo_768.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/768/banana-boat-sled_768.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/768/seatrek-underwater_768.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/768/deep-sea-fishing_768.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/768/sidemount-diving-course_768.jpg');
-  }
+<body>
 
-}
+    <div class="container col-12">
+        <!-- START MENU-NAVIGATION TABLET AND DESKTOP -->
+        <div class="menu-floater-tablet col-m-12 col-t-12">
+            <nav id="nav-2">
+                <a class="link-2" data-id="1" href="#">SCUBA Diving</a>
+                <a class="link-2" data-id="2" href="#">Water Sports</a>
+                <a class="link-2" data-id="3" href="#">Island Tours</a>
+                <a class="link-2" data-id="4" href="#">Club Member</a>
+                <a class="link-2" data-id="5" href="../contact/index.html">More About Us</a>
+                <a class="link-2 home-btn-t" data-id="6" href="/"><img src="../images/home-ico.png">Home</a>
 
-@media (min-width: 769px) and (max-width:1024px) {
-  .head-holder-1 {
-    background-image: url('../images/header/1024/fish-coral-diver_1024.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1024/beach-sun-bath-photo_1024.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1024/banana-boat-sled_1024.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1024/seatrek-underwater_1024.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1024/deep-sea-fishing_1024.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1024/sidemount-diving-course_1024.jpg');
-  }
-}
+                <div id="main-menu-1" class="about-menu-mobile row">
+                    <div class="row about-link-holder">
+                        <a href="../scuba-diving/scuba-diving-courses.html" class="col-t-2">
+                            <img title="scuba diving courses" alt="scuba diving courses" src="../images/watersports-menu/scuba-diving-courses_210.jpg" />
+                            <span>SCUBA Diving Courses</span>
+                        </a>
+                        <a href="../scuba-diving/learn-free-diving.html" class="col-t-2">
+                            <img title="learn free diving" alt="learn free diving" src="../images/watersports-menu/free-diving_210.jpg" />
+                            <span>Learn Free Diving</span>
+                        </a>
+                        <a href="../scuba-diving/scuba-diving-vacation.html" class="col-t-2">
+                            <img title="scuba diving vacation" alt="scuba diving vacation" src="../images/watersports-menu/tec-diving-course_210.jpg" />
+                            <span>SCUBA Diving Vacation</span>
+                        </a>
+                        <a href="../scuba-diving/scuba-diving-packages.html" class="col-t-2">
+                            <img title="scuba diving packages" alt="scuba diving packages" src="../images/watersports-menu/tec-diving_210.jpg" />
+                            <span>SCUBA Diving Packages</span>
+                        </a>
+                        <a href="../scuba-diving/become-a-professional-scuba-diver.html" class="col-t-2">
+                            <img title="become a professional scuba diver" alt="professional scuba diver internship" src="../images/watersports-menu/professional-scuba-diver_210.jpg" />
+                            <span>Become a Professional SCUBA Diver <br />(Internship)</span>
+                        </a>
+                        <a href="../scuba-diving/helmet-diving-seatrek.html" class="col-t-2">
+                            <img title="helmet diving seatrek" alt="walking underwater with helmet diving" src="../images/watersports-menu/helmet-diving_210.jpg" />
+                            <span>Helmet Diving<br /> (no certification needed)</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="main-menu-2" class="about-menu-mobile row">
+                    <div class="row about-link-holder">
+                        <a href="../watersports/parasailing.html" class="col-t-2">
+                            <img title="parasailing" alt="parasailing boat" src="../images/watersports-menu/parasailing-boat_210.jpg" />
+                            <span>Parasailing</span>
+                        </a>
+                        <a href="../watersports/banana-boat.html" class="col-t-2">
+                            <img title="banana boat" alt="banana boat and water sled" src="../images/watersports-menu/banana-boat-sled_210.jpg" />
+                            <span>Banana Boat / Water Sled</span>
+                        </a>
+                        <a href="../watersports/flyfish-ride.html" class="col-t-2">
+                            <img title="flyfish ride" alt="flyfish ride" src="../images/watersports-menu/flyfish-boat_210.jpg" />
+                            <span>Flyfish Ride</span>
+                        </a>
+                        <a href="../watersports/water-ski.html" class="col-t-2">
+                            <img title="water ski" alt="water ski" src="../images/watersports-menu/kite-surfing_210.jpg" />
+                            <span>Water Ski</span>
+                        </a>
+                        <a href="../watersports/jet-ski.html" class="col-t-2">
+                            <img title="jet ski" alt="jetski" src="../images/watersports-menu/jetski_210.jpg" />
+                            <span>Jet Ski</span>
+                        </a>
+                        <a href="../watersports/more-water-sports.html" class="col-t-2">
+                            <img title="more watersports" alt="all water sports" src="../images/watersports-menu/philippines-dolphins_210.jpg" />
+                            <span>More Water Sports</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="main-menu-3" class="about-menu-mobile row">
+                    <div class="row about-link-holder">
+                        <a href="../island-tours/sight-seeing-tours.html" class="col-t-2">
+                            <img title="sight seeing and island tours" alt="island tours" src="../images/watersports-menu/island-tour_210.jpg" />
+                            <span>Sight-seeing Tours</span>
+                        </a>
+                        <a href="../island-tours/sunset-cruise.html" class="col-t-2">
+                            <img title="sunset cruise" alt="sunset cruise" src="../images/watersports-menu/sunset-cruise_210.jpg" />
+                            <span>Sunset Cruise</span>
+                        </a>
+                        <a href="../island-tours/island-hopping.html" class="col-t-2">
+                            <img title="island hopping" alt="island hopping and tour" src="../images/watersports-menu/island-tour-visit-pandanon_210.jpg" />
+                            <span>Island Hopping</span>
+                        </a>
+                        <a href="../island-tours/deep-sea-fishing.html" class="col-t-2">
+                            <img title="Deep sea fishing" alt="Deep sea fishing" src="../images/watersports-menu/deep-sea-fishing_210.jpg" />
+                            <span>Deep sea fishing</span>
+                        </a>
+                        <a href="../island-tours/boat-rentals.html" class="col-t-2">
+                            <img title="boat rentals" alt="boat and yacht rental" src="../images/watersports-menu/fishing-tour-boat-yatch_210.jpg" />
+                            <span>Boat Rentals</span>
+                        </a>
+                        <a href="../island-tours/more-destination-and-packages.html" class="col-t-2">
+                            <img title="more destinations and packages" alt="destinations and packages" src="../images/watersports-menu/virgin-island-bohol_210.jpg" />
+                            <span>More Destinations & Packages</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="main-menu-4" class="about-menu-mobile row">
+                    <div class="row about-link-holder">
 
-@media (min-width: 1025px) and (max-width:1920px) {
-  .head-holder-1 {
-    background-image: url('../images/header/1920/fish-coral-diver_1920.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1920/beach-sun-bath-photo_1920.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1920/banana-boat-sled_1920.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1920/seatrek-underwater_1920.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1920/deep-sea-fishing_1920.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1920/sidemount-diving-course_1920.jpg');
-  }
-}
+                        <a href="../club-member/how-to-become-a-club-member.html" class="col-t-6 h-cloner">
+                            <img title="how to become a club member" alt="become a club member" src="../images/watersports-menu/become-dive-master_210.jpg" />
+                            <span>How to become a Club Member</span>
+                        </a>
+                        <a href="../club-member/club-member-portal.html" class="col-t-6 h-cloner">
+                            <img title="club member portal" alt="club member portal" src="../images/watersports-menu/become-pro-diver_210.jpg" />
+                            <span>Club Member&lsquo;s Portal</span>
+                        </a>
 
-@media (min-width: 1921px) {
-  .head-holder-1 {
-    background-image: url('../images/header/1920/fish-coral-diver.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/1920/beach-sun-bath-photo.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/1920/banana-boat-sled.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/1920/seatrek-underwater.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/1920/deep-sea-fishing_1920.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/1920/sidemount-diving-course_1920.jpg');
-  }
-}
-</style>
-<body onload="">
-
-<div class="container col-12">
-  <div class="menu-floater-tablet col-m-12 col-t-12">
-    <nav id="nav-2">
-      <a class="link-2" data-id="1" href="#">SCUBA Diving</a>
-      <a class="link-2" data-id="2" href="#">Water Sports</a>
-      <a class="link-2" data-id="3" href="#">Island Tours</a>
-      <a class="link-2" data-id="4" href="#">Club Member</a>
-      <a class="link-2" data-id="5" href="../contact/about-dive-scotty.html">More About Us</a>
-    </nav>
-
-    <div id="main-menu-1" class="about-menu-mobile row">
-      <div class="row about-link-holder">
-        <a href="../scuba-diving/scuba-diving-courses.html" class="col-t-2">
-          <img title="scuba diving courses" alt="scuba diving courses" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/scuba-diving-courses_210.jpg" />
-          <h3>SCUBA Diving Courses</h3>
-        </a>
-        <a href="../scuba-diving/learn-free-diving.html" class="col-t-2">
-          <img title="learn free diving" alt="free diving" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/free-diving_210.jpg" />
-          <h3>Learn Free Diving</h3>
-
-        </a>
-        <a href="../scuba-diving/scuba-diving-vacation.html" class="col-t-2">
-          <img title="scuba diving vacation" alt="tec diving course" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/tec-diving-course_210.jpg" />
-          <h3>SCUBA Diving Vacation</h3>
-        </a>
-        <a href="../scuba-diving/scuba-diving-packages.html" class="col-t-2">
-          <img title="scuba diving packages" alt="scuba diving packages" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/tec-diving_210.jpg" />
-          <h3>SCUBA Diving Packages</h3>
-        </a>
-        <a href="../scuba-diving/become-a-professional-scuba-diver.html" class="col-t-2">
-          <img title="become a professional scuba diver" alt="professional scuba diver" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/professional-scuba-diver_210.jpg" />
-          <h3>Become a Professional SCUBA Diver <br />(Internship)</h3>
-        </a>
-        <a href="../scuba-diving/helmet-diving-seatrek.html" class="col-t-2">
-          <img title="helmet diving seatrek" alt="helmet diving" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/helmet-diving_210.jpg" />
-          <h3>Helmet Diving<br /> (no certification needed)</h3>
-        </a>
-      </div>
-    </div>
-    <div id="main-menu-2" class="about-menu-mobile row">
-      <div class="row about-link-holder">
-        <a href="../watersports/parasailing.html" class="col-t-2">
-          <img title="parasailing" alt="parasailing boat" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/parasailing-boat_210.jpg" />
-          <h3>Parasailing</h3>
-        </a>
-        <a href="../watersports/banana-boat.html" class="col-t-2">
-          <img title="banana boat" alt="banana boat" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/banana-boat-sled_210.jpg" />
-          <h3>Banana Boat/Sled</h3>
-        </a>
-        <a href="../watersports/flyfish-ride.html" class="col-t-2">
-          <img title="flyfish ride" alt="flyfish boat" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/flyfish-boat_210.jpg" />
-          <h3>Flyfish Ride</h3>
-        </a>
-        <a href="../watersports/water-ski.html" class="col-t-2">
-          <img title="water ski" alt="kite surfing" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/kite-surfing_210.jpg" />
-          <h3>Water Ski</h3>
-        </a>
-        <a href="../watersports/jet-ski.html" class="col-t-2">
-          <img title="jet ski" alt="jetski" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/jetski_210.jpg" />
-          <h3>Jet Ski</h3>
-        </a>
-        <a href="../watersports/more-water-sports.html" class="col-t-2">
-          <img title="more watersports" alt="philippines dolphines" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/philippines-dolphins_210.jpg" />
-          <h3>More Water Sports</h3>
-        </a>
-      </div>
-    </div>
-    <div id="main-menu-3" class="about-menu-mobile row">
-      <div class="row about-link-holder">
-        <a href="./sight-seeing-tours.html" class="col-t-2">
-          <img title="sight seeing tours" alt="island tours" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/island-tour_210.jpg" />
-          <h3>Sight-seeing Tours</h3>
-        </a>
-        <a href="./sunset-cruise.html" class="col-t-2">
-          <img title="sunset cruise" alt="sunset cruise" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/sunset-cruise_210.jpg" />
-          <h3>Sunset Cruise</h3>
-        </a>
-        <a href="./island-hopping.html" class="col-t-2">
-          <img title="island hopping" alt="island tour visit pandanon" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/island-tour-visit-pandanon_210.jpg" />
-          <h3>Island Hopping</h3>
-        </a>
-        <a href="./deep-sea-fishing.html" class="col-t-2">
-          <img title="river adventures" alt="what to visit" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/what-to-visit_210.jpg" />
-          <h3>River Adventures</h3>
-        </a>
-        <a href="./boat-rentals.html" class="col-t-2">
-          <img title="boat rentals" alt="fishing tour boat yacht" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/fishing-tour-boat-yatch_210.jpg" />
-          <h3>Boat Rentals</h3>
-        </a>
-        <a href="./more-destination-and-packages.html" class="col-t-2">
-          <img title="more destinations and packages" alt="virgin island bohol" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/virgin-island-bohol_210.jpg" />
-          <h3>More Destinations & Packages</h3>
-        </a>
-      </div>
-    </div>
-    <div id="main-menu-4" class="about-menu-mobile row">
-      <div class="row about-link-holder">
-        <a href="../club-member/how-to-become-a-club-member.html" class="col-t-6">
-          <img title="how to become a club member" alt="become dive master" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/become-dive-master_210.jpg" />
-          <h3>How to become a Club Member</h3>
-        </a>
-        <a href="../club-member/club-member-portal.html" class="col-t-6">
-          <img title="club member portal" alt="become pro diver" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/become--pro-diver_210.jpg" />
-          <h3>Club Member's Portal</h3>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="menu-floater-mobile col-m-12 col-t-12">
-  <label for="show-menu" class="show-menu"><img src="../images/menu12.png" /><span class="menu-tap">Menu</span></label>
-  <input type="checkbox" id="show-menu" role="button">
-    <nav id="myTopNav">
-      <!-- ************************ -->
-      <div class="nav-mobile-wrapper">
-        <button class="accordion">
-          <div class="col-m-12 section-menu">
-            <div class="col-m-2">
-              <img src="../images/scuba-diving-pictures/scuba-diving-pictures-210/scuba-underwater-photography-course_210.jpg" />
-            </div>
-            <div class="col-m-10">
-              <h5>Diving Underwater</h5>
-              <p>
-                All about SCUBA Diving, Free Diving. From beginners to Extreme Technical SCUBA Diving.
-              </p>
-            </div>
-          </div>
-        </button>
-        <div class="panel">
-          <div class="panel-show-wrapper">
-            <div class="col-m-4 col-t-4">
-              <a href="../scuba-diving/scuba-diving-courses.html">
-                <img title="scuba diving courses" alt="scuba diving courses" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/scuba-diving-courses_210.jpg" /><br />
-                <span>SCUBA Diving Courses</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../scuba-diving/learn-free-diving.html">
-                <img title="learn free diving" alt="free diving" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/free-diving_210.jpg" /><br />
-                <span>Learn Free Diving</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../scuba-diving/scuba-diving-vacation.html">
-                <img title="scuba diving vacation" alt="tec diving course" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/tec-diving-course_210.jpg" /><br />
-                <span>Scuba Diving Vacation</span>
-                <!-- needs more Idea -->
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../scuba-diving/scuba-diving-packages.html">
-                <img title="scuba diving packages" alt="scuba diving packages" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/tec-diving_210.jpg" /><br />
-                <span>SCUBA Diving Packages</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../scuba-diving/become-a-professional-scuba-diver.html">
-                <img title="become a professional scuba diver" alt="professional scuba diver" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/professional-scuba-diver_210.jpg" /><br />
-                <span>Become a Professional SCUBA Diver <br />(Internship)</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../scuba-diving/helmet-diving-seatrek.html">
-                <img title="helmet diving seatrek" alt="helmet diving" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/helmet-diving_210.jpg" /><br />
-                <span>Helmet Diving<br /> (No Certification needed)</span>
-              </a>
-            </div>
-          </div>
+                    </div>
+                </div>
+            </nav>
         </div>
+        <!-- END MENU-NAVIGATION TABLET AND DESKTOP -->
 
-        <button class="accordion">
-          <div class="col-m-12 section-menu">
-            <div class="col-m-2">
-              <img src="../images/scuba-diving-pictures/scuba-diving-pictures-210/parasailing_210.jpg" />
+        <!-- START MENU NAVIGATION PHONE -->
+        <div class="menu-floater-mobile col-m-12 col-t-12">
+            <input type="checkbox" id="show-menu" role="button" />
+            <label for="show-menu" class="show-menu">
+              <img id="menuimage" title="navigation icon" alt="navigation icon" src="../images/menu12.png" /><span class="closemenu">X</span><span class="menu-tap menucloser">Menu</span><span class="menu-tap closecloser">Close</span>
+            </label>
+            <div class="home-btn-m">
+                <a href="/"><img src="../images/home-ico.png">Home</a>
             </div>
-            <div class="col-m-10">
-              <h5>Water Sports</h5>
-              <p>
-                If its above water, on the water, or underwater, we do it.
-              </p>
+            <div class="menu-contact">
+                <a href="../contact/dive-support.html"><img src="../images/menu-contact.png">Contact</a>
             </div>
-          </div>
-        </button>
 
-        <div class="panel">
-          <div class="panel-show-wrapper">
-            <div class="col-m-4 col-t-4">
-              <a href="../watersports/parasailing.html">
-                <img title="parasailing" alt="parasailing boat" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/parasailing-boat_210.jpg" /><br />
-                <span>Parasailing</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../watersports/banana-boat.html">
-                <img title="banana boat" alt="banana boat" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/banana-boat-sled_210.jpg" /><br />
-                <span>Banana boat/sled</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../watersports/flyfish-ride.html">
-                <img title="flyfish ride" alt="flyfish boat" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/flyfish-boat_210.jpg" /><br />
-                <span>Flyfish ride</span>
-                <!-- needs more Idea -->
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../watersports/water-ski.html">
-                <img title="water ski" alt="kite surfing" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/kite-surfing_210.jpg" /><br />
-                <span>Water Ski</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="#">
-                <img src="../images/scuba-diving-pictures/scuba-diving-pictures-210/jetski_210.jpg" /><br />
-                <span>Jet Ski</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="../watersports/jet-ski.html">
-                <img title="more watersports" alt="philippines dolphines" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/philippines-dolphins_210.jpg" /><br />
-                <span>More Water Sports</span>
-              </a>
-            </div>
-          </div>
+            <nav id="myTopNav">
+              <div class="nav-mobile-wrapper">
+                <button class="accordion" data-location="scuba-diving">
+                  <div class="col-m-12 section-menu">
+                    <div class="col-m-2">
+                      <a name="scuba-diving"></a>
+                      <img title="scuba diving" alt="scuba diving" src="../images/watersports-menu/scuba-underwater-photography-course_210.jpg" />
+                    </div>
+                    <div class="col-m-10">
+                      <span>Diving Underwater</span>
+                      <p>
+                        All about SCUBA Diving, Free Diving. From beginners to Extreme Technical SCUBA Diving.
+                      </p>
+                    </div>
+                  </div>
+                </button>
+                <div class="panel">
+                        <div class="panel-show-wrapper">
+                            <div class="col-m-4 col-t-4">
+                                <a href="../scuba-diving/scuba-diving-courses.html">
+                                    <img title="scuba diving courses" alt="scuba diving courses" src="../images/watersports-menu/scuba-diving-courses_210.jpg" /><br />
+                                    <span>SCUBA Diving Courses</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../scuba-diving/learn-free-diving.html">
+                                    <img title="learn free diving" alt="where to learn free diving" src="../images/watersports-menu/free-diving_210.jpg" /><br />
+                                    <span>Learn Free Diving</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../scuba-diving/scuba-diving-vacation.html">
+                                    <img title="scuba diving vacation" alt="scuba diving vacation" src="../images/watersports-menu/tec-diving-course_210.jpg" /><br />
+                                    <span>Scuba Diving Vacation</span>
+
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../scuba-diving/scuba-diving-packages.html">
+                                    <img title="scuba diving packages" alt="scuba diving packages" src="../images/watersports-menu/tec-diving_210.jpg" /><br />
+                                    <span>SCUBA Diving Packages</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../scuba-diving/become-a-professional-scuba-diver.html">
+                                    <img title="become a professional scuba diver" alt="professional scuba diver internship" src="../images/watersports-menu/professional-scuba-diver_210.jpg" /><br />
+                                    <span>Become a Professional SCUBA Diver <br />(Internship)</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../scuba-diving/helmet-diving-seatrek.html">
+                                    <img title="helmet diving seatrek" alt="helmet diving walking underwater" src="../images/watersports-menu/helmet-diving_210.jpg" /><br />
+                                    <span>Helmet Diving<br /> (No Certification needed)</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="accordion" data-location="watersports">
+                  <div class="col-m-12 section-menu">
+                    <div class="col-m-2">
+                      <a name="watersports"></a>
+                      <img title="water sports and parasailing" alt="water sports and parasailing" src="../images/watersports-menu/parasailing_210.jpg" />
+                    </div>
+                    <div class="col-m-10">
+                      <span>Water Sports</span>
+                      <p>
+                        If its above water, on the water, or underwater, we do it.
+                      </p>
+                    </div>
+                  </div>
+                </button>
+                <div class="panel">
+                        <div class="panel-show-wrapper">
+                            <div class="col-m-4 col-t-4">
+                                <a href="../watersports/parasailing.html">
+                                    <img title="parasailing" alt="parasailing boat" src="../images/watersports-menu/parasailing-boat_210.jpg" /><br />
+                                    <span>Parasailing</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../watersports/banana-boat.html">
+                                    <img title="banana boat" alt="banana boat" src="../images/watersports-menu/banana-boat-sled_210.jpg" /><br />
+                                    <span>Banana boat/sled</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../watersports/flyfish-ride.html">
+                                    <img title="flyfish ride" alt="flyfish ride" src="../images/watersports-menu/flyfish-boat_210.jpg" /><br />
+                                    <span>Flyfish ride</span>
+
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../watersports/water-ski.html">
+                                    <img title="water ski" alt="water ski" src="../images/watersports-menu/kite-surfing_210.jpg" /><br />
+                                    <span>Water Ski</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../watersports/jet-ski.html">
+                                    <img title="jet ski" alt="jet ski" src="../images/watersports-menu/jetski_210.jpg" /><br />
+                                    <span>Jet Ski</span>
+                                </a>
+                            </div>
+                            <div class="col-m-4 col-t-4">
+                                <a href="../watersports/more-water-sports.html">
+                                    <img title="more watersports" alt="more watersports" src="../images/watersports-menu/philippines-dolphins_210.jpg" /><br />
+                                    <span>More Water Sports</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                <button class="accordion" data-location="island-tours">
+                  <div class="col-m-12 section-menu">
+                    <div class="col-m-2">
+                      <a name="island-tours"></a>
+                      <img title="island tours" alt="island tours" src="../images/watersports-menu/holidays-vacations_210.jpg" />
+                    </div>
+                    <div class="col-m-10">
+                      <span>Island Tours</span>
+                      <p>
+                        Inspiring Destinations within your reach. You&lsquo;ll love where we will take you.
+                      </p>
+                    </div>
+                  </div>
+                </button>
+                <div class="panel">
+                          <div class="panel-show-wrapper">
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../island-tours/sight-seeing-tours.html">
+                                      <img title="sight seeing tours" alt="island tours and sight seeing" src="../images/watersports-menu/island-tour_210.jpg" /><br />
+                                      <span>Sight-seeing Tours</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../island-tours/sunset-cruise.html">
+                                      <img title="sunset cruise" alt="sunset cruise" src="../images/watersports-menu/sunset-cruise_210.jpg" /><br />
+                                      <span>Sunset Cruise</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../island-tours/island-hopping.html">
+                                      <img title="island hopping and tours" alt="island hopping and tours" src="../images/watersports-menu/island-tour-visit-pandanon_210.jpg" /><br />
+                                      <span>Island Hopping</span>
+
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../island-tours/deep-sea-fishing.html">
+                                      <img title="deep sea fishing" alt="deep sea fishing" src="../images/watersports-menu/deep-sea-fishing_210.jpg" /><br />
+                                      <span>Deep sea fishing</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../island-tours/boat-rentals.html">
+                                      <img title="boat rentals" alt="boat rentals" src="../images/watersports-menu/fishing-tour-boat-yatch_210.jpg" /><br />
+                                      <span>Boat Rentals</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../island-tours/more-destination-and-packages.html">
+                                      <img title="more destinations and packages" alt="more destinations and packages" src="../images/watersports-menu/virgin-island-bohol_210.jpg" /><br />
+                                      <span>More Destinations & Packages</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+
+                <button class="accordion" data-location="club-member">
+                  <div class="col-m-12 section-menu">
+                    <div class="col-m-2">
+                      <a name="club-member"></a>
+                      <img title="scuba diving club member" alt="scuba diving club member" src="../images/watersports-menu/scuba-diving_210.jpg" />
+                    </div>
+                    <div class="col-m-10">
+                      <span>Club Member</span>
+                      <p>
+                        We offer special rates & discounts for all our Club Members
+                      </p>
+                    </div>
+                  </div>
+                </button>
+                <div class="panel">
+                          <div class="panel-show-wrapper">
+                              <div class="col-m-6 col-t-6">
+                                  <a href="../club-member/how-to-become-a-club-member.html">
+                                      <img title="how to become a club member" alt="how to become a club member" src="../images/watersports-menu/become-dive-master_210.jpg" /><br />
+                                      <span>How to Become A Club Member</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-6 col-t-6">
+                                  <a href="../club-member/club-member-portal.html">
+                                      <img title="club member portal" alt="club member portal" src="../images/watersports-menu/become-pro-diver_210.jpg" /><br />
+                                      <span>Club Member&lsquo;s Portal</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                <div class="accordion">
+                          <span style="float:left;"><a href="../contact/">More About Us</a></span>
+                          <label for="show-menu" class="show-menu" style="cursor:pointer;float:right;">X close</label>
+                      </div>
+                <div class="panel"></div>
+              </div>
+            </nav>
         </div>
+        <!-- END MENU NAVIGATION PHONE -->
 
-        <button class="accordion">
-          <div class="col-m-12 section-menu">
-            <div class="col-m-2">
-              <img src="../images/scuba-diving-pictures/scuba-diving-pictures-210/holidays-vacations_210.jpg" />
+        <!--  START ROTATING HEADER h2 -->
+        <header id="heads">
+            <div class="heading">
+                <div class="row head-holder-1">
+                    <h2>Our luxury banca boat with a double deck, rent as long as you want</h2>
+                </div>
             </div>
-            <div class="col-m-10">
-              <h5>Island Tours</h5>
-              <p>
-                Inspiring Destinations within your reach. You'll love where we will take you.
-              </p>
+            <div class="heading">
+                <div class="row head-holder-2">
+                    <h2>You can rent any boat from speedboat to liveaboard from our fleet</h2>
+                </div>
             </div>
-          </div>
-        </button>
+            <div class="heading">
+                <div class="row head-holder-3">
+                    <h2>5-star boat rental: All prices are with captain and crew included</h2>
+                </div>
+            </div>
+        </header>
+        <!-- END ROTATING HEADER H2 -->
 
-        <div class="panel">
-          <div class="panel-show-wrapper">
-            <div class="col-m-4 col-t-4">
-              <a href="./sight-seeing-tours.html">
-                <img title="sight seeing tours" alt="island tours" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/island-tour_210.jpg" /><br />
-                <span>Sight-seeing Tours</span>
-              </a>
+        <!-- START BLOCS MAIN CONTENTS -->
+        <div class="row mainrow">
+            <div>
+                <!--  BLOCS MAIN ARTICLE AND SUB-ARTICLE -->
+                <article class="col-ms-12 col-m-12 col-t-12">
+                    <div class="col-m-12 col-ms-12 col-t-12">
+                        <!-- START BLOCK MAIN ARTICLE -->
+                        <h1>Mactan Cebu Boat Rentals and Packages</h1>
+                        <p>
+                            <img title="mactan cebu boat rental" alt="mactan cebu boat rental"
+                            src="../images/pictures/island-tours-hopping/480/sunset-cruise-island-tours_480.jpg"
+                            srcset="../images/pictures/island-tours-hopping/480/sunset-cruise-island-tours_480.jpg 400w,
+                              ../images/pictures/island-tours-hopping/768/sunset-cruise-island-tours_768.jpg 778w"
+                              sizes="(min-width: 400px) 50vw, 100vw" />
+                              As the sun goes down, we still have offers for you to enjoy the rest of the day.
+                              Cruise with us on Cebu’s luxurious banca as we go over along the Mactan coastline in our Boat rentals and packages.
+                              You will enjoy your company with the beauty of the tropical waters of Mactan and the wonders of the ocean as the night reigns.
+                        </p>
+                        <!-- END BLOCK MAIN ARTICLE -->
+                        <div class="clearer"></div>
+
+                        <!-- START PRICES MAIN CONTENT -->
+                        <h2>Glass Bottom Boat</h2>
+                        <p>
+                          <img class="right" title="glass bottom boat" alt="glass bottom boat"
+                          src="../images/pictures/island-tours-hopping/480/sea-fishing-boat_480.jpg"
+                          srcset="../images/pictures/island-tours-hopping/480/sea-fishing-boat_480.jpg 400w,
+                           ../images/pictures/island-tours-hopping/768/sea-fishing-boat_768.jpg 778w"
+                           sizes="(min-width: 400px) 50vw, 100vw" />
+                           Gleam through the window of the underwater world as you bound our Glass Bottom Boat and mesmerize the beauty of the marine culture without getting wet. Tour through the Marine Sanctuary of Shangri-La for PHP 1,000 / $20 approximating 30 minutes and 2 persons are required the least. Or browse through the colorful Talima Marine Sanctuary and enjoy the beauty it brings as it unfolds beneath you. Package is good for 1 hour and 30 minutes approximately and rates at PHP 2,000 / $40 per person. Atleast 2 persons are required. And if you want to dive in through this adventure, just add PHP 500 / $10  and we will provide you our snorkeling equipments.
+                          <ul style="display:table">
+                            <li><strong>Glass Bottom Boat</strong></li>
+                            <li>Mactan Cebu</li>
+                            <li>duration: approx 30 minutes</li>
+                            <li>price: 1,000 PHP / $20 per person</li>
+                            <li>minimum of 2 persons</li>
+                          </ul>
+
+                          <ul style="display:table">
+                            <li><strong>Glass Bottom Boat 2</strong></li>
+                            <li>Talima</li>
+                            <li>duration: approx 1 hour and 30 minutes</li>
+                            <li>price: 2,000 PHP / $40 per person</li>
+                            <li>minimum of 2 persons</li>
+                          </ul>
+
+                          <ul style="display:table">
+                            <li><strong>Glass Bottom Boat 3</strong></li>
+                            <li>add-on with snorkeling adventure</li>
+                            <li>price: 500 PHP / $10</li>
+                          </ul>
+                        </p>
+                        <!-- END PRICES MAIN CONTENT -->
+                        <div class="clearer"></div>
+
+                        <!-- START PRICES MAIN CONTENT -->
+                        <h2>Luxurious Bluewater Hunter Boat</h2>
+                        <p>
+                          <img title="bluewater hunter boat" alt="bluewater hunter boat"
+                          src="../images/pictures/island-tours-hopping/480/tropical-sunset_480.jpg"
+                          srcset="../images/pictures/island-tours-hopping/480/tropical-sunset_480.jpg 400w,
+                           ../images/pictures/island-tours-hopping/768/tropical-sunset_768.jpg 778w"
+                           sizes="(min-width: 400px) 50vw, 100vw" />
+                           Take in for an adventure with our Luxurious Bluewater Hunter and you could take this for and Island Hopping for PHP 60,000 / $1200 and tour the islands surrounding Mactan and Olango approximating the tour upto 5 hours and a maximum of 8 persons can join in. But if you want to have 1Day Tour, its good for PHP 80,000 / $1600 and approximated to 7 hours. You could also take this in a wonderful Sunset Cruise for PHP 30,000 and approximation of an hour and a half of the sunset tour.
+                           <ul style="display:table">
+                            <li><strong>Bluewater Hunter</strong></li>
+                            <li>island hopping</li>
+                            <li>duration: approx 5 hours</li>
+                            <li>price: 60,000 PHP / $1,206</li>
+                            <li>maximum of 8 persons</li>
+                          </ul>
+
+                          <ul style="display:table">
+                            <li><strong>	1 Day Tour</strong></li>
+                            <li>duration: approx 7 hours</li>
+                            <li>	price: 80,000 PHP / $1,608</li>
+                            <li>maximum of 8 persons</li>
+                          </ul>
+
+                          <ul style="display:table">
+                            <li><strong>Sunset Cruise</strong></li>
+                            <li>duration: 1 hour and 30 minutes</li>
+                            <li>price: 30,000 PHP / $603</li>
+                            <li>maximum of 8 persons</li>
+                          </ul>
+                        </p>
+                        <!-- END PRICES MAIN CONTENT -->
+                        <div class="clearer"></div>
+
+                        <!-- START PRICES MAIN CONTENT -->
+                        <h2>Jetboat Ride</h2>
+                        <p>
+                          <img class="right" title="jetboat ride" alt="jetboat ride"
+                          src="../images/pictures/scuba-diving/480/boat-diving_480.jpg"
+                          srcset="../images/pictures/scuba-diving/480/boat-diving_480.jpg 400w,
+                           ../images/pictures/scuba-diving/768/boat-diving_768.jpg 778w"
+                           sizes="(min-width: 400px) 50vw, 100vw" />
+                           Take on your need for speed as you can step on your speed limit in this rushing JetBoat Ride. Tag along 2 of your friends or you can have your partner and 2 kids and race through the wind in this awesome and thrilling water ride. Get in the fun as you can rush in the waves at PHP 3,600 / $72 for 30 minutes or get a full hour at PHP 5,800 / $115. Don’t let it stop you as you can extend your wave rush for another 30 minutes at PHP 3,600 / $72.
+                           <ul style="display:table">
+                            <li><strong>Jetboat Ride</strong></li>
+                            <li>duration: 1 hour</li>
+                            <li>price: 5,800 PHP / $117 (VAT inclusive)</li>
+                            <li>	max of 3 adults or 2 adults and 2 kids</li>
+                          </ul>
+
+                          <ul style="display:table">
+                            <li><strong>Jetboat Exceeding time</strong></li>
+                            <li>duration: 30 minutes</li>
+                            <li>price: 3,600 PHP / $72 (VAT inclusive)</li>
+                          </ul>
+                        </p>
+                        <!-- END PRICES MAIN CONTENT -->
+                    </div>
+                </article>
+                <!--  END BLOCS MAIN ARTICLE AND SUB-ARTICLE -->
             </div>
-            <div class="col-m-4 col-t-4">
-              <a href="./sunset-cruise.html">
-                <img title="sunset cruise" alt="sunset cruise" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/sunset-cruise_210.jpg" /><br />
-                <span>Sunset Cruise</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="./island-hopping.html">
-                <img title="island hopping" alt="island tour visit pandanon" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/island-tour-visit-pandanon_210.jpg" /><br />
-                <span>Island Hopping</span>
-                <!-- needs more Idea -->
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="./deep-sea-fishing.html">
-                <img title="river adventures" alt="what to visit" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/what-to-visit_210.jpg" /><br />
-                <span>River Adventures</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="./boat-rentals.html">
-                <img title="boat rentals" alt="fishing tour boat yacht" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/fishing-tour-boat-yatch_210.jpg" /><br />
-                <span>Boat Rentals</span>
-              </a>
-            </div>
-            <div class="col-m-4 col-t-4">
-              <a href="./more-destination-and-packages.html">
-                <img title="more destinations and packages" alt="virgin island bohol" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/virgin-island-bohol_210.jpg" /><br />
-                <span>More Destinations & Packages</span>
-              </a>
-            </div>
-          </div>
         </div>
+        <!-- END BLOCS MAIN CONTENTS -->
 
-        <button class="accordion">
-          <div class="col-m-12 section-menu">
-            <div class="col-m-2">
-              <img src="../images/scuba-diving-pictures/scuba-diving-pictures-210/fishing-rod_210.jpg" />
-            </div>
-            <div class="col-m-10">
-              <h5>Club Member</h5>
-              <p>
-                We offer special rates & discounts for all our Club Members
-              </p>
-            </div>
-          </div>
-        </button>
-
-        <div class="panel">
-          <div class="panel-show-wrapper">
-            <div class="col-m-6 col-t-6">
-              <a href="../club-member/how-to-become-a-club-member.html">
-                <img title="how to become a club member" alt="become dive master" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/become-dive-master_210.jpg" /><br />
-                <span>How to Become A Club Member</span>
-              </a>
-            </div>
-            <div class="col-m-6 col-t-6">
-              <a href="../club-member/club-member-portal.html">
-                <img title="club member portal" alt="become pro diver" src="../images/scuba-diving-pictures/scuba-diving-pictures-210/become--pro-diver_210.jpg" /><br />
-                <span>Club Member's Portal</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <button class="accordion">
-             <h2>More About Us</h2>
-          </button>
-        <div class="panel"></div>
-
-      </div>
-      <!-- ************************** -->
-    </nav>
-    </div>
-
-  <header id="heads">
-    <div class="heading">
-      <div class="row head-holder-1">
-        <div class="slider-caption">
-          <div class="text-holder-caption">
-            <p>Sight-seeing Tours</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="heading">
-      <div class="row head-holder-3">
-        <div class="slider-caption">
-          <div class="text-holder-caption">
-            <p>Sunset Cruises</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="heading">
-      <div class="row head-holder-2">
-        <div class="slider-caption">
-          <div class="text-holder-caption">
-           <p>Nitrox Enriched Air</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="heading">
-      <div class="row head-holder-3">
-        <div class="slider-caption">
-          <div class="text-holder-caption">
-            <p>Island Hopping</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="heading">
-      <div class="row head-holder-3">
-        <div class="slider-caption">
-          <div class="text-holder-caption">
-            <p>River Adventures</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="heading">
-      <div class="row head-holder-3">
-        <div class="slider-caption">
-          <div class="text-holder-caption">
-            <p>Boat Rentals</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="heading">
-      <div class="row head-holder-3">
-        <div class="slider-caption">
-          <div class="text-holder-caption">
-            <p>More Destinations & Packages</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-<ul>
-  <li><strong>bluewater hunter</strong>
-    <ul>
-      <li>island hopping</li>
-      <li>	duration: approx 5 hours</li>
-      <li>price: 60,000 PHP / $1,206</li>
-      <li>maximum of 8 persons</li>
-    </ul>
-  </li>
-
-  <li><strong>1 day tour</strong>
-    <ul>
-      <li>duration: approx 7 hours</li>
-      <li>price: 80,000 PHP / $1,608</li>
-      <li>maximum of 8 persons</li>
-    </ul>
-  </li>
-
-  <li><strong>sunset cruise</strong>
-    <ul>
-      <li>duration: 1 hour and 30 minutes</li>
-      <li>price: 30,000 PHP / $603</li>
-      <li>maximum of 8 persons</li>
-    </ul>
-  </li>
-
-  <li><strong>sunset cruise</strong>
-    <ul>
-      <li>duration: 1 hour and 30 minutes</li>
-      <li>price: 30,000 PHP / $603</li>
-      <li>maximum of 8 persons</li>
-    </ul>
-  </li>
-
-  <li><strong>jetboat ride</strong>
-    <ul>
-      <li>duration: 30 minutes</li>
-      <li>price: 3,600 PHP / $72 (VAT inclusive)</li>
-      <li>max of 3 adults or 2 adults and 2 kids</li>
-    </ul>
-  </li>
-
-  <li><strong>jetboat ride</strong>
-    <ul>
-      <li>duration: 1 hour</li>
-      <li>price: 5,800 PHP / $117 (VAT inclusive)</li>
-      <li>max of 3 adults or 2 adults and 2 kids</li>
-    </ul>
-  </li>
-
-  <li><strong>jetboat exceeding time</strong>
-    <ul>
-      <li>duration: 1 hour</li>
-      <li>duration: 30 minutes</li>
-      <li>price: 3,600 PHP / $72 (VAT inclusive)</li>
-    </ul>
-  </li>
-</ul>
-
-<ul style="display:table">
-  <li><strong>paraw sailing</strong>
-    <ul>
-      <li>along boracay coastline</li>
-      <li>duration: minimum of 2 hours</li>
-      <li>price: 5,000 PHP / $100 per unit</li>
-      <li>good for 3 to 4 persons</li>
-    </ul>
-  </li>
-  <li><strong>speedboat rental</strong>
-    <ul>
-      <li>island hopping</li>
-      <li>price: 10,000 PHP / $200 per hour rate</li>
-      <li>good for 1 to 4 persons</li>
-    </ul>
-  </li>
-  <li><strong>speedboat rental 2</strong>
-    <ul>
-      <li>island hopping</li>
-      <li>price: 15,000 PHP / $301 per hour rate</li>
-      <li>good for 5 to 10 persons</li>
-    </ul>
-  </li>
-  <li><strong>speedboat extra person</strong>
-    <ul>
-      <li>island hopping</li>
-      <li>price: 1,500 PHP / $30 per person</li>
-      <li>exceeding the max number on each rental package</li>
-    </ul>
-  </li>
-</ul>
-
-  <div class="row mainrow">
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-           <a href="./scuba-diving-destinations.html">
-              <img title="wreck scuba diving" alt="scuba diving destinations" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/wreck-scuba-diving_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/wreck-scuba-diving_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/wreck-scuba-diving_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
-            </a>
-        </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="./scuba-diving-destinations.html">Mactan Cebu Boat Rentals</a></h2>
-            <p class="block-with-text">
-             Take on your need for speed as you can step on your speed limit in this rushing JetBoat Ride. Tag along 2 of your friends or you can have your partner and 2 kids and race through the wind in this awesome and thrilling water ride.
-            </p>
-        </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore gogreen"><a href="./scuba-diving-destinations.html">Mactan Cebu Boat Rentals Prices</a></div>
-      </div>
-    </section>
-    <section class="col-ms-12 col-m-12 col-t-6">
-      <div class="content-wrapper">
-        <div class="logo_wrapper col-ms-5 col-m-3 col-t-5">
-          <a href="./scuba-diving-safaris.html">
-          <img title="scuba diving" alt="scuba diving safaris" class="col-m-image" src="../images/scuba-diving-pictures/scuba-diving-pictures-480/fishing-tour-boat-yatch_480.jpg" srcset="../images/scuba-diving-pictures/scuba-diving-pictures-480/fishing-tour-boat-yatch_480.jpg 400w, ../images/scuba-diving-pictures/scuba-diving-pictures-768/fishing-tour-boat-yatch_768.jpg 778w" sizes="(min-width: 400px) 50vw, 100vw" />
+        <!-- START MORE WATERSPORTS AND TRAVEL -->
+        <div class="show-divider col-m-12 col-t-12">
+          <a href="../watersports/jet-ski.html">
+          <img alt="Sunrise sunset-tour" title="Sunrise sunset tour"
+          src="../images/header/island-tours-hopping/1440/sun-rise-sun-set-tour_1440.jpg"
+          srcset="../images/header/island-tours-hopping/1920/sun-rise-sun-set-tour_1920.jpg 1920w,
+          ../images/header/island-tours-hopping/768/sun-rise-sun-set-tour_768.jpg 778w"
+          sizes="(min-width: 400px) 50vw, 100vw" />
+                <figcaption>Enjoy Mactan coastline in our Sunset Cruise</figcaption>
           </a>
         </div>
-        <div class="col-m-9 col-ms-7 col-t-7">
-          <h2 class="top_h2"><a href="./scuba-diving-destinations.html">Boracay Boat Rentals</a></h2>
-            <p class="block-with-text">
-              For a less strenuous outdoor activity, sit back and enjoy the wind blowing your hair on a Speedboat trip along the crystal blue waters of Boracay. Paraw Sailing is one of the local sailboat activity here in Boracay and experience the traiditional way of sailing
-            </p>
+        <!-- END MORE WATERSPORTS AND TRAVEL -->
+
+        <!-- START BLOCS MAIN CONTENTS -->
+        <div class="row mainrow">
+            <div>
+                <!--  BLOCS MAIN ARTICLE AND SUB-ARTICLE -->
+                <article class="col-ms-12 col-m-12 col-t-12">
+                    <div class="col-m-12 col-ms-12 col-t-12">
+                      <!-- START BLOCK MAIN ARTICLE -->
+                      <h1>Boracay Boat Rentals and Packages</h1>
+                      <p>
+                          <img title="boracay boat rentals and packages" alt="boracay boat rentals and packages"
+                          src="../images/pictures/island-tours-hopping/480/sunset-boat_480.jpg"
+                          srcset="../images/pictures/island-tours-hopping/480/sunset-boat_480.jpg 400w,
+                            ../images/pictures/island-tours-hopping/768/sunset-boat_768.jpg 778w"
+                            sizes="(min-width: 400px) 50vw, 100vw" />
+                            Relaxing boat tour of the tropical waters surrounding Boracay. Get to view the long white beach and some tropical islands with its local vilages and some fishermen and greet other tourist taking their tour around Boracay while your own our leisurely boat cruise.
+                      </p>
+                      <!-- END BLOCK MAIN ARTICLE -->
+                      <div class="clearer"></div>
+
+                      <!-- START PRICES MAIN CONTENT -->
+                      <h2>Paraw Sailing</h2>
+                      <p>
+                        <img class="right" title="paraw sailing" alt="paraw sailing"
+                        src="../images/pictures/island-tours-hopping/480/deep-sea-fishing_480.jpg"
+                        srcset="../images/pictures/island-tours-hopping/480/deep-sea-fishing_480.jpg 400w,
+                         ../images/pictures/island-tours-hopping/768/deep-sea-fishing_768.jpg 778w"
+                         sizes="(min-width: 400px) 50vw, 100vw" />
+                         Paraw Sailing is one of the local sailboat activity here in Boracay and experience the traiditional way of sailing with its two outriggers and two sails for you to experience a relaxing and ease ride along the Boaracay coastline and get a free drink, either a softdrinks or a beer, to refresh yourself along the waves. Experience this local getaway for just PHP 5,000 per unit and it is good for 3-4 person and relax in this boat tour on Boracay’s Tropical waters for a minimum of 2 hours.
+                         <ul style="display:table">
+                          <li><strong>  Paraw Sailing</strong></li>
+                          <li>along Boracay Coastline</li>
+                          <li>price: 5,000 PHP / $100 per unit</li>
+                          <li>good for 3 to 4 persons</li>
+                        </ul>
+                      </p>
+                      <!-- END PRICES MAIN CONTENT -->
+                      <div class="clearer"></div>
+
+                      <!-- START PRICES MAIN CONTENT -->
+                      <h2>Speedboat Rental</h2>
+                      <p>
+                        <img title="Speed boat rental" alt="Speed boat rental"
+                        src="../images/pictures/island-tours-hopping/480/luxury-local-boat_480.jpg"
+                        srcset="../images/pictures/island-tours-hopping/480/luxury-local-boat_480.jpg 400w,
+                         ../images/pictures/island-tours-hopping/768/luxury-local-boat_768.jpg 778w"
+                         sizes="(min-width: 400px) 50vw, 100vw" />
+                         For a less strenuous outdoor activity, sit back and enjoy the wind blowing your hair on a Speedboat trip along the crystal blue waters of Boracay.
+                          Whizzing through water at high speed while abosrbing the breathtaking beauty of the surroundings will be much memorable as you go along with your
+                          friends and love ones. Rent your own Speedboats with Scotty’s as we can offer packages for you and your family.
+                      </p>
+                      <p>
+                          For PHP 10,000 / $200 per hourly rate, you can bring a upto 4 of your friends and go along the waves of Boracay.
+                          If you want to bring the whole family, you can take the PHP 15,000 / $300 per hour and can bring in up to 10 people.
+                          If you want to tag along more, additional person comes at PHP 1,500 / $30 per person after exceeding the 10th person.
+                          Maximum numbers of person can ride is up to 15 people.
+                         <ul style="display:table">
+                          <li><strong>Speedboat Rental</strong></li>
+                          <li>price: 10,000 PHP / $200 per hour rate</li>
+                          <li>good for 1 to 4 persons</li>
+                        </ul>
+                        <ul style="display:table">
+                         <li><strong>Speedboat Rental 2</strong></li>
+                         <li>price: 15,000 PHP / $301 per hour rate</li>
+                         <li>good for 5 to 10 persons</li>
+                       </ul>
+                       <ul style="display:table">
+                        <li><strong>	Speedboat extra person</strong></li>
+                        <li>price: 1,500 PHP / $30 per person</li>
+                        <li>exceeding the max number on each rental package</li>
+                      </ul>
+                      </p>
+                      <!-- END PRICES MAIN CONTENT -->
+                        <div class="clearer"></div>
+
+                      <!-- START PRICES MAIN CONTENT -->
+                      <h2>Submarine Adventure</h2>
+                      <p>
+                        <img class="right" title="submarine ride" alt="submarine ride"
+                        src="../images/pictures/island-tours-hopping/480/dive-splash-island_480.jpg"
+                        srcset="../images/pictures/island-tours-hopping/480/dive-splash-island_480.jpg 400w,
+                         ../images/pictures/island-tours-hopping/768/dive-splash-island_768.jpg 778w"
+                         sizes="(min-width: 400px) 50vw, 100vw" />
+                         Journey on a wonderful lifetime experience that you only dream about as you discover the stunning marine life of Boracay in this Submarine Adventure. You’ll cruise along the colorful reefs and corals upclose as you dive further upto 25 meters deep of Boracay’s crystal clear blue ocean. Experience this dreamlike ride for just PHP 4,250 / $85 per person as you cruise along the coastline of Boracay for 30 minutes. Two persons are atleast required for this activity.
+                         <ul style="display:table">
+                          <li><strong>Submarine</strong></li>
+                          <li>depth down up to 25meters</li>
+                          <li>duration: 30 minutes</li>
+                          <li>price: 4,250 PHP / $85 per person</li>
+                          <li>minimum of 2 persons</li>
+                        </ul>
+                      </p>
+                      <!-- END PRICES MAIN CONTENT -->
+                        <div class="clearer"></div>
+
+                      <!-- START PRICES MAIN CONTENT -->
+                      <h2>Luxury Catamaran Sailing</h2>
+                      <p>
+                        <img title="Luxury Catamaran Sailing" alt="Luxury Catamaran Sailing"
+                        src="../images/pictures/island-tours-hopping/480/fishing-tour-boat-yatch_480.jpg"
+                        srcset="../images/pictures/island-tours-hopping/480/fishing-tour-boat-yatch_480.jpg 400w,
+                         ../images/pictures/island-tours-hopping/768/fishing-tour-boat-yatch_768.jpg 778w"
+                         sizes="(min-width: 400px) 50vw, 100vw" />
+                         All aboard on the Luxurious Catamaran and sit back and relax as you sail over the Boracay coastlines as Scotty’s Action Sports Network offers great array of packages for your relaxing cruise.
+                      </p>
+                      <p>
+                         Sail around the island over the open sea on a perfect day adventure as you relax in this 42 feet Luxury Catamaran.
+                      </p>
+                      <p>
+                         Get to enjoy a Day Sailing with catered lunch, beer and drinks for just PHP 8,500 / $170 per person on a day tour from 10am until 3pm. Take on a spectacular romantic sunset as you go over our Sunset Sailing Cruise with Canapés, beer and wine for PHP 6,000 / $120 per person as you cruise along the sunset of Boracay around 4:30pm til 6:30pm. Go for an afternoon Late Day Sailing as you wait the beauty of the sunset. In this cruise is included with late lunch, beer and wine for PHP 9,250 / $185 per person, sailing around 1:30pm until 6:30pm. Capacity of the cruise is good for 4 to 20 person.
+                      </p>
+                      <p>
+                          You can also take the Luxury Catamaran as you exclusive getaway packages.
+                          Exclusive Day Sailing with lunch, beers and drinks for PHP 34,000 / $680 for 1-3 persons and cruise over 10am until 3pm.
+                          Exclusive Sunset Sailing package is with Canapés, beer and wine for PHP 24,000 / $480 for 1-3 persons enjoy the sunset cruise from 4:30pm to 6:30pm.
+                          Enjoy your Exclusive Late Day Sailing with luxurious late lunch, beer and wine for PHP 37,000 / for 1-3 persons and relax from 1:30pm until 6:30pm.
+                          <ul style="display:table">
+                              <li><strong>Luxury Catamaran Sailing</strong>
+                                  <ul>
+                                      <li>Day Sailing</li>
+                                      <li>with catered lunch, beer, drinks</li>
+                                      <li>from 10:00am to 3:00pm</li>
+                                      <li>price: 8,500 PHP / $170 per person</li>
+                                      <li>4 to 20 person max</li>
+                                  </ul>
+                              </li>
+                          </ul>
+                          <ul style="display:table">
+                              <li><strong>Sunset Sailing</strong>
+                                  <ul>
+                                      <li>with canapes, beer, wine</li>
+                                      <li>from 4:30pm to 6:30pm</li>
+                                      <li>price: 6,000 PHP / $120 per person</li>
+                                      <li>4 to 20 person max</li>
+                                  </ul>
+                              </li>
+                          </ul>
+                          <ul style="display:table">
+                              <li><strong>Late Day Sailing</strong>
+                                <ul>
+                                    <li>with late lunch, beer, wine</li>
+                                    <li>from 1:30pm to 6:30pm</li>
+                                    <li>price: 9,250 PHP / $186 per person</li>
+                                    <li>4 to 20 person max</li>
+                                </ul>
+                             </li>
+                          </ul>
+                          <ul style="display:table">
+                              <li><strong>Exclusive Day Sailing</strong>
+                                  <ul>
+                                      <li>catered lunch, beer, drinks</li>
+                                      <li>from 10:00am to 3:00pm</li>
+                                      <li>price: 34,000 PHP / $683 per person</li>
+                                  </ul>
+                              </li>
+                          </ul>
+                          <ul style="display:table">
+                              <li><strong>Exclusive Sunset Sailing</strong>
+                                  <ul>
+                                      <li>canapes, beer, wine</li>
+                                      <li>from 4:30pm to 6:30pm</li>
+                                      <li>price: 24,000 PHP / $482 for 1 to 3 persons</li>
+                                  </ul>
+                              </li>
+                          </ul>
+                          <ul style="display:table">
+                              <li><strong>Exclusive Late Day Sailing</strong>
+                                  <ul>
+                                      <li>late lunch, beer, wine</li>
+                                      <li>from 1:30pm to 6:30pm</li>
+                                      <li>price: 37,000 PHP / $744 for 1 to 3 persons</li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </p>
+                      <!-- END PRICES MAIN CONTENT -->
+                    </div>
+                </article>
+                <!--  END BLOCS MAIN ARTICLE AND SUB-ARTICLE -->
+            </div>
         </div>
-        <div style="height:1px; clear:both"></div>
-        <div class="col-m-6 col-ms-12 col-t-12 readmore gogreen"><a href="./scuba-diving-destinations.html">Boracay Boat Rentals Prices</a></div>
-        </div>
-    </section>
-        <section class="hide-divider divider col-m-12 col-t-12">
-      <img src="../images/watersports-photos-header/watersports-photos-header-1440/island-tours_1440.jpg" />
-      <div>
-        <h2 class="divider-title">
-          <a href="#">
-            More Destinations & Packages!
+        <!-- END BLOCS MAIN CONTENTS -->
+
+        <!-- START MORE WATERSPORTS AND TRAVEL -->
+        <div class="show-divider col-m-12 col-t-12">
+          <a href="../watersports/parasailing.html">
+          <img alt="Parasail towed boat" title="Parasail towed boat"
+          src="../images/header/watersports/1440/parasail-towed-boat_1440.jpg"
+          srcset="../images/header/watersports/1920/parasail-towed-boat_1920.jpg 1920w,
+          ../images/header/watersports/768/parasail-towed-boat_768.jpg 778w"
+          sizes="(min-width: 400px) 50vw, 100vw" />
+                <figcaption>Enjoy the sky above sea level with our Parasiling ride andventures</figcaption>
           </a>
-        </h2>
-      </div>
-    </section>
-  </div>
-  <footer class="col-12 col-m-12">
-    <div><a href="tel:+63322315060"><img src="../images/call-us.jpg" /></a></div>
-    <div><a href="./contact/dive-support.html"><img src="../images/email-support.jpg" /></a></div>
-    <div><a href="./contact/index.html"><img src="../images/FAQ.jpg" /></a></div>
-    <div class="col-m-12 col-t-12 copyright">
-      Copyright divescotty.com/Scotty's Action Sports Network (SASN) 1986-2017 All rights reserved
-      <br />
+        </div>
+        <!-- END MORE WATERSPORTS AND TRAVEL -->
 
-      Punta Engaño Road, Lapu-Lapu City 6015, Cebu Philippines
-      <br />
-      Tel. Nos.: (+63 32) 231-5060 / 231-5061
+        <footer class="col-12 col-m-12">
+            <div>
+                <a href="tel:+63322315060"><img src="../images/call-us.jpg" /></a>
+            </div>
+            <div>
+                <a href="../contact/dive-support.html"><img src="../images/email-support.jpg" /></a>
+            </div>
+            <div>
+                <a href="../contact/index.html"><img src="../images/FAQ.jpg" /></a>
+            </div>
+            <div class="col-m-12 col-t-12 copyright">
+                Copyright divescotty.com Scotty&lsquo;s Action Sports Network (SASN) 1986-2017 All rights reserved
+                <br /> Punta Engaño Road, Lapu-Lapu City 6015, Cebu Philippines
+                <br /> Tel. Nos.: (+63 32) 231-5060 / 231-5061
+            </div>
+        </footer>
     </div>
-  </footer>
-</div>
 
+    <!-- BUTTON GO UP -->
+    <div onclick="smoothScroll('nav-2');" alt="Go up" style="border-radius:5px;opacity:0.8;cursor:pointer;position: fixed; right: 10px; bottom: 15px; z-index: 999; font-size: 35px; padding: 0px 10px; font-weight: bolder; background: rgb(128, 177, 254) none repeat scroll 0px 0px; font-family: icon; color: rgb(51, 51, 51);">
+        &uarr;
+      </div>
 </body>
+
 </html>
