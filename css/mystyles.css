@@ -8,7 +8,13 @@ p {
     text-indent: 0px !important;
     text-align: justify;
 }
+.map-images {
+  /* we dont have different sizes on "map images" so we
+  need to set limit for its max-width so it wont
+   stretch and get blury in bigger resolutions */
+   max-width: 350px;
 
+}
 a {
     font-size: inherit;
     font-weight: inherit;
@@ -16,9 +22,13 @@ a {
     color: inherit;
 }
 
+/* Position of the layer div containing the h2 rotatif */
 .heading .row {
     position: relative;
     height: 300px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: auto auto;
 }
 
 .heading .row h2 {
@@ -28,8 +38,12 @@ a {
     background: #fff;
     padding: 10px;
     margin: 10px;
+    box-shadow: 8px 8px 8px #000;
+    border-radius: 6px;
 }
-
+#menuimage, .closemenu {
+  cursor: pointer;
+}
 .clearer {
     clear: both;
 }
@@ -57,18 +71,18 @@ a {
 
 .show-divider {
     text-align: center;
-    background: #ccccff;
+    font-size: 1.3em;
+    background: #FF0000;
     margin-bottom: 20px;
+    color: #ffffff;
+    font-weight:bold;
+    padding-bottom: 5px;
 }
 
 .show-divider img {
-    border-top: 5px solid red;
+    border-top: 2px solid #FF0000;
     width: 100%;
 }
-
-.show-divider div {}
-
-.show-divider figcaption {}
 
 article p {
     font-size: 16px;
@@ -213,7 +227,6 @@ article img {
 */
 
 .home-btn-m img {
-    height: 15px;
     padding-top: 4px;
 }
 
@@ -227,13 +240,8 @@ article img {
 }
 
 .menu-contact img {
-    height: 13px;
     padding-right: 3px;
     padding-top: 5px;
-}
-
-.home-btn-t {
-    /*  padding-bottom: 0px !important; */
 }
 
 .faqsection .about-heading {
@@ -411,43 +419,6 @@ blockquote p {
     display: none;
 }
 
-.heading {
-    overflow: hidden;
-    opacity: 0.98;
-    z-index: -1;
-    background-color: #000;
-}
-
-.heading h1 {
-    color: #fff;
-    text-transform: uppercase;
-    margin: 0px;
-}
-
-
-/*
-.head-holder-1 {
-  background-image: url('../images/background-1.jpg');
-  height:100%;
-  background-color: #000;
-}
-.head-holder-2 {
-  background-image: url('../images/background-2.jpg');
-  height:100%;
-  background-color: #000;
-}
-.head-holder-3 {
-  background-image: url('../images/background-3.jpg');
-  height:100%;
-  background-color: #000;
-}
-.head-holder-4{
-  background-image: url('../images/background-4.jpg');
-  height:100%;
-  background-color: #000;
-}
-*/
-
 footer {
     color: #fff;
     height: 90px;
@@ -489,14 +460,6 @@ nav {
 nav a.icon {
     display: none;
 }
-
-
-/* For mobile phones:
-[class*="col-"] {
-    width: 100%;
-    float:left;
-} */
-
 
 /* For mobiles: */
 
@@ -604,7 +567,7 @@ section h2 {
 .heading {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: auto;
 }
 
 .readmore {
@@ -689,11 +652,6 @@ nav {
     width: auto;
 }
 
-.show-menu img {
-    width: 45px;
-}
-
-
 /*Hide checkbox*/
 
 input[type=checkbox] {
@@ -766,6 +724,7 @@ input[type=checkbox]:checked~nav {
 
 #myTopNav {
     opacity: 0.98;
+    margin-top:15px;
 }
 
 .nav-mobile-wrapper {
@@ -942,7 +901,7 @@ div.panel.show {
     }
     .col-m-3 {
         width: 25%;
-        font-size: 32px;
+
     }
     .col-m-4 {
         width: 33.33%;
@@ -975,7 +934,6 @@ div.panel.show {
         max-height: 2em;
     }
     .heading .row {
-        background-size: 100% 100%;
         height: 100px;
     }
     .panel.show [class*="col-"] {
@@ -1050,22 +1008,11 @@ div.panel.show {
 
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     /* this is for tablet device */
-    .col-t-1 {
-        width: 8.33%;
-    }
-    .col-t-2 {
-        width: 16.66%;
-    }
-    .col-t-3 {
-        width: 25%;
-        font-size: 32px;
-    }
-    .col-t-4 {
-        width: 33.33%;
-    }
-    .col-t-5 {
-        width: 41.66%;
-    }
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
     .col-t-6 {
         width: 50%;
     }
@@ -1354,7 +1301,6 @@ div.panel.show {
         width: 100%;
     }
     .heading .row {
-        background-size: 100% 100%;
         height: inherit;
     }
     [class*="col-ms-"] {
@@ -1448,15 +1394,14 @@ div.panel.show {
         padding-top: 10px;
     }
     .heading .row {
-        background-size: 100% 100%;
-        height: inherit;
+       height: inherit;
     }
     .heading .row h2 {
         margin: 10px;
         font-size: 16px;
     }
     .heading {
-        height: 150px;
+        height: 100px;
     }
     .panel div div {
         display: table;
@@ -1507,33 +1452,13 @@ div.panel.show {
         line-height: 40px;
         padding: 10px;
     }
-    .heading .row {
-        background-size: 100% 100%;
-        height: 170px;
-        /* was 180px */
-    }
-    /* test
-   <div class="row head-holder-1" style="background-image: url('./images/header/768/fish-coral-diver_768.jpg');">
 
-  .head-holder-1 {
-    background-image: url('../images/header/768/fish-coral-diver_768.jpg');
-  }
-  .head-holder-2 {
-    background-image: url('../images/header/768/beach-sun-bath-photo_768.jpg');
-  }
-  .head-holder-3 {
-    background-image: url('../images/header/768/banana-boat-sled_768.jpg');
-  }
-  .head-holder-4 {
-    background-image: url('../images/header/768/seatrek-underwater_768.jpg');
-  }
-  .head-holder-5 {
-    background-image: url('../images/header/768/deep-sea-fishing_768.jpg');
-  }
-  .head-holder-6 {
-    background-image: url('../images/header/768/sidemount-diving-course_768.jpg');
-  }
-*/
+    .heading .row {
+        height: 170px;
+
+    }
+
+
 }
 
 @media (min-width: 769px) and (max-width:1024px) {
@@ -1556,10 +1481,11 @@ div.panel.show {
     .hide-divider {
         display: block;
     }
+
     .heading .row {
-        background-size: 100% 100%;
         height: 200px;
     }
+
 }
 
 @media (min-width: 1025px) {
@@ -1569,13 +1495,11 @@ div.panel.show {
     .block-with-text-2 {
         max-height: 4em;
     }
+
     .heading .row {
-        background-size: 100% 100%;
         height: 230px;
     }
-    #heads .heading .row {
-        background-size: 100% 100%;
-    }
+
     .hide-divider {
         display: block;
     }
@@ -1593,10 +1517,11 @@ div.panel.show {
     .block-with-text-2 {
         max-height: 4em;
     }
+
     .heading .row {
-        background-size: 100% 100%;
         height: 300px;
     }
+
 }
 
 @media (min-width: 1441px) and (max-width:1920px) {
@@ -1604,9 +1529,9 @@ div.panel.show {
         max-height: 7.6em;
     }
     .heading .row {
-        background-size: 100% 100%;
         height: 400px;
     }
+
     .hide-divider {
         display: block;
     }
@@ -1619,10 +1544,10 @@ div.panel.show {
 }
 
 @media (min-width: 1921px) {
-    .heading .row {
-        background-size: 100% 100%;
+   .heading .row {
         height: 500px;
     }
+
     .hide-divider {
         display: block;
     }
