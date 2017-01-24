@@ -11,188 +11,294 @@
     <textarea id="text">  </textarea>
 </body>
 <script>
-    var arr = [
-        [
-            'fun-diving-olango',   //image name
-            'PADI Open Water Diver Course',  // main title
-            'Want to explore the greatness of the underwater world? Get your Open Water Diver Certification and get to dive in any aquatic world and discover its wonders. Be a certified Open Water Diver by taking 5 academic lessons, 5 pool sessions and 4 ocean dives in this 4 days program'  //description
-        ],
-        [
-            'open-water-diver_card',   //image name
-            'SSI Open Water Diver Course',  // main title
-            'Get certified and be part of the family and take your diving experience anywhere and into a new level! Have a great time in learning as you are guided by a team of experts from Scuba School International (SSI). Want to explore the greatness of the underwater world? Get your OpenWater Diver Certification and get to dive in any aquatic world and discover its wonders.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Advanced Open Water Diver Course',  // main title
-            'Take you adventures to a new level as you take the Advanced OpenWater Course and build up your confidence and expand your scuba skills as you develop your capabilities in exploring the underwater world. Take on 5 dives in this 2 days session and shape up your knowledge and skills to go deeper and withstand the challenges of scuba diving.'  //description
-        ],
-        [
-            'advanced-adventurer_card',   //image name
-            'SSI Advance Adventurer Diver Course',  // main title
-            'If you want to go further with your Scuba Diving dream, take on Advanced Adventurer Course for you to take variety of specialty courses after you complete this course. You will get 5 ocean dives with our experts within 2 days.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Enriched Air Nitrox Course',  // main title
-            'Get to dive further and longer with no decompression time as you venture on deep oceans by taking the Enriched Air Nitrox Course. Get to learn the rules for planning dives with Nitrox  in a safe way and in order for you to be able to go deeper. You will be certified as a Nitrox Diver and get to dive with it and how to cope up with it for longer bottom time. You will get 5 ocean dives and it is optional if your instructor will give you permission to dive using Nitrox and this course typically conducted over 2 and a half days'  //description
-        ],
-        [
-            'nitrox_card',   //image name
-            'SSI Eanx Nitrox Course',  // main title
-            'Dive further, longer and safer scuba diving with our  Advanced Adventurer & Enriched Air Nitrox (EANx) Combo Course and learn the necessary rules with Nitrox mixes to maximize your diving experience in a safe way.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Rescue Diver Course',  // main title
-            'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur. Be a Rescue Diver and learn to avoid, recognize and solve problems on the surface and underwater. Step up into this challenging yet most rewarding course ever taken. The program runs on 2 academic classes, 2 pool sessions, 4 open water scenarios, Search and Recovery and this program runs for 3 days.'  //description
-        ],
-        [
-            'stress-rescue-diver_card',   //image name
-            'SSI Stress and Rescue Course',  // main title
-            'Heighten your awareness in emergency situations and gain the knowledge and certification of a Stress and Rescue Diver and be confident in your diving skills. This course consist of 2 knowledge development, 2 in-pool practice exercises and 2 openwater scenarios and this is conducted over 3 days.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Deep Diver Course',  // main title
-            'Explore the depths of the ocean and dive deeper and unfold its exciting mysteries. Dive with confidence as you take our Deep Dive Course and lurk the depths down to 40 meters and take 3 dives for 2 days.'  //description
-        ],
-        [
-            'deep-diving_card',   //image name
-            'SSI Deep Diving Course',  // main title
-            'Venture to the depths and take on the challenge of Deep Diving and go beyond that safety net for you to explore the vast world of underwater. Learn to plan and manage your way down with this 2 days program and 3 training dives.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Digital Underwater Photographer Course',  // main title
-            'Take your hobby underwater as you will learn the proper photography techniques to get better results instantly in Underwater Photography. Capture your scuba diving adventures and cherish this memory digitally.'  //description
-        ],
-        [
-            'underwater-digital-photography_card',   //image name
-            'SSI Digital Underwater Photography Course',  // main title
-            'Bring back the memories of the breathtaking scenes of the wild beneath the ocean as you capture it epicness. Take the Underwater Photography and Video and start your way in taking beautiful underwater pictures with proper techniques and positioning.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Cavern Diver Course',  // main title
-            'Venture into an exciting scuba diving adventure from freshwater springs to volcanic island walls and limestone coasts. Get further into inciting deep, dark spaces and get to learn on how to go over the place safely and avoid the dangers lurking underneath.'  //description
-        ],
-        [
-            'night-limited-visibility_card',   //image name
-            'SSI Cavern Diving Course Course',  // main title
-            'Dive deeper into cavern zones and learn cave buoyancy and propulsion skills along with line laying and light usage. Obtain the knowledge on how to properly make your way in and out on caverns safely with your scuba diving gears and equipments.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Master SCUBA Diver Course',  // main title
-            'Still pump for diving? Take your adventure further and be recognized as a Master Diver. Be part of the elite group of respected divers who take their dedication to diving in a new level. Complete at least 4 specialty courses, be a certified Rescue Diver and logged atleast 50 dives, you will earn the recognition level of being competent when it comes to scuba diving.'  //description
-        ],
-        [
-            'master-diver_card',   //image name
-            'SSI Master Diver Course',  // main title
-            'Take your Scuba Diving to a whole new level and be recognized as a Master Scuba. With atleast 50 logged dives and your Positive Identification Card (PIC), with additional intensive Specialities training, this will be your ticket to be at the top.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Boat Diver Course Course',  // main title
-            'Learn the techniques and necessary information your need to know regarding with Boat Diving so that you could plan and enjoy your dive trips from all sizes and types of boats.'  //description
-        ],
-        [
-            'boat-diving_card',   //image name
-            'SSI Boat Diving Course',  // main title
-            'Obtain knowledge above the sea and learn the features and jargons in Boat Diving. Take in the diving procedures and etiquette and its safety. Lessons good for a day with 2 extra dives.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Underwater Navigation Course',  // main title
-            'Be confident in lurking under the sea as you become an Underwater Navigator. In this course, you will learn how to navigate with a compass, estimate distances and learn to navigate different search patterns and make your marking points to go forward where you needed to be or to go back to safety.'  //description
-        ],
-        [
-            'underwater-navigation_card',   //image name
-            'SSI Navigation Course',  // main title
-            'Learn to navigate underwater and take our Underwater Navigation course and get a better view beneath the ocean floors. This training is good for a day with 2 dives included.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Wreck Diver Course',  // main title
-            'Get into the ultimate diving experience as your explore the history and unknown sites of ocean as you take Wreck Diving discover sunken ships, airplanes or anything that’s waiting to be discovered. Take on this course  and get 2 to 4 dives on your 2 days adventure.'  //description
-        ],
-        [
-            'wreck-diving_card',   //image name
-            'SSI Wreck Diving Course',  // main title
-            'Journey the resting place of sunken ships whether by fate, weather or sunk as artificial reefs. Learn the techniques that maximizes your Wreck Diving experience and explore history and unknown sites.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Peak Performance Buoyancy Course',  // main title
-            'Glide with less effort and use less air as you hover underwater. Take the Peak Performance Buoyancy Course and within 2 dives for a day of training, you will get to learn the proper buoyancy control as you explore the aquatic life.'  //description
-        ],
-        [
-            'perfect-buoyancy_card',   //image name
-            'SSI Perfect Buoyancy Course',  // main title
-            'Swim through the water effortlessly and gracefully and learn the tricks in controlling your breathing, adjusting your weight and polish your skills in achieving the Perfect Bouyancy. This course is conducted in a day'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Drift Diver Course',  // main title
-            'Ride with the waves and currents underwater and flow freely in this exhilarating adventure in Drift Divier Course. After taking this course and take 2 practice dives on the same day, you will learn the techniques in handling various water motion conditions that you may encounter and learn to interact with waves and currents and just enjoy the ride.'  //description
-        ],
-        [
-            'waves-tides-currents_card',   //image name
-            'SSI Waves, Tides and Currents Course',  // main title
-            'Go with the flow with the ocean currents and glide along. Never miss SSI Waves, Tides and Currents as it is fun and exhilarating and it will feels like your flying underwater.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Underwater Videographer Course',  // main title
-            'Share your adventures and keep these memories forever as you take on Underwater Videographer Course and learn how to get the best clips and capture your scuba diving stories and share them all over the world.'  //description
-        ],
-        [
-            'motion-picture-diving_card',   //image name
-            'SSI Motion Picture Diving Course',  // main title
-            'Film your scuba diving journey and share the signts, sounds and motion of the marine life underwater. Get to learn on selecting and maintaining your underwater video equipment and record your scuba diving adventure.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Shark Conservation Diver Course',  // main title
-            'Obtain the knowledge and pexpertise to interact with sharks outside of the safety cage. Learn the proper procedure and diving skills in interacting with sharks underwater.'  //description
-        ],
-        [
-            'shark-diving_card',   //image name
-            'SSI Shark Diving Course',  // main title
-            'Meet and greet with the rogues of the sea! Get the chance to dive with the sharks and learn the proper techniques when meeting with them.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Night Diver Course',  // main title
-            'Get into the mysterious ride of Night Diving and take on a new world of underwater experience as you watch it under the glow of the moonlight or your dive light. Get upto 3 Night Dives for 3 Days.'  //description
-        ],
-        [
-            'night-limited-visibility_card',   //image name
-            'SSI Night Limited Visibility Course',  // main title
-            'Lurk with the nocturnal marine creatures that hide during the day and enjoy a new magical experience in diving at Night and Limited Visibility. This course is designed to differentiate between day and night diving and the considerations that you should learn to dive at night confidently. This can be taken within a day and for 2 dive sessions.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Equipment Specialist Course',  // main title
-            'Be alert on the situation of your scuba diving gear so that you could enjoy further and deeper and comfortable. Dont let minor issues take out the fun. Take the Equipment Specialist Course and learn the proper way to handle your scuba diving gears and equipments, their maintenances and addressing issues within the ocean.'  //description
-        ],
-        [
-            'equipment-techniques_card',   //image name
-            'SSI Equipment Techniques Course',  // main title
-            'Get into your diving gears and learn how to make adjustments, maintenance and fix any issues of your equipments on the spot. Be knowledgable on your scuba diving equipments on how they will affect you and your fun in diving.'  //description
-        ],
-        [
-            'fun-diving-olango',   //image name
-            'PADI Search and Recovery Diver Course',  // main title
-            'Learn the basics and prepare for those unexpected emergencies and handling emergency situations and increase your diving safety and comfort significantly.'  //description
-        ],
-        [
-            'search-recovery_card',   //image name
-            'SSI Search and Recovery Course',  // main title
-            'Tune your navigation skills and learn the techniques in locating and recovering items underwater. Take the Search and Recovery Course to practice your navigation skills and learn proper techniques in lifting objects.ur.'  //description
-        ]
-    ];
+    // scuba-diving courses array
+    // var arr = [
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Open Water Diver Course',  // main title
+    //         'Want to explore the greatness of the underwater world? Get your Open Water Diver Certification and get to dive in any aquatic world and discover its wonders. Be a certified Open Water Diver by taking 5 academic lessons, 5 pool sessions and 4 ocean dives in this 4 days program'  //description
+    //     ],
+    //     [
+    //         'open-water-diver_card',   //image name
+    //         'SSI Open Water Diver Course',  // main title
+    //         'Get certified and be part of the family and take your diving experience anywhere and into a new level! Have a great time in learning as you are guided by a team of experts from Scuba School International (SSI). Want to explore the greatness of the underwater world? Get your OpenWater Diver Certification and get to dive in any aquatic world and discover its wonders.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Advanced Open Water Diver Course',  // main title
+    //         'Take you adventures to a new level as you take the Advanced OpenWater Course and build up your confidence and expand your scuba skills as you develop your capabilities in exploring the underwater world. Take on 5 dives in this 2 days session and shape up your knowledge and skills to go deeper and withstand the challenges of scuba diving.'  //description
+    //     ],
+    //     [
+    //         'advanced-adventurer_card',   //image name
+    //         'SSI Advance Adventurer Diver Course',  // main title
+    //         'If you want to go further with your Scuba Diving dream, take on Advanced Adventurer Course for you to take variety of specialty courses after you complete this course. You will get 5 ocean dives with our experts within 2 days.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Enriched Air Nitrox Course',  // main title
+    //         'Get to dive further and longer with no decompression time as you venture on deep oceans by taking the Enriched Air Nitrox Course. Get to learn the rules for planning dives with Nitrox  in a safe way and in order for you to be able to go deeper. You will be certified as a Nitrox Diver and get to dive with it and how to cope up with it for longer bottom time. You will get 5 ocean dives and it is optional if your instructor will give you permission to dive using Nitrox and this course typically conducted over 2 and a half days'  //description
+    //     ],
+    //     [
+    //         'nitrox_card',   //image name
+    //         'SSI Eanx Nitrox Course',  // main title
+    //         'Dive further, longer and safer scuba diving with our  Advanced Adventurer & Enriched Air Nitrox (EANx) Combo Course and learn the necessary rules with Nitrox mixes to maximize your diving experience in a safe way.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Rescue Diver Course',  // main title
+    //         'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur. Be a Rescue Diver and learn to avoid, recognize and solve problems on the surface and underwater. Step up into this challenging yet most rewarding course ever taken. The program runs on 2 academic classes, 2 pool sessions, 4 open water scenarios, Search and Recovery and this program runs for 3 days.'  //description
+    //     ],
+    //     [
+    //         'stress-rescue-diver_card',   //image name
+    //         'SSI Stress and Rescue Course',  // main title
+    //         'Heighten your awareness in emergency situations and gain the knowledge and certification of a Stress and Rescue Diver and be confident in your diving skills. This course consist of 2 knowledge development, 2 in-pool practice exercises and 2 openwater scenarios and this is conducted over 3 days.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Deep Diver Course',  // main title
+    //         'Explore the depths of the ocean and dive deeper and unfold its exciting mysteries. Dive with confidence as you take our Deep Dive Course and lurk the depths down to 40 meters and take 3 dives for 2 days.'  //description
+    //     ],
+    //     [
+    //         'deep-diving_card',   //image name
+    //         'SSI Deep Diving Course',  // main title
+    //         'Venture to the depths and take on the challenge of Deep Diving and go beyond that safety net for you to explore the vast world of underwater. Learn to plan and manage your way down with this 2 days program and 3 training dives.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Digital Underwater Photographer Course',  // main title
+    //         'Take your hobby underwater as you will learn the proper photography techniques to get better results instantly in Underwater Photography. Capture your scuba diving adventures and cherish this memory digitally.'  //description
+    //     ],
+    //     [
+    //         'underwater-digital-photography_card',   //image name
+    //         'SSI Digital Underwater Photography Course',  // main title
+    //         'Bring back the memories of the breathtaking scenes of the wild beneath the ocean as you capture it epicness. Take the Underwater Photography and Video and start your way in taking beautiful underwater pictures with proper techniques and positioning.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Cavern Diver Course',  // main title
+    //         'Venture into an exciting scuba diving adventure from freshwater springs to volcanic island walls and limestone coasts. Get further into inciting deep, dark spaces and get to learn on how to go over the place safely and avoid the dangers lurking underneath.'  //description
+    //     ],
+    //     [
+    //         'night-limited-visibility_card',   //image name
+    //         'SSI Cavern Diving Course Course',  // main title
+    //         'Dive deeper into cavern zones and learn cave buoyancy and propulsion skills along with line laying and light usage. Obtain the knowledge on how to properly make your way in and out on caverns safely with your scuba diving gears and equipments.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Master SCUBA Diver Course',  // main title
+    //         'Still pump for diving? Take your adventure further and be recognized as a Master Diver. Be part of the elite group of respected divers who take their dedication to diving in a new level. Complete at least 4 specialty courses, be a certified Rescue Diver and logged atleast 50 dives, you will earn the recognition level of being competent when it comes to scuba diving.'  //description
+    //     ],
+    //     [
+    //         'master-diver_card',   //image name
+    //         'SSI Master Diver Course',  // main title
+    //         'Take your Scuba Diving to a whole new level and be recognized as a Master Scuba. With atleast 50 logged dives and your Positive Identification Card (PIC), with additional intensive Specialities training, this will be your ticket to be at the top.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Boat Diver Course Course',  // main title
+    //         'Learn the techniques and necessary information your need to know regarding with Boat Diving so that you could plan and enjoy your dive trips from all sizes and types of boats.'  //description
+    //     ],
+    //     [
+    //         'boat-diving_card',   //image name
+    //         'SSI Boat Diving Course',  // main title
+    //         'Obtain knowledge above the sea and learn the features and jargons in Boat Diving. Take in the diving procedures and etiquette and its safety. Lessons good for a day with 2 extra dives.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Underwater Navigation Course',  // main title
+    //         'Be confident in lurking under the sea as you become an Underwater Navigator. In this course, you will learn how to navigate with a compass, estimate distances and learn to navigate different search patterns and make your marking points to go forward where you needed to be or to go back to safety.'  //description
+    //     ],
+    //     [
+    //         'underwater-navigation_card',   //image name
+    //         'SSI Navigation Course',  // main title
+    //         'Learn to navigate underwater and take our Underwater Navigation course and get a better view beneath the ocean floors. This training is good for a day with 2 dives included.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Wreck Diver Course',  // main title
+    //         'Get into the ultimate diving experience as your explore the history and unknown sites of ocean as you take Wreck Diving discover sunken ships, airplanes or anything that’s waiting to be discovered. Take on this course  and get 2 to 4 dives on your 2 days adventure.'  //description
+    //     ],
+    //     [
+    //         'wreck-diving_card',   //image name
+    //         'SSI Wreck Diving Course',  // main title
+    //         'Journey the resting place of sunken ships whether by fate, weather or sunk as artificial reefs. Learn the techniques that maximizes your Wreck Diving experience and explore history and unknown sites.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Peak Performance Buoyancy Course',  // main title
+    //         'Glide with less effort and use less air as you hover underwater. Take the Peak Performance Buoyancy Course and within 2 dives for a day of training, you will get to learn the proper buoyancy control as you explore the aquatic life.'  //description
+    //     ],
+    //     [
+    //         'perfect-buoyancy_card',   //image name
+    //         'SSI Perfect Buoyancy Course',  // main title
+    //         'Swim through the water effortlessly and gracefully and learn the tricks in controlling your breathing, adjusting your weight and polish your skills in achieving the Perfect Bouyancy. This course is conducted in a day'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Drift Diver Course',  // main title
+    //         'Ride with the waves and currents underwater and flow freely in this exhilarating adventure in Drift Divier Course. After taking this course and take 2 practice dives on the same day, you will learn the techniques in handling various water motion conditions that you may encounter and learn to interact with waves and currents and just enjoy the ride.'  //description
+    //     ],
+    //     [
+    //         'waves-tides-currents_card',   //image name
+    //         'SSI Waves, Tides and Currents Course',  // main title
+    //         'Go with the flow with the ocean currents and glide along. Never miss SSI Waves, Tides and Currents as it is fun and exhilarating and it will feels like your flying underwater.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Underwater Videographer Course',  // main title
+    //         'Share your adventures and keep these memories forever as you take on Underwater Videographer Course and learn how to get the best clips and capture your scuba diving stories and share them all over the world.'  //description
+    //     ],
+    //     [
+    //         'motion-picture-diving_card',   //image name
+    //         'SSI Motion Picture Diving Course',  // main title
+    //         'Film your scuba diving journey and share the signts, sounds and motion of the marine life underwater. Get to learn on selecting and maintaining your underwater video equipment and record your scuba diving adventure.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Shark Conservation Diver Course',  // main title
+    //         'Obtain the knowledge and pexpertise to interact with sharks outside of the safety cage. Learn the proper procedure and diving skills in interacting with sharks underwater.'  //description
+    //     ],
+    //     [
+    //         'shark-diving_card',   //image name
+    //         'SSI Shark Diving Course',  // main title
+    //         'Meet and greet with the rogues of the sea! Get the chance to dive with the sharks and learn the proper techniques when meeting with them.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Night Diver Course',  // main title
+    //         'Get into the mysterious ride of Night Diving and take on a new world of underwater experience as you watch it under the glow of the moonlight or your dive light. Get upto 3 Night Dives for 3 Days.'  //description
+    //     ],
+    //     [
+    //         'night-limited-visibility_card',   //image name
+    //         'SSI Night Limited Visibility Course',  // main title
+    //         'Lurk with the nocturnal marine creatures that hide during the day and enjoy a new magical experience in diving at Night and Limited Visibility. This course is designed to differentiate between day and night diving and the considerations that you should learn to dive at night confidently. This can be taken within a day and for 2 dive sessions.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Equipment Specialist Course',  // main title
+    //         'Be alert on the situation of your scuba diving gear so that you could enjoy further and deeper and comfortable. Dont let minor issues take out the fun. Take the Equipment Specialist Course and learn the proper way to handle your scuba diving gears and equipments, their maintenances and addressing issues within the ocean.'  //description
+    //     ],
+    //     [
+    //         'equipment-techniques_card',   //image name
+    //         'SSI Equipment Techniques Course',  // main title
+    //         'Get into your diving gears and learn how to make adjustments, maintenance and fix any issues of your equipments on the spot. Be knowledgable on your scuba diving equipments on how they will affect you and your fun in diving.'  //description
+    //     ],
+    //     [
+    //         'fun-diving-olango',   //image name
+    //         'PADI Search and Recovery Diver Course',  // main title
+    //         'Learn the basics and prepare for those unexpected emergencies and handling emergency situations and increase your diving safety and comfort significantly.'  //description
+    //     ],
+    //     [
+    //         'search-recovery_card',   //image name
+    //         'SSI Search and Recovery Course',  // main title
+    //         'Tune your navigation skills and learn the techniques in locating and recovering items underwater. Take the Search and Recovery Course to practice your navigation skills and learn proper techniques in lifting objects.ur.'  //description
+    //     ]
+    // ];
+
+//tec scuba courses
+//array
+var arr = [
+      [
+          'sidemount-tec-dive',   //image name
+          'Discover tec diving with PADI',  // main title
+          'Learn the basics of Technical Diving in our Intro Tec Course. Get the basic skills and requirements in taking your diving experience to a whole new level with gears and techniques to learn. '  //description
+      ],
+      [
+          'intro-tec-course',   //image name
+          'SSI intro tec',  // main title
+          'Learn the basics of Technical Diving in our Intro Tec Course. Get the basic skills and requirements in taking your diving experience to a whole new level with gears and techniques to learn. '  //description
+      ],
+      [
+          'tec-dive-course-mactan',   //image name
+          'PADI tec 40 courses',  // main title
+          'Transition from recreational scuba diving to technical diving and build up your knowledge and skills as you will get to gain experience in this extreme adventure. Take our Tec40 Course and take your first step into the world of technical diving. You must be an Advanced Open Water Diver with Enriched Air Diver certification and at least 10 dives using Nitrox deeper than 18 meters and certified Deep Diver with atleast 10 dives down to 30 meters. This course is good for 4 days which includes your diving gears'  //description
+      ],
+      [
+          'tec-xr-nitrox',   //image name
+          'SSI XR foundation courses',  // main title
+          'XR Foundations Course is intended to provide divers a training to improve their skills to a high level in Tec Diving and procedures. You need atleast an Advanced Open Water and Enriched Air Nitrox certification and have logged at least 24 dives. This course is good for 2 days and with 2 dive sessions at depths of 12 meters.'  //description
+      ],
+      [
+          'wreck-side-mount',   //image name
+          'PADI tec 45 courses',  // main title
+          'Take a step ahead in your tec diving as you take Tec45 Course and enhance your knowledge and skills and go further with a new set of gears and mixes to use for deepening your adventure. You must obtain first a certification for Tech40 Diver, Rescue Diver, have minimum of 50 logged dives, with at least 12 dives on Enriched Air Nitrox deeper than 18 meters and 10 dives deeper than 30 meters. This course is good for 4 days which includes your diving gears.'  //description
+      ],
+      [
+          'tec-nitrox-xr',   //image name
+          'SSI XR diving courses',  // main title
+          'Take your diving to the next level to independently plan and extend your bottom time and get the thrill of exploring deep reefs, wrecks and caves with SASN’s Extended Range (XR) Diving. Take the challenge and deepen you experience as you go 45 meters deep as this course includes 6 dives typically conducted over 5 days.'  //description
+      ],
+      [
+          'technical-diving',   //image name
+          'PADI tec 50 courses',  // main title
+          'Go for more and obtain a recognition on gaining a high level of skill and knowledge as you take the Tec50 program and learn to dive further without worrying much and just enjoy the adventure. This course is good for 4 days which includes your diving gears and get 4 dive sessions upto 50 meters for PHP 25,000 / $500. You must accomplish Tec45 Course, have minimum of 100 logged dives, with at least 20 dives on Enriched Air Nitrox deeper than 18 meters and 15 dives deeper than 30 meters.'  //description
+      ],
+      [
+          'tec-dive-xr-nitrox',   //image name
+          'SSI technical XR diving courses',  // main title
+          'The program Technical XR Diving will provide divers with the training to conduct two-gas switch, multiple-stop decompression dives to depths of up to 50 meters using specialized diving equipment and procedures with an expert diver. You must be a certified in Extended Range Diving, FullCave Diving, or Technical Wreck Diving and undergone Science of Diving and Diver Stress and Rescue certifications.This course is conducted within 4 days with 6 dive sessions.'  //description
+      ],
+      [
+          'trimed-sidemount-diver',   //image name
+          'PADI tec trimix 65 courses',  // main title
+          'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur.'  //description
+      ],
+      [
+          'bcd-sidemount-diving',   //image name
+          'SSI normoxic XR courses',  // main title
+          'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur.'  //description
+      ],
+      [
+          'teaching-sidemount-diving',   //image name
+          'PADI tec timix diver courses',  // main title
+          'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur.'  //description
+      ],
+      [
+          'deep-sidemount-diver',   //image name
+          'SSI hypoxic XR diving courses',  // main title
+          'Go to the extreme and use all your knowledge, skills and equipments and take your adventure down to 100 meters and be certified with Hypoxic XR Diving* to push the abilities to discover marvelous underwater world with no limits. The Hypoxic XR Diving* course is composed of 6 dives for 4 days. Must be a certified Technical XR Diver, Science of Diving and Stress and Rescue, logged 100 dives, including at least 30 dives deeper than 30 meters, 10 dives deeper than 50 meters and at least 20 dives requiring staged decompression with at least 2 gas switches.'  //description
+      ],
+      [
+          'scuba-diving-tec',   //image name
+          'PADI tec sidemount diving courses',  // main title
+          'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur.'  //description
+      ],
+      [
+          'fun-tec-diving-shangri-la',   //image name
+          'SSI technical sidemount diver courses',  // main title
+          'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur.'  //description
+      ],
+      [
+          'wreck-sidemount-dive',   //image name
+          'SSI XR nitrox diving courses',  // main title
+          'Get the chance to experience Tec Dive going 40 meters using Nitrox mixtures with our XR Nitrox Divingfor 3 days. You need atleast an Advanced Open Water and Enriched Air Nitrox certification and have logged at least 24 dives including 6 Nitrox dives.'  //description
+      ],
+      [
+          'tec-course-cave-diving',   //image name
+          'SSI cave and full cave diving courses',  // main title
+          'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur.'  //description
+      ],
+      [
+          'full-cave-tec-dive',   //image name
+          'SSI technical wreck diving courses',  // main title
+          'Get certified and be a major contributor to rescue situations and diving accidents, and be able to handle problems within the sea if they occur.'  //description
+      ],
+      [
+          'tec-course-cave-diving',   //image name
+          'PADI tec 40 CCR rebreather courses',  // main title
+          '45,000 PHP + CO2 Absorbant. The course will be at a maximum depth of 40 meters - 130 feet.'  //description
+      ],
+      [
+          'discover-technical-dive',   //image name
+          'PADI tec 60 CCR rebreather courses',  // main title
+          '45,000 PHP + CO2 Absorbant + Helium + Book. The course will be at a maximum depth of 60 meters - 200 feet.'  //description
+      ],
+      [
+          'deep-side-mount-divers',   //image name
+          'PADI tec 100 CCR rebreather courses',  // main title
+          '45,000 PHP + CO2 Absorbant + Helium + Book. The course will be at a maximum depth of 100 meters - 330 feet.'  //description
+      ]
+];
 
     var gotolink = '';
     var image_title = '';
@@ -221,15 +327,15 @@ console.log(arr.length);
           '</div>' +
           '<div class="col-m-9 col-ms-7 col-t-7">' +
           '<h1 class="top_h2"><a href="./' + gotolink + '">' + head_title + '</a></h1>' +
-          '<p class="block-with-text-2">' +
+          '<p>' +
           description +
           '</p>' +
           '</div>' +
           '<div style="height:1px; clear:both"></div>' +
-          '<div class="col-m-6 col-ms-12 col-t-12 readmore gogreen">' +
+          '<div class="col-m-6 col-ms-12 col-t-12 readmore goblue">' +
           '<h3>' +
-          '<a href="' + gotolink + '">' +
-          title + ' Prices' +
+          '<a href="./' + gotolink + '">' +
+          title + ' prices' +
           '</a>' +
           '</h3>' +
           '<div class="toggle-price">' +

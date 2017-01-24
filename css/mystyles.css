@@ -98,7 +98,7 @@ article h1 {
     font-weight: bold;
     line-height: normal;
     text-align: left;
-    text-transform: capitalize;
+    
 }
 
 article .right {
@@ -114,7 +114,7 @@ article h2 {
     line-height: normal;
     margin-top: 10px;
     text-align: left;
-    text-transform: capitalize;
+
 }
 
 article img {
@@ -510,7 +510,7 @@ section h2 {
     font-weight: 700;
     font-size: 22px;
     color: #fff;
-    text-transform: capitalize;
+
 }
 
 #heads {
@@ -524,7 +524,7 @@ section h2 {
     margin: 0px;
     color: #fff;
     font-size: 18px;
-    text-transform: capitalize;
+
     font-weight: bolder;
 }
 
@@ -532,7 +532,7 @@ section h2 {
     margin: 128px 0 35px 10px;
     opacity: 0.98;
     padding: 10px;
-    text-transform: capitalize;
+
     z-index: 2;
 }
 
@@ -606,7 +606,7 @@ footer img {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
-    text-transform: capitalize;
+
     color: #666;
     font-size: 16px;
     font-weight: 500;
@@ -964,7 +964,7 @@ div.panel.show {
         border-bottom: 1px solid #ff3d2e;
         color: #ff3d2e;
         font-size: 18px;
-        text-transform: capitalize;
+
         font-weight: bolder;
     }
     .top_h2 a {
@@ -976,7 +976,7 @@ div.panel.show {
         background-color: #ff3d2e;
         font-family: 'Arial', sans-serif;
         font-size: 11px;
-        text-transform: capitalize;
+
         float: right;
         /*  padding:5px;
       margin:0px 5px; */
@@ -1120,7 +1120,7 @@ div.panel.show {
         font-weight: 400px;
         padding: 0 10px 10px;
         text-align: center;
-        text-transform: capitalize;
+
     }
     section p {
         display: block;
@@ -1139,7 +1139,7 @@ div.panel.show {
         border-bottom: 1px solid #ff3d2e;
         color: #ff3d2e;
         font-size: 18px;
-        text-transform: capitalize;
+
         font-weight: bolder;
     }
     .readmore {
@@ -1148,7 +1148,7 @@ div.panel.show {
         background-color: #ff3d2e;
         font-family: 'Arial', sans-serif;
         font-size: 16px;
-        text-transform: capitalize;
+
         float: right;
         margin: auto 2px auto auto;
         /*  padding:5px;
@@ -1369,7 +1369,7 @@ div.panel.show {
         background-color: #d9d9d9;
         color: #ff3d2e;
         font-size: 18px;
-        text-transform: capitalize;
+
         font-weight: bolder;
     }
     [class*="col-ms-"] .top_h2 a {
@@ -1380,7 +1380,7 @@ div.panel.show {
         color: #fff;
         font-family: 'Arial', sans-serif;
         font-size: 11px;
-        text-transform: capitalize;
+
         float: right;
         text-align: center;
         font-size: 16px;
