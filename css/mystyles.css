@@ -15,13 +15,17 @@ p {
    max-width: 350px;
 
 }
-a {
-    font-size: inherit;
-    font-weight: inherit;
-    text-decoration: none;
-    color: inherit;
+
+ul {
+    display: table;
 }
 
+a {
+    text-decoration: none;
+}
+figcaption {
+  color:#ffffff;
+}
 /* Position of the layer div containing the h2 rotatif */
 .heading .row {
     position: relative;
@@ -98,7 +102,7 @@ article h1 {
     font-weight: bold;
     line-height: normal;
     text-align: left;
-    
+
 }
 
 article .right {
@@ -310,6 +314,7 @@ section {
 
 .menu-tap {
     position: absolute;
+    padding-top:5px;
 }
 
 

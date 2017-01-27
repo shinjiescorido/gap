@@ -1,0 +1,82 @@
+
+
+var array = [
+  
+    {
+      "h1" : "PADI open water course",
+      "description" : "Get your PADI scuba certification here with us in Scotty&lsquo;s. If you want to learn how to scuba dive, discover new adventures or simply see the wondrous world beneath the waves, your scuba diving adventure starts here. This is the most popular scuba diving course and be part of millions of aspiring scuba divers in this underwater adventure. During this course, you&lsquo;ll undergo atleast 5 academic trainings, confined water sessions and 4 ocean dives.",
+      "price" : [
+        [
+          "Mactan Cebu",
+          "Scuba Diver",
+          "two dives",
+          "duration: 1 and a half day",
+          "price SSI Certification: 12,500 PHP / $251"
+        ],
+        [
+          "OpenWater Diver",
+          "five academic and confined water training",
+          "two dives",
+          "duration: 3 days",
+          "price SSI Certification: 22,500 PHP / $452"
+        ],
+        [
+          "OpenWater Referral A",
+          "price per open water dive plus PIC",
+          "two dives",
+          "price SSI Certification: 3,000 PHP / $60"
+        ],
+        [
+          "OpenWater Referral B",
+          "per confined session",
+          "two dives",
+          "price SSI Certification: 2,250 PHP / $45"
+        ],
+        [
+          "OpenWater Referral C",
+          "per academic session",
+          "two dives",
+          "price SSI Certification: 1,000 PHP / $20"
+        ],
+        [
+          "Boracay",
+          "Openwater Diver",
+          "5 academics, 5 pool sessions, 4 ocean dives",
+          "duration: 4 days",
+          "price PADI Certification: 32,000 PHP / $643"
+        ]
+      ]
+    }
+]
+
+Get your PADI scuba certification here with us in Scotty&lsquo;s. If you want to learn how to scuba dive, discover new adventures or simply see the wondrous world beneath the waves, your scuba diving adventure starts here. This is the most popular scuba diving course and be part of millions of aspiring scuba divers in this underwater adventure.
+During this course, you&lsquo;ll undergo atleast 5 academic trainings, confined water sessions and 4 ocean dives.
+								Mactan Cebu
+								Scuba Diver
+								two dives
+								duration: 1 and a half day
+								price SSI Certification: 12,500 PHP / $251
+
+								OpenWater Diver
+
+								sessions and four ocean dives
+								duration: 3 days
+								price SSI Certification: 22,500 PHP / $452
+
+								OpenWater Referral A
+								price per open water dive plus PIC
+								price SSI Certification: 3,000 PHP / $60
+
+								OpenWater Referral B
+								per confined session
+								price SSI Certification: 2,250 PHP / $45
+
+								OpenWater Referral C
+								per academic session
+								price SSI Certification: 1,000 PHP / $20
+
+Boracay
+Openwater Diver
+5 academics, 5 pool sessions, 4 ocean dives
+duration: 4 days
+price PADI Certification: 32,000 PHP / $643

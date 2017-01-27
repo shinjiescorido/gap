@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <title>PADI boat diver course</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+
+      <link rel="stylesheet" type="text/css" href="../css/mystyles.css">
+      <script src="../js/main.js"></script>
+      <style>
+          @media (max-width:360px) {
+              .head-holder-1 {
+                  background-image: url('../images/header/scuba-diving/320/scuba-diving-scuba_320.jpg');
+              }
+              .head-holder-2 {
+                  background-image: url('../images/header/scuba-diving/320/fun-dive-boat_320.jpg');
+              }
+              .head-holder-3 {
+                  background-image: url('../images/header/scuba-diving/320/scuba-diving-boat_320.jpg');
+              }
+              body {
+                  background: url('../images/header/scuba-diving/320/scuba-diving-scuba_320.jpg') no-repeat -9999px -9999px,
+                  url('../images/header/scuba-diving/320/fun-dive-boat_320.jpg') no-repeat -9999px -9999px,
+                  url('../images/header/scuba-diving/320/scuba-diving-boat_320.jpg') no-repeat -9999px -9999px;
+              }
+          }
+
+          @media (min-width:361px) and (max-width:480px) {
+              .head-holder-1 {
+                  background-image: url("../images/header/scuba-diving/480/scuba-diving-scuba_480.jpg");
+              }
+              .head-holder-2 {
+                  background-image: url("../images/header/scuba-diving/480/fun-dive-boat_480.jpg");
+              }
+              .head-holder-3 {
+                  background-image: url("../images/header/scuba-diving/480/scuba-diving-boat_480.jpg");
+              }
+              body {
+                  background: url(../images/header/scuba-diving/480/scuba-diving-scuba_480.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/480/fun-dive-boat_480.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/480/scuba-diving-boat_480.jpg) no-repeat -9999px -9999px;
+              }
+          }
+
+          @media (min-width:481px) and (max-width:768px) {
+              .head-holder-1 {
+                  background-image: url("../images/header/scuba-diving/768/scuba-diving-scuba_768.jpg");
+              }
+              .head-holder-2 {
+                  background-image: url("../images/header/scuba-diving/768/fun-dive-boat_768.jpg");
+              }
+              .head-holder-3 {
+                  background-image: url("../images/header/scuba-diving/768/scuba-diving-boat_768.jpg");
+              }
+
+              body {
+                  background: url(../images/header/scuba-diving/768/scuba-diving-scuba_768.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/768/fun-dive-boat_768.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/768/scuba-diving-boat_768.jpg) no-repeat -9999px -9999px;
+              }
+          }
+
+          @media (min-width:769px) and (max-width:1024px) {
+              .head-holder-1 {
+                  background-image: url("../images/header/scuba-diving/1024/scuba-diving-scuba_1024.jpg");
+              }
+              .head-holder-2 {
+                  background-image: url("../images/header/scuba-diving/1024/fun-dive-boat_1024.jpg");
+              }
+              .head-holder-3 {
+                  background-image: url("../images/header/scuba-diving/1024/scuba-diving-boat_1024.jpg");
+              }
+              body {
+                  background: url(../images/header/scuba-diving/1024/scuba-diving-scuba_1024.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/1024/fun-dive-boat_1024.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/1024/scuba-diving-boat_1024.jpg) no-repeat -9999px -9999px;
+              }
+          }
+
+          @media (min-width:1025px) and (max-width:1440px) {
+              .head-holder-1 {
+                  background-image: url("../images/header/scuba-diving/1440/scuba-diving-scuba_1440.jpg");
+              }
+              .head-holder-2 {
+                  background-image: url("../images/header/scuba-diving/1440/fun-dive-boat_1440.jpg");
+              }
+              .head-holder-3 {
+                  background-image: url("../images/header/scuba-diving/1440/scuba-diving-boat_1440.jpg");
+              }
+              body {
+                  background: url(../images/header/scuba-diving/1440/scuba-diving-scuba_1440.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/1440/fun-dive-boat_1440.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/1440/scuba-diving-boat_1440.jpg) no-repeat -9999px -9999px;
+              }
+          }
+
+          @media (min-width:1441px) and (max-width:1920px) {
+              .head-holder-1 {
+                  background-image: url("../images/header/scuba-diving/1920/scuba-diving-scuba_1920.jpg");
+              }
+              .head-holder-2 {
+                  background-image: url("../images/header/scuba-diving/1920/fun-dive-boat_1920.jpg");
+              }
+              .head-holder-3 {
+                  background-image: url("../images/header/scuba-diving/1920/scuba-diving-boat_1920.jpg");
+              }
+              body {
+                  background: url(../images/header/scuba-diving/1920/scuba-diving-scuba_1920.jpg) no-repeat -9999px -9999px, url(../images/header/scuba-diving/1920/fun-dive-boat_1920.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/1920/scuba-diving-boat_1920.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/1920/diver-in-sardines-school_1920.jpg) no-repeat -9999px -9999px;
+              }
+          }
+
+          @media (min-width:1921px) {
+              .head-holder-1 {
+                  background-image: url("../images/header/scuba-diving/scuba-diving-scuba.jpg");
+              }
+              .head-holder-2 {
+                  background-image: url("../images/header/scuba-diving/fun-dive-boat.jpg");
+              }
+              .head-holder-3 {
+                  background-image: url("../images/header/scuba-diving/scuba-diving-boat.jpg");
+              }
+
+              body {
+                  background: url(../images/header/scuba-diving/scuba-diving-scuba.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/fun-dive-boat.jpg) no-repeat -9999px -9999px,
+                  url(../images/header/scuba-diving/scuba-diving-boat.jpg) no-repeat -9999px -9999px;
+              }
+          }
+      </style>
+  </head>
+  <body>
+
+      <div class="container col-12">
+          <!-- START MENU-NAVIGATION TABLET AND DESKTOP -->
+          <div class="menu-floater-tablet col-m-12 col-t-12">
+              <nav id="nav-2">
+                  <a class="link-2" data-id="1" href="#">SCUBA Diving</a>
+                  <a class="link-2" data-id="2" href="#">Water Sports</a>
+                  <a class="link-2" data-id="3" href="#">Island Tours</a>
+                  <a class="link-2" data-id="4" href="#">Club Member</a>
+                  <a class="link-2" data-id="5" href="../contact/index.html">More About Us</a>
+                  <a class="link-2 home-btn-t" data-id="6" href="/"><img src="../images/home-ico.png">Home</a>
+
+                  <div id="main-menu-1" class="about-menu-mobile row">
+                      <div class="row about-link-holder">
+                          <a href="../scuba-diving/scuba-diving-courses.html" class="col-t-2">
+                              <img title="scuba diving courses" alt="scuba diving courses" src="../images/watersports-menu/scuba-diving-courses_210.jpg" />
+                              <span>SCUBA Diving Courses</span>
+                          </a>
+                          <a href="../scuba-diving/learn-free-diving.html" class="col-t-2">
+                              <img title="learn free diving" alt="learn free diving" src="../images/watersports-menu/free-diving_210.jpg" />
+                              <span>Learn Free Diving</span>
+                          </a>
+                          <a href="../scuba-diving/scuba-diving-vacation.html" class="col-t-2">
+                              <img title="scuba diving vacation" alt="scuba diving vacation" src="../images/watersports-menu/tec-diving-course_210.jpg" />
+                              <span>SCUBA Diving Vacation</span>
+                          </a>
+                          <a href="../scuba-diving/scuba-diving-packages.html" class="col-t-2">
+                              <img title="scuba diving packages" alt="scuba diving packages" src="../images/watersports-menu/tec-diving_210.jpg" />
+                              <span>SCUBA Diving Packages</span>
+                          </a>
+                          <a href="../scuba-diving/become-a-professional-scuba-diver.html" class="col-t-2">
+                              <img title="become a professional scuba diver" alt="professional scuba diver internship" src="../images/watersports-menu/professional-scuba-diver_210.jpg" />
+                              <span>Become a Professional SCUBA Diver <br />(Internship)</span>
+                          </a>
+                          <a href="../scuba-diving/helmet-diving-seatrek.html" class="col-t-2">
+                              <img title="helmet diving seatrek" alt="walking underwater with helmet diving" src="../images/watersports-menu/helmet-diving_210.jpg" />
+                              <span>Helmet Diving<br /> (no certification needed)</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div id="main-menu-2" class="about-menu-mobile row">
+                      <div class="row about-link-holder">
+                          <a href="../watersports/parasailing.html" class="col-t-2">
+                              <img title="parasailing" alt="parasailing boat" src="../images/watersports-menu/parasailing-boat_210.jpg" />
+                              <span>Parasailing</span>
+                          </a>
+                          <a href="../watersports/banana-boat.html" class="col-t-2">
+                              <img title="banana boat" alt="banana boat and water sled" src="../images/watersports-menu/banana-boat-sled_210.jpg" />
+                              <span>Banana Boat / Water Sled</span>
+                          </a>
+                          <a href="../watersports/flyfish-ride.html" class="col-t-2">
+                              <img title="flyfish ride" alt="flyfish ride" src="../images/watersports-menu/flyfish-boat_210.jpg" />
+                              <span>Flyfish Ride</span>
+                          </a>
+                          <a href="../watersports/water-ski.html" class="col-t-2">
+                              <img title="water ski" alt="water ski" src="../images/watersports-menu/kite-surfing_210.jpg" />
+                              <span>Water Ski</span>
+                          </a>
+                          <a href="../watersports/jet-ski.html" class="col-t-2">
+                              <img title="jet ski" alt="jetski" src="../images/watersports-menu/jetski_210.jpg" />
+                              <span>Jet Ski</span>
+                          </a>
+                          <a href="../watersports/more-water-sports.html" class="col-t-2">
+                              <img title="more watersports" alt="all water sports" src="../images/watersports-menu/philippines-dolphins_210.jpg" />
+                              <span>More Water Sports</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div id="main-menu-3" class="about-menu-mobile row">
+                      <div class="row about-link-holder">
+                          <a href="../island-tours/sight-seeing-tours.html" class="col-t-2">
+                              <img title="sight seeing and island tours" alt="island tours" src="../images/watersports-menu/island-tour_210.jpg" />
+                              <span>Sight-seeing Tours</span>
+                          </a>
+                          <a href="../island-tours/sunset-cruise.html" class="col-t-2">
+                              <img title="sunset cruise" alt="sunset cruise" src="../images/watersports-menu/sunset-cruise_210.jpg" />
+                              <span>Sunset Cruise</span>
+                          </a>
+                          <a href="../island-tours/island-hopping.html" class="col-t-2">
+                              <img title="island hopping" alt="island hopping and tour" src="../images/watersports-menu/island-tour-visit-pandanon_210.jpg" />
+                              <span>Island Hopping</span>
+                          </a>
+                          <a href="../island-tours/deep-sea-fishing.html" class="col-t-2">
+                              <img title="Deep sea fishing" alt="Deep sea fishing" src="../images/watersports-menu/deep-sea-fishing_210.jpg" />
+                              <span>Deep sea fishing</span>
+                          </a>
+                          <a href="../island-tours/boat-rentals.html" class="col-t-2">
+                              <img title="boat rentals" alt="boat and yacht rental" src="../images/watersports-menu/fishing-tour-boat-yatch_210.jpg" />
+                              <span>Boat Rentals</span>
+                          </a>
+                          <a href="../island-tours/more-destination-and-packages.html" class="col-t-2">
+                              <img title="more destinations and packages" alt="destinations and packages" src="../images/watersports-menu/virgin-island-bohol_210.jpg" />
+                              <span>More Destinations & Packages</span>
+                          </a>
+                      </div>
+                  </div>
+                  <div id="main-menu-4" class="about-menu-mobile row">
+                      <div class="row about-link-holder">
+
+                          <a href="../club-member/how-to-become-a-club-member.html" class="col-t-6 h-cloner">
+                              <img title="how to become a club member" alt="become a club member" src="../images/watersports-menu/become-dive-master_210.jpg" />
+                              <span>How to become a Club Member</span>
+                          </a>
+                          <a href="../club-member/club-member-portal.html" class="col-t-6 h-cloner">
+                              <img title="club member portal" alt="club member portal" src="../images/watersports-menu/become-pro-diver_210.jpg" />
+                              <span>Club Member&lsquo;s Portal</span>
+                          </a>
+
+                      </div>
+                  </div>
+              </nav>
+          </div>
+          <!-- END MENU-NAVIGATION TABLET AND DESKTOP -->
+
+          <!-- START MENU NAVIGATION PHONE -->
+          <div class="menu-floater-mobile col-m-12 col-t-12">
+              <input type="checkbox" id="show-menu" role="button" />
+              <label for="show-menu" class="show-menu">
+                <img id="menuimage" title="navigation icon" alt="navigation icon" src="../images/menu12.png" /><span class="closemenu">X</span><span class="menu-tap menucloser">Menu</span><span class="menu-tap closecloser">Close</span>
+              </label>
+              <div class="home-btn-m">
+                  <a href="/"><img src="../images/home-ico.png">Home</a>
+              </div>
+              <div class="menu-contact">
+                  <a href="../contact/dive-support.html"><img src="../images/menu-contact.png">Contact</a>
+              </div>
+
+              <nav id="myTopNav">
+                <div class="nav-mobile-wrapper">
+                  <button class="accordion" data-location="scuba-diving">
+                    <div class="col-m-12 section-menu">
+                      <div class="col-m-2">
+                        <a name="scuba-diving"></a>
+                        <img title="scuba diving" alt="scuba diving" src="../images/watersports-menu/scuba-underwater-photography-course_210.jpg" />
+                      </div>
+                      <div class="col-m-10">
+                        <span>Diving Underwater</span>
+                        <p>
+                          All about SCUBA Diving, Free Diving. From beginners to Extreme Technical SCUBA Diving.
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <div class="panel">
+                          <div class="panel-show-wrapper">
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../scuba-diving/scuba-diving-courses.html">
+                                      <img title="scuba diving courses" alt="scuba diving courses" src="../images/watersports-menu/scuba-diving-courses_210.jpg" /><br />
+                                      <span>SCUBA Diving Courses</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../scuba-diving/learn-free-diving.html">
+                                      <img title="learn free diving" alt="where to learn free diving" src="../images/watersports-menu/free-diving_210.jpg" /><br />
+                                      <span>Learn Free Diving</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../scuba-diving/scuba-diving-vacation.html">
+                                      <img title="scuba diving vacation" alt="scuba diving vacation" src="../images/watersports-menu/tec-diving-course_210.jpg" /><br />
+                                      <span>Scuba Diving Vacation</span>
+
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../scuba-diving/scuba-diving-packages.html">
+                                      <img title="scuba diving packages" alt="scuba diving packages" src="../images/watersports-menu/tec-diving_210.jpg" /><br />
+                                      <span>SCUBA Diving Packages</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../scuba-diving/become-a-professional-scuba-diver.html">
+                                      <img title="become a professional scuba diver" alt="professional scuba diver internship" src="../images/watersports-menu/professional-scuba-diver_210.jpg" /><br />
+                                      <span>Become a Professional SCUBA Diver <br />(Internship)</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../scuba-diving/helmet-diving-seatrek.html">
+                                      <img title="helmet diving seatrek" alt="helmet diving walking underwater" src="../images/watersports-menu/helmet-diving_210.jpg" /><br />
+                                      <span>Helmet Diving<br /> (No Certification needed)</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+
+                  <button class="accordion" data-location="watersports">
+                    <div class="col-m-12 section-menu">
+                      <div class="col-m-2">
+                        <a name="watersports"></a>
+                        <img title="water sports and parasailing" alt="water sports and parasailing" src="../images/watersports-menu/parasailing_210.jpg" />
+                      </div>
+                      <div class="col-m-10">
+                        <span>Water Sports</span>
+                        <p>
+                          If its above water, on the water, or underwater, we do it.
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <div class="panel">
+                          <div class="panel-show-wrapper">
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../watersports/parasailing.html">
+                                      <img title="parasailing" alt="parasailing boat" src="../images/watersports-menu/parasailing-boat_210.jpg" /><br />
+                                      <span>Parasailing</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../watersports/banana-boat.html">
+                                      <img title="banana boat" alt="banana boat" src="../images/watersports-menu/banana-boat-sled_210.jpg" /><br />
+                                      <span>Banana boat/sled</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../watersports/flyfish-ride.html">
+                                      <img title="flyfish ride" alt="flyfish ride" src="../images/watersports-menu/flyfish-boat_210.jpg" /><br />
+                                      <span>Flyfish ride</span>
+
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../watersports/water-ski.html">
+                                      <img title="water ski" alt="water ski" src="../images/watersports-menu/kite-surfing_210.jpg" /><br />
+                                      <span>Water Ski</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../watersports/jet-ski.html">
+                                      <img title="jet ski" alt="jet ski" src="../images/watersports-menu/jetski_210.jpg" /><br />
+                                      <span>Jet Ski</span>
+                                  </a>
+                              </div>
+                              <div class="col-m-4 col-t-4">
+                                  <a href="../watersports/more-water-sports.html">
+                                      <img title="more watersports" alt="more watersports" src="../images/watersports-menu/philippines-dolphins_210.jpg" /><br />
+                                      <span>More Water Sports</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+
+                  <button class="accordion" data-location="island-tours">
+                    <div class="col-m-12 section-menu">
+                      <div class="col-m-2">
+                        <a name="island-tours"></a>
+                        <img title="island tours" alt="island tours" src="../images/watersports-menu/holidays-vacations_210.jpg" />
+                      </div>
+                      <div class="col-m-10">
+                        <span>Island Tours</span>
+                        <p>
+                          Inspiring Destinations within your reach. You&lsquo;ll love where we will take you.
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <div class="panel">
+                            <div class="panel-show-wrapper">
+                                <div class="col-m-4 col-t-4">
+                                    <a href="../island-tours/sight-seeing-tours.html">
+                                        <img title="sight seeing tours" alt="island tours and sight seeing" src="../images/watersports-menu/island-tour_210.jpg" /><br />
+                                        <span>Sight-seeing Tours</span>
+                                    </a>
+                                </div>
+                                <div class="col-m-4 col-t-4">
+                                    <a href="../island-tours/sunset-cruise.html">
+                                        <img title="sunset cruise" alt="sunset cruise" src="../images/watersports-menu/sunset-cruise_210.jpg" /><br />
+                                        <span>Sunset Cruise</span>
+                                    </a>
+                                </div>
+                                <div class="col-m-4 col-t-4">
+                                    <a href="../island-tours/island-hopping.html">
+                                        <img title="island hopping and tours" alt="island hopping and tours" src="../images/watersports-menu/island-tour-visit-pandanon_210.jpg" /><br />
+                                        <span>Island Hopping</span>
+
+                                    </a>
+                                </div>
+                                <div class="col-m-4 col-t-4">
+                                    <a href="../island-tours/deep-sea-fishing.html">
+                                        <img title="deep sea fishing" alt="deep sea fishing" src="../images/watersports-menu/deep-sea-fishing_210.jpg" /><br />
+                                        <span>Deep sea fishing</span>
+                                    </a>
+                                </div>
+                                <div class="col-m-4 col-t-4">
+                                    <a href="../island-tours/boat-rentals.html">
+                                        <img title="boat rentals" alt="boat rentals" src="../images/watersports-menu/fishing-tour-boat-yatch_210.jpg" /><br />
+                                        <span>Boat Rentals</span>
+                                    </a>
+                                </div>
+                                <div class="col-m-4 col-t-4">
+                                    <a href="../island-tours/more-destination-and-packages.html">
+                                        <img title="more destinations and packages" alt="more destinations and packages" src="../images/watersports-menu/virgin-island-bohol_210.jpg" /><br />
+                                        <span>More Destinations & Packages</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                  <button class="accordion" data-location="club-member">
+                    <div class="col-m-12 section-menu">
+                      <div class="col-m-2">
+                        <a name="club-member"></a>
+                        <img title="scuba diving club member" alt="scuba diving club member" src="../images/watersports-menu/scuba-diving_210.jpg" />
+                      </div>
+                      <div class="col-m-10">
+                        <span>Club Member</span>
+                        <p>
+                          We offer special rates & discounts for all our Club Members
+                        </p>
+                      </div>
+                    </div>
+                  </button>
+                  <div class="panel">
+                            <div class="panel-show-wrapper">
+                                <div class="col-m-6 col-t-6">
+                                    <a href="../club-member/how-to-become-a-club-member.html">
+                                        <img title="how to become a club member" alt="how to become a club member" src="../images/watersports-menu/become-dive-master_210.jpg" /><br />
+                                        <span>How to Become A Club Member</span>
+                                    </a>
+                                </div>
+                                <div class="col-m-6 col-t-6">
+                                    <a href="../club-member/club-member-portal.html">
+                                        <img title="club member portal" alt="club member portal" src="../images/watersports-menu/become-pro-diver_210.jpg" /><br />
+                                        <span>Club Member&lsquo;s Portal</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                  <div class="accordion">
+                            <span style="float:left;"><a href="../contact/">More About Us</a></span>
+                            <label for="show-menu" class="show-menu" style="cursor:pointer;float:right;">X close</label>
+                        </div>
+                  <div class="panel"></div>
+                </div>
+              </nav>
+          </div>
+          <!-- END MENU NAVIGATION PHONE -->
+
+          <!--  START ROTATING HEADER h2 -->
+          <header id="heads">
+              <div class="heading">
+                  <div class="row head-holder-1">
+                      <h2>
+                        Get a PADI boat diver course and dive to any diving sites accessible only by boat.
+                      </h2>
+                  </div>
+              </div>
+              <div class="heading">
+                  <div class="row head-holder-2">
+                      <h2>Learn the basics in boat diving with this specialty training courses.</h2>
+                  </div>
+              </div>
+              <div class="heading">
+                  <div class="row head-holder-3">
+                      <h2>Boat diving will let you explore a variety of underwater worlds.</h2>
+                  </div>
+              </div>
+          </header>
+          <!-- END ROTATING HEADER H2 -->
+
+          <!-- START BLOCS MAIN CONTENTS -->
+          <div class="row mainrow">
+            <div>
+              <!--  BLOCS MAIN ARTICLE AND SUB-ARTICLE -->
+              <article class="col-ms-12 col-m-12 col-t-12">
+                  <div class="col-m-12 col-ms-12 col-t-12">
+                      <!-- START BLOCK MAIN ARTICLE -->
+                      <h1>PADI Boat Diver Course</h1>
+                      <p><img title="PADI Boat Diver Course" alt="PADI Boat Diver Course" src="../images/pictures/scuba-diving-courses/boat-scuba-diving.jpg" />Learn the techniques and necessary information your need to know regarding with Boat Diving so that you
+                          could plan and enjoy your dive trips from all sizes and types of boats.
+                          <ul style="display:table">
+                              <li>no price.</li>
+                          </ul>
+                      </p>
+                      <!-- END BLOCK MAIN ARTICLE -->
+                      <div class="clearer"></div>
+                  </div>
+              </article>
+              <!--  END BLOCS MAIN ARTICLE AND SUB-ARTICLE -->
+                      <div class="clearer"></div>
+                  </div>
+              </article>
+              <!--  END BLOCS MAIN ARTICLE AND SUB-ARTICLE -->
+            </div>
+          </div>
+          <!-- END BLOCS MAIN CONTENTS -->
+
+          <!-- START MORE WATERSPORTS AND TRAVEL -->
+          <div class="show-divider col-m-12 col-t-12">
+            <a href="../scuba-diving/helmet-diving-seatrek.html">
+            <img alt="Underwater helmet Diving" title="Underwater helmet Diving"
+            src="../images/header/scuba-diving/1440/fun-helmet-diving_1440.jpg"
+            srcset="../images/header/scuba-diving/1920/fun-helmet-diving_1920.jpg 1920w, ../images/header/scuba-diving/768/fun-helmet-diving_768.jpg 778w"
+             sizes="(min-width: 400px) 50vw, 100vw" />
+
+                  <figcaption>Underwater helmet Diving - Walk Underwater the old way of diving</figcaption>
+          </div>
+          <!-- END MORE WATERSPORTS AND TRAVEL -->
+
+          <footer class="col-12 col-m-12">
+              <div>
+                  <a href="tel:+63322315060"><img src="../images/call-us.jpg" /></a>
+              </div>
+              <div>
+                  <a href="../contact/dive-support.html"><img src="../images/email-support.jpg" /></a>
+              </div>
+              <div>
+                  <a href="../contact/index.html"><img src="../images/FAQ.jpg" /></a>
+              </div>
+              <div class="col-m-12 col-t-12 copyright">
+                  Copyright divescotty.com Scotty&lsquo;s Action Sports Network (SASN) 1986-2017 All rights reserved
+                  <br /> Punta Engaño Road, Lapu-Lapu City 6015, Cebu Philippines
+                  <br /> Tel. Nos.: (+63 32) 231-5060 / 231-5061
+              </div>
+          </footer>
+      </div>
+
+      <!-- BUTTON GO UP -->
+      <div onclick="smoothScroll('nav-2');" title="Go up" style="border-radius:5px;opacity:0.8;cursor:pointer;position: fixed; right: 10px; bottom: 15px; z-index: 999; font-size: 35px; padding: 0px 10px; font-weight: bolder; background: rgb(128, 177, 254) none repeat scroll 0px 0px; font-family: icon; color: rgb(51, 51, 51);">
+          &uarr;
+        </div>
+  </body>
+</html>
