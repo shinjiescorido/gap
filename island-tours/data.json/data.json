@@ -4,7 +4,7 @@ var array = [
   
     {
       "h1" : "PADI open water course",
-      "description" : "Get your PADI scuba certification here with us in Scotty&lsquo;s. If you want to learn how to scuba dive, discover new adventures or simply see the wondrous world beneath the waves, your scuba diving adventure starts here. This is the most popular scuba diving course and be part of millions of aspiring scuba divers in this underwater adventure. During this course, you&lsquo;ll undergo atleast 5 academic trainings, confined water sessions and 4 ocean dives.",
+      "description" : "Get your PADI scuba certification here with us in Scotty&lsquo;s. If you want to learn how to scuba dive, discover new adventures or simply see the wondrous world beneath the waves, your SCUBA diving adventure starts here. This is the most popular SCUBA diving course and be part of millions of aspiring scuba divers in this underwater adventure. During this course, you&lsquo;ll undergo atleast 5 academic trainings, confined water sessions and 4 ocean dives.",
       "price" : [
         [
           "Mactan Cebu",
@@ -49,7 +49,7 @@ var array = [
     }
 ]
 
-Get your PADI scuba certification here with us in Scotty&lsquo;s. If you want to learn how to scuba dive, discover new adventures or simply see the wondrous world beneath the waves, your scuba diving adventure starts here. This is the most popular scuba diving course and be part of millions of aspiring scuba divers in this underwater adventure.
+Get your PADI scuba certification here with us in Scotty&lsquo;s. If you want to learn how to scuba dive, discover new adventures or simply see the wondrous world beneath the waves, your SCUBA diving adventure starts here. This is the most popular SCUBA diving course and be part of millions of aspiring scuba divers in this underwater adventure.
 During this course, you&lsquo;ll undergo atleast 5 academic trainings, confined water sessions and 4 ocean dives.
 								Mactan Cebu
 								Scuba Diver

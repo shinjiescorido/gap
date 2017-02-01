@@ -3,29 +3,28 @@ html, body {
     margin: 0px;
     font-family: Arial, Helvitca, sans-serif;
 }
+ul {
+	display:table;
+}
 
 p {
     text-indent: 0px !important;
     text-align: justify;
 }
 .map-images {
-  /* we dont have different sizes on "map images" so we
+  /* we dont have different sizes on map's images on "more destination and package.html page" so we
   need to set limit for its max-width so it wont
    stretch and get blury in bigger resolutions */
    max-width: 350px;
 
 }
-
-ul {
-    display: table;
-}
-
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 figcaption {
   color:#ffffff;
 }
+
 /* Position of the layer div containing the h2 rotatif */
 .heading .row {
     position: relative;
@@ -812,27 +811,19 @@ div.panel.show {
     display: none;
     min-height: 100px;
     left: 1px;
-    margin: 0;
-    /*    opacity: 0.6; */
-    /*  padding-left: 20px; */
     position: relative;
     top: 0;
-    /* transform: translate3d(0px, -100%, 0px); */
-    color: #fff;
-    /*    width:99%; */
+    color: #000;
     font-family: Arial;
     font-size: 16px;
-    margin-top: 10px;
+    margin: 10px;
+}
+.toggle-price a {
+  color: blue;
 }
 
 .readmore-expander {
     width: 100% !important;
-}
-
-.toggle-price ul {
-    border-left: 1px solid #ccc;
-    margin: 5px 0;
-    padding-left: 10px;
 }
 
 .toggle-visible {
@@ -840,16 +831,6 @@ div.panel.show {
     display: block;
     width: 100%;
     margin: auto;
-    /*    min-height: 100px;
-    left: 0;
-    margin: 0;
-    opacity: 0.6;
-    padding: 0;
-    position: relative;
-    top: 0;
-    transform: translate3d(0px, 0px, 0px);
-    transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, visibility 0s ease 0s;
-    width: 99%; */
 }
 
 .toggle-price.toggle-visible div {
@@ -871,24 +852,6 @@ div.panel.show {
     top: 5px;
 }
 
-.toggle-price ul li {
-    font-size: 16px;
-}
-
-.toggle-price ul li span {
-    font-size: 16px;
-    color: #0162fe;
-}
-
-.toggle-price p {
-    font-size: 16px;
-    color: #0162fe;
-}
-
-.toggle-price div a {
-    color: #014ecb;
-    /* background: #fdd9b5 none repeat scroll 0 0; */
-}
 
 
 /*
