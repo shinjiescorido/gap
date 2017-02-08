@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Island hopping tours and sunset cruises in the Philippines</title>
+</head>
+
+<body>
+    <textarea id="text">  </textarea>
+</body>
+<script>
+    var arr = [
+        [
+            '../images/pictures/scuba-diving/320/scuba-diving_320',   //image name
+            'Try and discover SCUBA diving for beginners',  // main title
+            'Ready to dive into a marvelous world of wonders and cherish these memories forever as Scotty’s Action Sports Network offers great deals of your Scuba Diving Adventures not just for you but to your friends and family, even the young ones!'  //description
+
+        ],
+        [
+            '../images/pictures/scuba-diving/320/under-water-diver_320',   //image name
+            'All SCUBA diving courses and specialities',  // main title
+            'Get certified and be part of the family and take your diving experience anywhere and into a new level! Have a great time in learning as you are guided by a team of experts from Scuba School International (SSI) and from Professional Association of Diving Instructors (PADI).'  //description
+        ],
+        [
+            '../images/header/technical-scuba-diving/320/lou-CCR_320',   //image name
+            'Closed circuit rebreather (CCR) courses',  // main title
+            'Want to explore the greatness of the underwater world? Get your Closed circuit rebreather (CCR) courses and get to dive in any aquatic world and discover its wonders. Be a certified Closed circuit rebreather (CCR) courses taking 5 academic lessons, 5 pool sessions and 4 ocean dives in this 4 days program'  //description
+        ],
+        [
+            '../images/pictures/technical-scuba-diving/320/discover-technical-dive_320',   //image name
+            'Technical SCUBA diving courses',  // main title
+            'Get the opportunity of a lifetime to experience new dive sites beyond your typical diving zone. Scotty’s Action Sports Network offers great array of courses for those you would like to dive beyond and explore great depths of untouched marine sanctuaries, mysterious caves or amazing wrecks that are hidden away.'  //description
+        ]
+    ];
+
+    var gotolink = '';
+    var image_title = '';
+    var image_name = '';
+    var head_title = '';
+    var description = '';
+    var title = '';
+    var sectioner = '';
+console.log(arr.length);
+    for (var x = 0; x < arr.length; x++) {
+
+      image_title = arr[x][1];
+      image_name = arr[x][0];
+      head_title = arr[x][1];
+      description = arr[x][2];
+      title = arr[x][1];
+      gotolink = head_title.replace(new RegExp(' ', 'g'), '-').toLowerCase() + '.html';
+
+      sectioner = '<section class="sub-page col-ms-12 col-m-12 col-t-6">' +
+          '<div class="content-wrapper">' +
+          '<div class="logo_wrapper col-ms-5 col-m-3 col-t-5">' +
+          '<a href="./' + gotolink + '">' +
+          '<img title="' + image_title + '" alt="' + image_title + '" class="col-m-image"' +
+          'src="' + image_name + '.jpg" />' +
+          '</a>' +
+          '</div>' +
+          '<div class="col-m-9 col-ms-7 col-t-7">' +
+          '<h1 class="top_h2"><a href="./' + gotolink + '">' + head_title + '</a></h1>' +
+          '<p class="block-with-text-2">' +
+          description +
+          '</p>' +
+          '</div>' +
+          '<div style="height:1px; clear:both"></div>' +
+          '<div class="col-m-6 col-ms-12 col-t-12 readmore gogreen">' +
+          '<h3>' +
+          '<a href="' + gotolink + '">' +
+          title + ' Prices' +
+          '</a>' +
+          '</h3>' +
+          '<div class="toggle-price">' +
+          '</div>' +
+          '</div>' +
+          '</div>' +
+          '</section>';
+document.getElementById("text").innerHTML += sectioner;
+    }
+
+</script>
+
+</html>

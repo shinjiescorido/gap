@@ -17,23 +17,30 @@ function carousel() {
         myIndex = 1
     }
     unfade(x[myIndex - 1]);
-    x[myIndex - 1].style.display = 'block';
+x[myIndex - 1].style.display = 'block';
     //x[0].style.display='block';
-    setTimeout(carousel, 1000); // Change imag seconds
+    setTimeout(carousel, 7000); // Change imag seconds
 }
 
 function fade(element) {
     var op = 1; // initial opacity
     var timer = setInterval(function() {
-        if (op <= 0.1) {            clearInterval(timer);        }
-        element.style.opacity = op;        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        if (op <= 0.1) {
+          clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op -= op * 0.1;
     }, 50);}
 
-function unfade(element) {    var op = 0.1; // initial opacity
-    var timer = setInterval(function() {        if (op >= 1) {
-            clearInterval(timer);        }
-        element.style.opacity = op;        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+function unfade(element) {
+  var op = 0.1; // initial opacity
+    var timer = setInterval(function() {
+      if (op >= 1) {
+            clearInterval(timer);
+      }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op += op * 0.1;
     }, 10);
 }
